@@ -1,0 +1,17 @@
+<section id="about" class="section-about">{% assign posts = site.posts | where:'categories', 'about' %}
+{% assign de_posts=posts | where:'language', page.language %}
+{% for post in de_posts %}{% if post.title == 'about_main' %}
+{% assign mainHeader = post.header %}  
+{% assign mainContent = post.content %}  
+{% endif %}{% if post.title == 'about_participation' %}
+{% assign participationHeader = post.header %}  
+{% assign participationContent = post.content %}  
+{% endif %}{% if post.title == 'about_integration' %}
+{% assign integrationHeader = post.header %}  
+{% assign integrationContent = post.content %}  
+{% endif %}{% if post.title == 'about_sustainability' %}
+{% assign sustainabilityHeader = post.header %}  
+{% assign sustainabilityContent = post.content %}  
+{% endif %}
+{% endfor %}<div class="flex flex--center"><div class="col-spread"><h1 class="title-text">{{mainHeader}}</h1><div class="lead-text"> 
+{{mainContent}}</div></div></div><div class="block block--left-right block--about"><div class="col-side col-side--left"><h2>{{participationHeader}}</h2><p>{{participationContent}}</p></div><div class="col-side col-side--right"><h2>{{integrationHeader}}</h2><p>{{integrationContent}}</p></div><div class="col-side col-side--left"><h2>{{sustainabilityHeader}}</h2><p>{{sustainabilityContent}}</p></div></div></section>

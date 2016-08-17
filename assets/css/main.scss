@@ -1,10 +1,16 @@
 @import "bourbon";
+
+@import "0-tools/neat/neat";
 @import "0-tools/normalize";
 @import "0-tools/colors";
 
 @import "1-base/base";
 @import "1-base/links";
 
+@import "2-modules/bullets";
 @import "2-modules/header";
 
-@import "3-sections/home";
+@import "3-layouts/home";
+
+@import "4-sections/startscreen";
+@import "4-sections/about";

@@ -10,7 +10,7 @@ nav:
 
     - ref: about
       title: Über uns
-      href: ueber_uns
+      href: about
 
     - ref: projects
       title: Projekte

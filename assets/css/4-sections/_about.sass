@@ -1,0 +1,38 @@
+$about-border-radius: 4px
+
+.section-about
+  background: lighten(lightblue, 12%)
+
+  .title-text
+    color: white
+
+  .lead-text
+    color: #333
+
+  .block--about
+    .col-side
+      margin: 1.5rem 0
+      padding: 1rem 2rem
+      // border: 2px solid #aaa
+      background: white
+
+      &.col-side--left
+        border-left: none
+        border-top-right-radius: $about-border-radius
+        border-bottom-right-radius: $about-border-radius
+        box-shadow: inset -7px 7px 14px -7px rgba(0,0,0,0.2)
+
+
+      &.col-side--right
+        border-right: none
+        border-top-left-radius: $about-border-radius
+        border-bottom-left-radius: $about-border-radius
+        box-shadow: inset 7px 7px 14px -7px rgba(0,0,0,0.2)
+
+      h2
+        border-bottom: 1px solid transparentize(#333, 0.8)
+        display: inline-block
+        margin: .4rem 0 .2rem 0
+
+      @media (max-width: 640px)
+        border: none

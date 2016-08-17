@@ -1,0 +1,85 @@
+
+
+
+section.section-about#about
+  
+  {% assign posts = site.posts | where:'categories', 'about' %}
+  {% assign de_posts=posts | where:'language', page.language %}
+  
+  {% for post in de_posts %}
+
+  //- main
+  {% if post.title == 'about_main' %}
+  {% assign mainHeader = post.header %}  
+  {% assign mainContent = post.content %}  
+  {% endif %}
+  
+  //- participation
+  {% if post.title == 'about_participation' %}
+  {% assign participationHeader = post.header %}  
+  {% assign participationContent = post.content %}  
+  {% endif %}
+  
+  //- integration
+  {% if post.title == 'about_integration' %}
+  {% assign integrationHeader = post.header %}  
+  {% assign integrationContent = post.content %}  
+  {% endif %}
+  
+  //- sustainability
+  {% if post.title == 'about_sustainability' %}
+  {% assign sustainabilityHeader = post.header %}  
+  {% assign sustainabilityContent = post.content %}  
+  
+  {% endif %}
+  
+  {% endfor %}
+  
+  .flex.flex--center
+    .col-spread
+      h1.title-text {{mainHeader}}
+      
+      .lead-text 
+        {{mainContent}}
+
+  .block.block--left-right.block--about
+    
+    .col-side.col-side--left
+      h2 {{participationHeader}}
+      p {{participationContent}}
+    
+    .col-side.col-side--right
+      h2 {{integrationHeader}}
+      p {{integrationContent}}
+      
+    .col-side.col-side--left
+      h2 {{sustainabilityHeader}}
+      p {{sustainabilityContent}}
+      
+    
+      
+  
+  
+        
+      //- ul.bullets
+      //-   li.bullet
+      //-     .bullet-icon.bullet-icon-1
+      //-       img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png', alt='')
+      //-     .bullet-content
+      //-       h2 {{participationHeader}}
+      //-       p {{participationContent}}
+      //-   li.bullet
+      //-     .bullet-icon.bullet-icon-2
+      //-       img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png', alt='')
+      //-     .bullet-content
+      //-       h2 {{integrationHeader}}
+      //-       p {{integrationContent}}
+      //-   li.bullet
+      //-     .bullet-icon.bullet-icon-3
+      //-       img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png', alt='')
+      //-     .bullet-content
+      //-       h2 Last Bullet Title
+      //-       p
+      //-         | Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.
+      //- 
+    

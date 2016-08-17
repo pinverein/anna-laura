@@ -58,11 +58,12 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }).on('error', sass.logError))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(minifycss())
+    //     .pipe(rename({suffix: '.min', prefix : ''}))
+		// .pipe(minifycss())
 
-        .pipe(gulp.dest('assets/css'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(gulp.dest('_site/assets/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('assets/css'));
 });
 
 
@@ -98,7 +99,7 @@ gulp.task('js', function() {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/js/**/*.js', ['js']).on("change", browserSync.reload);
-    gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/css/**', ['sass']).on("change", browserSync.reload);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
 });

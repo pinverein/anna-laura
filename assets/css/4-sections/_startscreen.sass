@@ -1,0 +1,40 @@
+.startscreen
+  width: 100%
+  height: calc(100vh - 3.5rem)
+  background: white
+  display: flex
+  justify-content: center
+  padding: 0
+.flex
+  flex-direction: column
+  width: 100%
+
+.col-full
+  align-self: center
+  width: 100%
+  // padding: 1rem
+
+.start-logo
+  +hide-text
+  height: 8rem
+  width: calc(100% - 100px)
+  margin: 0
+  background:
+    image: url(/assets/img/logo-pin.png)
+    size: contain
+    repeat: no-repeat
+    position: center
+
+@media (max-width: 800px)
+
+
+  .start-logo
+    margin: 0 auto
+@media (max-width: 400px)
+  .col-full
+    margin: 0
+
+  .start-logo
+    margin: 0 auto
+
+    width: auto
