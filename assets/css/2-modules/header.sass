@@ -1,10 +1,11 @@
-.home-wrap header
-    width: 11rem
-    background: lightblue
+.home-wrap
+  header
+    width: 160px
+    background: white
     padding: 2rem 0
     .header-position
       position: fixed
-      width: 11rem
+      width: 160px
       top: 3rem
       left: 0
       bottom: 4rem
@@ -14,6 +15,7 @@
 
     .logo
       +hide-text
+      max-width: 156px
       background:
         image: url(/assets/img/logo_pin_only.png)
         repeat: no-repeat
@@ -23,19 +25,107 @@
       padding: 0
       margin: 0
 
-.site-nav
-  ul
-    list-style: none
-    margin: 1.5rem 0
-    padding: 0 20px 0 0
-    text-align: right
+  .site-nav
+    ul
+      list-style: none
+      margin: 1.5rem 0
+      padding: 0 20px 0 0
+      text-align: right
 
+      li
+        margin-bottom: .5rem
+
+        &:last-child
+          margin-bottom: 0
+
+  .placeholder
+    +hide-text
+    height: 3rem
+
+  .mobile-nav-toggle
+    display: none
+    width: 50px
+    height: 50px
+    margin-right: .4rem
+    // background: pink
+    align-items: center
+    cursor: pointer
+
+    span,
+    span:before,
+    span:after
+      content: ''
+      display: block
+      height: 3px
+      width: 100%
+      background: #000
+      position: relative
+      +transition(all 300ms ease-out)
+    span:before
+      top: 15px
+
+    span:after
+      top: -17px
+
+    &.is-active span
+      background: transparent
+
+    &.is-active span:before,
+    &.is-active span:after
+      transform-origin: center
+      transform: rotate(45deg)
+      top: 3px
+
+    &.is-active span:after
+      transform: rotate(-45deg)
+      top: 0
+
+  .mobile-nav
+    display: none
+    position: absolute
+    width: 100%
+    background: white
+    padding: 2rem 0 1.5rem
+    transform: translateY(-100%)
+    +transition(all 300ms ease-out)
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
     li
+      text-align: center
       margin-bottom: .5rem
 
-      &:last-child
-        margin-bottom: 0
 
-.placeholder
-  +hide-text
-  height: 3rem
+
+@media (max-width: 800px)
+  .home-wrap
+    header
+      width: auto
+      padding: 1rem
+
+      .header-position
+        position: relative
+        width: auto
+        top: auto
+        bottom: auto
+        left: auto
+        flex-direction: row
+        align-items: center
+
+      .site-nav,
+      .placeholder
+        display: none
+
+      .logo
+        height: 2.5rem
+        margin-left: -1rem
+
+      .mobile-nav-toggle
+        display: flex
+
+    .mobile-nav.is-active
+      display: block
+      background: lighten(lightblue, 10%)
+      transform: translateY(0%)
