@@ -61,7 +61,7 @@ gulp.task('sass', function () {
         .pipe(rename({suffix: '.min', prefix : ''}))
 		.pipe(minifycss())
 
-        .pipe(gulp.dest('_site/css'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -84,11 +84,11 @@ gulp.task('js', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('common.js'))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('js'))
-    .pipe(gulp.dest('_site/js'));
+    .pipe(gulp.dest('assets/js'))
+    .pipe(gulp.dest('_site/assets/js'));
 });
 
 

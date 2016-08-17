@@ -1,4 +1,50 @@
-name: Your New Jekyll Site
+name: pin
 markdown: kramdown
-highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+nav:
+
+# de
+ - language: de
+   links:
+
+    - ref: about
+      title: Über uns
+      href: ueber_uns
+
+    - ref: projects
+      title: Projekte
+      href: projekte
+
+    - ref: participate
+      title: Mitmachen
+      href: mitmachen
+
+    - ref: newsletter
+      title: Newsletter
+      href: newsletter
+
+    - ref: contact
+      title: Kontakt
+      href: kontakt
+
+# en
+ - language: en
+   links:
+
+    - ref: about
+      title: About us
+      href: about_us
+
+    - ref: projects
+      title: Projects
+      href: projects
+
+
+ # en:
+ #  about:
+ #   title: About us
+ #   href: about_us
+ #  projects:
+ #   title: Projects
+ #   href: projects

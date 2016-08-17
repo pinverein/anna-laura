@@ -1,0 +1,41 @@
+.home-wrap header
+    width: 11rem
+    background: lightblue
+    padding: 2rem 0
+    .header-position
+      position: fixed
+      width: 11rem
+      top: 3rem
+      left: 0
+      bottom: 4rem
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    .logo
+      +hide-text
+      background:
+        image: url(/assets/img/logo_pin_only.png)
+        repeat: no-repeat
+        position: center
+        size: contain
+      height: 4rem
+      padding: 0
+      margin: 0
+
+.site-nav
+  ul
+    list-style: none
+    margin: 1.5rem 0
+    padding: 0 20px 0 0
+    text-align: right
+
+    li
+      margin-bottom: .5rem
+
+      &:last-child
+        margin-bottom: 0
+
+.placeholder
+  +hide-text
+  height: 3rem
