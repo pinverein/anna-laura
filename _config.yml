@@ -2,8 +2,13 @@ name: pin
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-nav:
+baseurl: "" # the subpath of your site, e.g. /blog
 
+index:
+  de:
+  en: en/index.html
+
+nav:
 # de
  - language: de
    links:
@@ -14,11 +19,11 @@ nav:
 
     - ref: projects
       title: Projekte
-      href: projekte
+      href: projects
 
     - ref: participate
       title: Mitmachen
-      href: mitmachen
+      href: participate
 
     - ref: newsletter
       title: Newsletter
@@ -26,7 +31,7 @@ nav:
 
     - ref: contact
       title: Kontakt
-      href: kontakt
+      href: contakt
 
 # en
  - language: en
@@ -34,11 +39,23 @@ nav:
 
     - ref: about
       title: About us
-      href: about_us
+      href: about
 
     - ref: projects
       title: Projects
       href: projects
+
+    - ref: participate
+      title: Participate
+      href: participate
+
+    - ref: newsletter
+      title: Newsletter
+      href: newsletter
+
+    - ref: contact
+      title: Contact
+      href: contact
 
 
  # en:

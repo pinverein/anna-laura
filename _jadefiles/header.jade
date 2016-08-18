@@ -4,7 +4,7 @@ mixin nav-content()
 		//- p {{navigation['links']}}
 		{% for nav in navigation %}
 		{% for link in nav.links %}
-		li: a(href='#{{link.href}}') {{link.title}}
+		li: a(href='#{{link.href}}').scroll-on-page-link {{link.title}}
 		{% endfor %}
 		{% endfor %} 
 		
@@ -13,7 +13,8 @@ mixin nav-content()
 	
 header
 	.header-position
-		h1.logo pin
+		a(href='#start').scroll-on-page-link
+			h1.logo.logo--invisible pin
 		
 		nav.site-nav
 			+nav-content()

@@ -385,7 +385,7 @@ a {
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #daa41f; }
+    color: #ebc974; }
 
 .bullets {
   display: -webkit-box;
@@ -465,7 +465,15 @@ a {
     height: 4rem;
     padding: 0;
     margin: 0;
-    opacity: 0; }
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 100ms ease-in-out;
+            transition: all 100ms ease-in-out; }
+    .home-wrap header .logo.logo--invisible {
+      opacity: 0;
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3); }
 
 .home-wrap .site-nav ul {
   list-style: none;
@@ -476,6 +484,15 @@ a {
     margin-bottom: .5rem; }
     .home-wrap .site-nav ul li:last-child {
       margin-bottom: 0; }
+    .home-wrap .site-nav ul li .scroll-on-page-link {
+      border-bottom: 1px solid transparent;
+      -webkit-transition: all 100ms ease-in-out;
+              transition: all 100ms ease-in-out; }
+      .home-wrap .site-nav ul li .scroll-on-page-link.link--active {
+        color: #daa41f;
+        border-bottom: 1px solid #f2daa0;
+        -webkit-transition: all 300ms ease-in-out;
+                transition: all 300ms ease-in-out; }
 
 .home-wrap .placeholder {
   overflow: hidden;
@@ -586,6 +603,8 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  .home-sections section {
+    padding: 3rem 0; }
   .home-sections .flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,7 +674,7 @@ a {
 
 .startscreen {
   width: 100%;
-  height: calc(100vh - 3.5rem);
+  height: 100vh;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,7 +682,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0; }
+  padding: 0px; }
 
 .flex {
   -webkit-box-orient: vertical;
@@ -690,6 +709,8 @@ a {
   background-position: center; }
 
 @media (max-width: 800px) {
+  .startscreen {
+    height: calc(100vh - 3.5rem); }
   .start-logo {
     margin: 0 auto; } }
 
@@ -724,6 +745,7 @@ a {
       border-bottom: 1px solid rgba(51, 51, 51, 0.2);
       display: inline-block;
       margin: .4rem 0 .2rem 0; }
-    @media (max-width: 640px) {
-      .section-about .block--about .col-side {
-        border: none; } }
+  @media (max-width: 640px) {
+    .section-about .block--about .col-side.col-side--left, .section-about .block--about .col-side.col-side--right {
+      border-radius: 0;
+      box-shadow: inset 0px 7px 14px -7px rgba(0, 0, 0, 0.2); } }

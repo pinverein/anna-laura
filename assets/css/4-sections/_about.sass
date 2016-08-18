@@ -34,5 +34,8 @@ $about-border-radius: 4px
         display: inline-block
         margin: .4rem 0 .2rem 0
 
-      @media (max-width: 640px)
-        border: none
+    @media (max-width: 640px)
+      .col-side
+        &.col-side--left, &.col-side--right
+          border-radius: 0
+          box-shadow: inset 0px 7px 14px -7px rgba(0,0,0,0.2)
