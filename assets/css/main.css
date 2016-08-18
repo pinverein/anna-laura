@@ -458,7 +458,7 @@ a {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 156px;
-    background-image: url(/assets/img/logo_pin_only.png);
+    background-image: url(../img/logo_pin_only.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -722,7 +722,7 @@ a {
   height: 8rem;
   width: calc(100% - 160px);
   margin: 0;
-  background-image: url(/assets/img/logo-pin.png);
+  background-image: url(../img/logo-pin.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }

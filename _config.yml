@@ -2,7 +2,7 @@ name: pin
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-baseurl: "/pin-web-NEW2016" # the subpath of your site, e.g. /blog
+baseurl: /pin-web-NEW2016 # the subpath of your site, e.g. /blog
 
 index:
   de:
