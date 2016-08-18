@@ -11,6 +11,7 @@ index:
 nav:
 # de
  - language: de
+   index: /
    links:
 
     - ref: about
@@ -35,6 +36,7 @@ nav:
 
 # en
  - language: en
+   index: /en
    links:
 
     - ref: about

@@ -475,24 +475,44 @@ a {
       -webkit-transform: scale(0.3);
               transform: scale(0.3); }
 
+.home-wrap .site-nav .nav-seperator {
+  margin: 0 1rem;
+  height: 1px;
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(right, #ddd, white);
+  background-image: linear-gradient(to left,#ddd, white); }
+
 .home-wrap .site-nav ul {
   list-style: none;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   padding: 0 20px 0 0;
   text-align: right; }
-  .home-wrap .site-nav ul li {
-    margin-bottom: .5rem; }
-    .home-wrap .site-nav ul li:last-child {
-      margin-bottom: 0; }
-    .home-wrap .site-nav ul li .scroll-on-page-link {
-      border-bottom: 1px solid transparent;
-      -webkit-transition: all 100ms ease-in-out;
-              transition: all 100ms ease-in-out; }
-      .home-wrap .site-nav ul li .scroll-on-page-link.link--active {
-        color: #daa41f;
-        border-bottom: 1px solid #f2daa0;
-        -webkit-transition: all 300ms ease-in-out;
-                transition: all 300ms ease-in-out; }
+  .home-wrap .site-nav ul .link--active, .home-wrap .site-nav ul .language--active {
+    color: #daa41f !important;
+    border-bottom: 1px solid #f2daa0;
+    -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out; }
+
+.home-wrap .site-nav .language-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .home-wrap .site-nav .language-list li {
+    margin-left: .4rem; }
+    .home-wrap .site-nav .language-list li a {
+      color: #ccc; }
+
+.home-wrap .site-nav .link-list li {
+  margin-bottom: .5rem; }
+  .home-wrap .site-nav .link-list li:last-child {
+    margin-bottom: 0; }
+  .home-wrap .site-nav .link-list li .scroll-on-page-link {
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 100ms ease-in-out;
+            transition: all 100ms ease-in-out; }
 
 .home-wrap .placeholder {
   overflow: hidden;
@@ -539,15 +559,14 @@ a {
     top: 0; }
 
 .home-wrap .mobile-nav {
-  display: none;
   position: absolute;
   width: 100%;
   background: white;
-  padding: 2rem 0 1.5rem;
+  padding: 4rem 0 2.5rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out; }
+          transition: all 300ms ease-out; }
   .home-wrap .mobile-nav ul {
     list-style: none;
     margin: 0;
@@ -701,7 +720,7 @@ a {
   text-indent: 101%;
   white-space: nowrap;
   height: 8rem;
-  width: calc(100% - 100px);
+  width: calc(100% - 160px);
   margin: 0;
   background-image: url(/assets/img/logo-pin.png);
   background-size: contain;
@@ -712,14 +731,13 @@ a {
   .startscreen {
     height: calc(100vh - 3.5rem); }
   .start-logo {
-    margin: 0 auto; } }
+    width: auto;
+    margin: -6rem 1rem 0; } }
 
 @media (max-width: 400px) {
-  .col-full {
-    margin: 0; }
   .start-logo {
-    margin: 0 auto;
-    width: auto; } }
+    width: auto;
+    margin: -6rem 1rem 0; } }
 
 .section-about {
   background: #dceef4; }
@@ -735,17 +753,20 @@ a {
       border-left: none;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      box-shadow: inset -7px 7px 14px -7px rgba(0, 0, 0, 0.2); }
+      box-shadow: inset -7px 7px 14px -7px rgba(0, 0, 0, 0.2);
+      padding-left: 8rem; }
     .section-about .block--about .col-side.col-side--right {
       border-right: none;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
-      box-shadow: inset 7px 7px 14px -7px rgba(0, 0, 0, 0.2); }
+      box-shadow: inset 7px 7px 14px -7px rgba(0, 0, 0, 0.2);
+      padding-right: 8rem; }
     .section-about .block--about .col-side h2 {
       border-bottom: 1px solid rgba(51, 51, 51, 0.2);
       display: inline-block;
       margin: .4rem 0 .2rem 0; }
   @media (max-width: 640px) {
     .section-about .block--about .col-side.col-side--left, .section-about .block--about .col-side.col-side--right {
+      padding: 1rem 2rem;
       border-radius: 0;
       box-shadow: inset 0px 7px 14px -7px rgba(0, 0, 0, 0.2); } }

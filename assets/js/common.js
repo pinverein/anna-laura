@@ -1,8 +1,15 @@
 (function ($) {
 
+  toggleMobileMenu = function() {
+    $('.mobile-nav-toggle').on('click', function() {
+      var $this = $(this);
+      $this.toggleClass('is-active');
+      $('.mobile-nav').toggleClass('is-active');
+    });
+  };
+
   showLogoOnScroll = function() {
     var wScroll = $(window).scrollTop();
-    console.log(wScroll);
     var wantedTop = $('#start').height() / 2 + 100;
     if (wScroll >= wantedTop) {
       $('.logo').removeClass('logo--invisible');
@@ -44,7 +51,7 @@
 
   $(document).ready(function() {
     $.mark.jump();
-
+    toggleMobileMenu();
   });
 
 })(jQuery);

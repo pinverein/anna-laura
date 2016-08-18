@@ -1,5 +1,16 @@
 mixin nav-content()
-	ul
+	ul.language-list
+		{% assign languages = site.nav %}
+		{% for lang in languages %}
+		{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}
+
+		li: a(class='{{has_class}}' href='{{lang.index}}') {{lang.language}} 
+		
+		{% endfor %}
+		
+	.nav-seperator
+		
+	ul.link-list
 		{% assign navigation=site.nav | where:'language', page.language %}
 		//- p {{navigation['links']}}
 		{% for nav in navigation %}
@@ -10,7 +21,7 @@ mixin nav-content()
 		
 .mobile-nav
 	+nav-content()
-	
+		
 header
 	.header-position
 		a(href='#start').scroll-on-page-link
