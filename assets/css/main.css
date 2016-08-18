@@ -742,7 +742,8 @@ a {
 .section-about {
   background: #dceef4; }
   .section-about .title-text {
-    color: white; }
+    color: white;
+    text-shadow: -1px -1px 0 #c1e1ec; }
   .section-about .lead-text {
     color: #333; }
   .section-about .block--about .col-side {
