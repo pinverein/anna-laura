@@ -1,11 +1,11 @@
 .home-wrap
   header
-    width: 160px
+    width: 200px
     background: white
     padding: 2rem 0
     .header-position
       position: fixed
-      width: 160px
+      width: 200px
       top: 3rem
       left: 0
       bottom: 4rem
@@ -23,7 +23,7 @@
         size: contain
       height: 4rem
       padding: 0
-      margin: 0
+      margin: 0 auto
       opacity: 1
       transform: scale(1)
       transition: all 100ms ease-in-out
@@ -41,15 +41,16 @@
 
     .nav-seperator
 
-      margin: 0 1rem
+      margin: 0 34px 0 40px
       height: 1px
       @include linear-gradient(to left, #ddd, white)
 
     ul
       list-style: none
       margin: 1rem 0
-      padding: 0 20px 0 0
+      padding: 0 34px 0 0
       text-align: right
+
 
       .link--active, .language--active
         color: $brand-color !important
@@ -71,6 +72,7 @@
     .link-list
       li
         margin-bottom: .5rem
+        opacity: 0
 
         &:last-child
           margin-bottom: 0
@@ -78,6 +80,25 @@
         .scroll-on-page-link
           border-bottom: 1px solid transparent
           transition: all 100ms ease-in-out
+
+
+        @for $i from 1 through 5
+          &:nth-child(#{$i})
+            animation:
+              name: fadeIn
+              duration: 500ms
+              delay: 200ms * $i - 300
+              timing-function: ease-in-out
+              fill-mode: forwards
+
+        @keyframes fadeIn
+          0%
+            transform: translateX(-30px)
+            opacity: 0
+
+          100%
+            transform: translateX(0px)
+            opacity: 1
 
 
 

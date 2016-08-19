@@ -1,10 +1,12 @@
 section.section-about#about
-  p hallo
+
   {% assign posts = site.posts | where:'categories', 'about' %}
   {% assign de_posts=posts | where:'language', page.language %}
   
   {% for post in de_posts %}
-  p {{post.title}}
+  
+  
+  
   //- main
   {% if post.title == 'about_main' %}
   {% assign mainHeader = post.header %}  

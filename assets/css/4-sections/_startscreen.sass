@@ -25,6 +25,21 @@
     size: contain
     repeat: no-repeat
     position: center
+  opacity: 1
+  transform-origin: top
+  animation: logoFade 800ms ease-in-out
+
+  @keyframes logoFade
+    0%
+      opacity: 0
+      transform: rotateZ(-90deg) scale(1.5)
+
+    70%
+      transform: rotateZ(10deg) scale(.8)
+
+    100%
+      opacity: 1
+      transform: rotateZ(0deg) scale(1)
 
 @media (max-width: 800px)
   .startscreen
