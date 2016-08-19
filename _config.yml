@@ -32,7 +32,7 @@ nav:
 
     - ref: contact
       title: Kontakt
-      href: contakt
+      href: contact
 
 # en
  - language: en

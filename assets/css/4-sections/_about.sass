@@ -1,19 +1,21 @@
 $about-border-radius: 4px
 
 .section-about
-  background: lighten(lightblue, 12%)
+  background: lighten($aqua, 12%)
 
   .title-text
     color: white
-    text-shadow: -1px -1px 0 lighten(lightblue, 5%)
+    text-shadow: -1px -1px 0 lighten($aqua, 5%)
+    text-transform: uppercase
 
   .lead-text
     color: #333
 
   .block--about
+    padding: 2rem 0
     .col-side
-      margin: 1.5rem 0
-      padding: 1rem 2rem
+      margin: 4.5rem 0
+      padding: 2rem 4rem
       // border: 2px solid #aaa
       background: white
 
@@ -22,14 +24,14 @@ $about-border-radius: 4px
         border-top-right-radius: $about-border-radius
         border-bottom-right-radius: $about-border-radius
         box-shadow: inset -7px 7px 14px -7px rgba(0,0,0,0.2)
-        padding-left: 8rem
+        padding-left: 10rem
 
       &.col-side--right
         border-right: none
         border-top-left-radius: $about-border-radius
         border-bottom-left-radius: $about-border-radius
         box-shadow: inset 7px 7px 14px -7px rgba(0,0,0,0.2)
-        padding-right: 8rem
+        padding-right: 10rem
 
       h2
         border-bottom: 1px solid transparentize(#333, 0.8)
