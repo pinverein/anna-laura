@@ -45,6 +45,9 @@
       margin: 0 34px 0 40px
       height: 1px
       @include linear-gradient(to left, #ddd, white)
+      opacity: 0
+      animation: langFade 400ms 800ms ease-in-out forwards
+
 
     ul
       list-style: none
@@ -61,11 +64,21 @@
     .language-list
       display: flex
       justify-content: flex-end
+      opacity: 0
+      animation: langFade 400ms 600ms ease-in-out forwards
+      @keyframes langFade
+        0%
+          transform: translateX(-30px)
+          opacity: 0
+
+        100%
+          transform: translateX(0px)
+          opacity: 1
 
 
       li
-
         margin-left: .4rem
+
 
         a
           color: #ccc
@@ -87,8 +100,8 @@
           &:nth-child(#{$i})
             animation:
               name: fadeIn
-              duration: 500ms
-              delay: 200ms * $i - 300
+              duration: 300ms
+              delay: 1100ms + (100ms * $i - 300)
               timing-function: ease-in-out
               fill-mode: forwards
 
