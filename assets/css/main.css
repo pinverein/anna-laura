@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 html {
   box-sizing: border-box; }
 
@@ -374,7 +375,7 @@ body {
   background-color: white;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -728,8 +729,7 @@ a {
 
 .col-2 {
   max-width: 18.75rem;
-  margin: 0 .5rem;
-  background: lightblue; }
+  margin: 0 .5rem; }
 
 .col-full {
   margin: 0 .5rem; }
@@ -878,3 +878,78 @@ a {
       padding: 1rem 2rem;
       border-radius: 0;
       box-shadow: inset 0px 7px 14px -7px rgba(0, 0, 0, 0.2); } }
+
+section.participate {
+  background-color: #99d6bb;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.participate .col-1 {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3); }
+    section.participate .col-1 .image {
+      width: 400px;
+      height: 300px;
+      border-radius: 10px; }
+    section.participate .col-1.col--participate .image {
+      background-image: url(../img/participate-icon_small.png);
+      background-repeat: repeat;
+      background-position: center 0px;
+      background-attachment: fixed; }
+    section.participate .col-1.col--donate .image {
+      background-image: url(../img/donate-icon_small.png);
+      background-repeat: repeat;
+      background-position: center 0px;
+      background-attachment: fixed; }
+    section.participate .col-1 .col-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #222;
+      padding: 20px 80px;
+      text-align: center; }
+      section.participate .col-1 .col-content h1 {
+        font-size: 3rem;
+        margin: 0; }
+      section.participate .col-1 .col-content p {
+        font-weight: 300; }
+  @media (max-width: 1024px) {
+    section.participate .flex {
+      display: block; }
+    section.participate .col-1 {
+      margin: 1rem auto; }
+      section.participate .col-1 .col-content {
+        padding: 20px 30px; } }
+  @media (max-width: 480px) {
+    section.participate .col-1 {
+      width: auto;
+      margin: 1rem; }
+      section.participate .col-1 .image {
+        width: auto; } }

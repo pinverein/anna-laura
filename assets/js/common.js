@@ -19,6 +19,18 @@
     }
   };
 
+  scrollBackground = function() {
+    var wScroll = $(window).scrollTop(),
+        bgElementParticipate = $('.col--participate .image'),
+        bgElementDonate = $('.col--donate .image'),
+        bgTop = $('section.participate .col-1').offset().top;
+
+    bgElementParticipate.css({'background-position': wScroll + 'px '+ (wScroll - bgTop) / 2 +'px'});
+
+    bgElementDonate.css({'background-position': '-'+ wScroll + 'px '+ (wScroll - bgTop) / 2 +'px'});
+
+  };
+
   $.mark = {
     jump: function (options) {
       var defaults = {
@@ -46,6 +58,7 @@
 
   $(window).scroll(function() {
     showLogoOnScroll();
+    scrollBackground();
   });
 
 

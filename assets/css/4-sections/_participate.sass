@@ -1,0 +1,77 @@
+section.participate
+
+  background-color: lighten($olive, 30%)
+  min-height: 600px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .col-1
+    width: 400px
+    // height: 400px
+    margin: 0 auto
+    position: relative
+    border-radius: 10px
+    box-shadow: 0 5px 7px rgba(black, .3)
+
+
+    .image
+      width: 400px
+      height: 300px
+      border-radius: 10px
+
+    &.col--participate
+      .image
+        background:
+          image: url(../img/participate-icon_small.png)
+          repeat: repeat
+          position: center 0px
+          attachment: fixed
+
+    &.col--donate
+      .image
+        background:
+          // color: pink
+          image: url(../img/donate-icon_small.png)
+          repeat: repeat
+          position: center 0px
+          attachment: fixed
+
+    .col-content
+      @include position (absolute, 0)
+      background:
+        color: rgba(white, .8)
+
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      color: #222
+      padding: 20px 80px
+      text-align: center
+
+      h1
+        font-size: 3rem
+        margin: 0
+      p
+        font-weight: 300
+
+  @media (max-width: 1024px)
+    .flex
+      display: block
+
+    .col-1
+      margin: 1rem auto
+
+
+      .col-content
+        padding: 20px 30px
+
+  @media (max-width: 480px)
+    .col-1
+      width: auto
+      margin: 1rem
+
+      .image
+        width: auto
