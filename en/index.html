@@ -7,25 +7,29 @@ language: en
 
   {% include header.html %}
 
-  <div class='home-sections'>
+  <div class='main-wrapper'>
 
-    {% include startscreen.html %}
+    <div class='home-sections'>
 
-    {% include about.html %}
+      {% include startscreen.html %}
 
-    {% include projects.html %}
+      {% include about.html %}
 
-    {% include participate.html %}
+      {% include projects.html %}
 
-    <div style='height: 200px;'></div>
+      {% include participate.html %}
+
+      {% include newsletter.html %}
+
+      {% include contact.html %}
 
 
-    {% include columns.html %}
 
+    </div>
 
-    <div style='height: 2000px;'></div>
 
 
   </div>
 
 </div>
+{% include footer.html %}
