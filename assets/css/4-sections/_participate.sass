@@ -23,7 +23,7 @@ section.participate
     &.col--participate
       .image
         background:
-          image: url(../img/participate-icon_small.png)
+          image: url(../img/participate-icon_small_desat.png)
           repeat: repeat
           position: center 0px
           attachment: fixed
@@ -32,7 +32,7 @@ section.participate
       .image
         background:
           // color: pink
-          image: url(../img/donate-icon_small.png)
+          image: url(../img/donate-icon_small_desat.png)
           repeat: repeat
           position: center 0px
           attachment: fixed
@@ -77,10 +77,13 @@ section.participate
         transform: scale(.9)
         transition: all 200ms ease-in-out
         cursor: pointer
+        font-weight: bold
 
         &:hover
+          background: lighten($olive, 20%)
           box-shadow: 0px 2px 3px rgba(black, .5)
           transform: scale(1)
+          color: white
 
         &:active
           box-shadow: 0px 0px 0px rgba(black, .5)

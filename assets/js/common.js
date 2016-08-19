@@ -25,9 +25,9 @@
         bgElementDonate = $('.col--donate .image'),
         bgTop = $('section.participate .col-1').offset().top;
 
-    bgElementParticipate.css({'background-position': wScroll + 'px '+ (wScroll - bgTop) / 2 +'px'});
+    bgElementParticipate.css({'background-position': (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
 
-    bgElementDonate.css({'background-position': '-'+ wScroll + 'px '+ (wScroll - bgTop) / 2 +'px'});
+    bgElementDonate.css({'background-position': '-'+ (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
 
   };
 
