@@ -1,42 +1,92 @@
-$about-border-radius: 4px
+$about-border-radius: 20px
 
 .section-about
-  background: lighten($aqua, 12%)
+  background: lighten($aqua, 14%)
+  // @include linear-gradient(to left, lighten($aqua, 28%), lighten($aqua, 12%))
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+  .col-spread
+    +transition
+
 
   .title-text
     color: white
-    text-shadow: -1px -1px 0 lighten($aqua, 5%)
-    text-transform: uppercase
 
   .lead-text
     color: #333
+    // text-align: center
+    font-size: 1.2rem
 
-  .block--about
-    padding: 2rem 0
-    .col-side
-      margin: 4.5rem 0
-      padding: 2rem 4rem
-      // border: 2px solid #aaa
-      background: white
+  .button-cta
+    // background: rgba(white, .5)
+    border: 1px solid #aaa
+    margin-top: 2rem
 
-      &.col-side--left
-        border-left: none
-        border-top-right-radius: $about-border-radius
-        border-bottom-right-radius: $about-border-radius
-        box-shadow: inset -7px 7px 14px -7px rgba(0,0,0,0.2)
-        padding-left: 10rem
 
-      &.col-side--right
-        border-right: none
-        border-top-left-radius: $about-border-radius
-        border-bottom-left-radius: $about-border-radius
-        box-shadow: inset 7px 7px 14px -7px rgba(0,0,0,0.2)
-        padding-right: 10rem
+    &.hidden
+      display: none
 
-      h2
-        border-bottom: 1px solid transparentize(#333, 0.8)
-        display: inline-block
-        margin: .4rem 0 .2rem 0
+
+  #about-block
+    overflow: hidden
+
+    .block--about
+      padding: 2rem 0 0
+      // position: absolute
+      display: none
+
+      &.is-open
+        display: block
+        // opacity: 0
+        animation: slideIn 600ms ease-in-out
+        z-index: 3
+
+      @keyframes slideIn
+        0%
+          opacity: 0
+          transform: translateY(-1000px)
+        40%
+          opacity: 1
+        100%
+          opacity: 1
+          transform: translateY(0px)
+
+      .col-side
+        margin: 0 0 4.5rem
+        padding: 2rem 4rem
+        border: 4px dashed lighten($aqua, 12%)
+        background: lighten($aqua, 20%)
+
+        &.col-side--left
+          // @include linear-gradient(to bottom, lighten($aqua, 18%), lighten($aqua, 12%))
+          border-left: none
+
+          border-top-right-radius: $about-border-radius
+          border-bottom-right-radius: $about-border-radius
+          // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 0%)
+          padding-left: 10rem
+
+        &.col-side--right
+          // @include linear-gradient(to left, white, lighten($aqua, 12%))
+          border-right: none
+          border-top-left-radius: $about-border-radius
+          border-bottom-left-radius: $about-border-radius
+          // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 12%)
+          padding-right: 10rem
+
+        h2
+          border-bottom: 1px solid transparentize(#333, 0.8)
+          display: inline-block
+          margin: .4rem 0 .2rem 0
+
+        .lead-text
+          color: #666
+          text-align: left
+          font-size: 1rem
+
 
     @media (max-width: 640px)
       .col-side

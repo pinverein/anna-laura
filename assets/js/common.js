@@ -1,5 +1,7 @@
 (function ($) {
 
+
+
   toggleMobileMenu = function() {
     $('.mobile-nav-toggle').on('click', function() {
       var $this = $(this);
@@ -65,6 +67,12 @@
   $(document).ready(function() {
     $.mark.jump();
     toggleMobileMenu();
+
+    $('.about-cta').click(function(){
+      $('.block--about').toggleClass('is-open');
+      $('.about-cta').toggleClass('hidden');
+    });
+
   });
 
 })(jQuery);
