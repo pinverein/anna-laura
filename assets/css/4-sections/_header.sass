@@ -2,14 +2,14 @@
   header
     width: 200px
     background: white
-    padding: 2rem 0
-    z-index: 2
+    padding: 2rem 0 1rem
+    z-index: 5
     .header-position
       position: fixed
       width: 200px
       top: 3rem
       left: 0
-      bottom: 4rem
+      bottom: 3rem
       display: flex
       flex-direction: column
       justify-content: space-between
@@ -39,6 +39,7 @@
         //   transform: scale(1)
 
   .site-nav
+    position: relative
 
     .nav-seperator
 
@@ -116,9 +117,59 @@
 
 
 
-  .placeholder
-    +hide-text
-    height: 3rem
+
+  .icon-box
+    position: relative
+    // bottom: 2rem
+    display: flex
+    justify-content: center
+    margin: 0 auto
+
+
+    .icon
+      width: 30px
+      height: 30px
+      margin: 0 .6rem
+      cursor: pointer
+      border-radius: 50%
+      opacity: 0
+
+      filter: grayscale(1) blur(1px) opacity(.4)
+
+
+      @for $i from 1 through 3
+        &:nth-child(#{$i})
+          animation:
+            name: fadeInIcons
+            duration: 500ms
+            delay: 2200ms + (100ms * $i - 300)
+            timing-function: ease-in-out
+            fill-mode: forwards
+
+      @keyframes fadeInIcons
+        0%
+          transform: translateX(-30px)
+          opacity: 0
+
+        100%
+          transform: translateX(0px)
+          opacity: 1
+      +transition
+
+      &:hover
+        filter: grayscale(0) blur(0px) opacity(1)
+
+      &.icon--fb
+        background:
+          image: url(../img/icons/facebook.svg)
+
+      &.icon--tw
+        background:
+          image: url(../img/icons/twitter.svg)
+
+      &.icon--tg
+        background:
+          image: url(../img/icons/at.svg)
 
   .mobile-nav-toggle
     display: none
@@ -163,9 +214,10 @@
     position: absolute
     width: 100%
     background: white
-    padding: 4rem 0 2.5rem
+    padding: 5rem 0 2.5rem
     transform: translateY(-100%)
     transition: all 300ms ease-out
+    z-index: 4
 
     ul
       list-style: none
@@ -191,6 +243,7 @@
         left: auto
         flex-direction: row
         align-items: center
+        z-index: 5
 
       .site-nav,
       .placeholder

@@ -6,4 +6,4 @@
 {% for lang in languages %}
 {% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}<li><a href="{{lang.index}}" class="{{has_class}}">{{lang.language}} </a></li>{% endfor %}</ul><div class="nav-seperator"></div><ul class="link-list">{% assign navigation=site.nav | where:'language', page.language %}{% for nav in navigation %}
 {% for link in nav.links %}<li><a href="#{{link.href}}" class="scroll-on-page-link">{{link.title}}</a></li>{% endfor %}
-{% endfor %} </ul></nav><div class="placeholder">pin</div><div class="mobile-nav-toggle"><span></span></div></div></header>
+{% endfor %} </ul></nav><div class="icon-box"><div class="icon icon--fb"></div><div class="icon icon--tw"></div><div class="icon icon--tg"><span></span></div></div><div class="mobile-nav-toggle"><span></span></div></div></header>
