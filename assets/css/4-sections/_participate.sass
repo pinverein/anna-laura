@@ -11,17 +11,17 @@ section.participate
     margin: 0 auto
 
   .col-1
-    width: 400px
+    width: 100%
     // height: 400px
     margin: 0 auto
     position: relative
-    border-radius: 10px
+    // border-radius: 10px
     margin-bottom: 1rem
 
     .image
-      width: 400px
-      height: 360px
-      border-radius: 10px
+      width: 100%
+      height: 330px
+      // border-radius: 10px
 
     &.col--participate
       .image
@@ -46,9 +46,9 @@ section.participate
     .col-content
       @include position (absolute, 0)
       background:
-        color: rgba(white, .8)
+        color: rgba(lighten($aqua, 12%), .9)
 
-      border-radius: 10px
+      // border-radius: 10px
       display: flex
       flex-direction: column
       justify-content: center
@@ -58,11 +58,11 @@ section.participate
       text-align: center
       // border: 3px solid rgba(black, .3)
 
-      &.col-content--participate
-        box-shadow: 1px 1px 3px rgba(black, .5) inset
-
-      &.col-content--donate
-        box-shadow: -1px 1px 3px rgba(black, .5) inset
+      // &.col-content--participate
+      //   box-shadow: 1px 1px 3px rgba(black, .5) inset
+      //
+      // &.col-content--donate
+      //   box-shadow: -1px 1px 3px rgba(black, .5) inset
 
 
       h1
