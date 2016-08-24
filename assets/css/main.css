@@ -461,10 +461,140 @@ a {
     -webkit-transition: all 50ms linear;
             transition: all 50ms linear; }
 
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0; }
+
+.modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px; }
+
+.modal .modal-state {
+  display: none; }
+
+.modal .modal-trigger {
+  padding: 0.8em 1em; }
+
+.modal .modal-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  -webkit-transition: opacity 0.25s ease;
+          transition: opacity 0.25s ease;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-fade-screen {
+      padding-top: 10em; } }
+  .modal .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer; }
+  .modal .modal-close::after, .modal .modal-close::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .modal .modal-close:hover::after, .modal .modal-close:hover::before {
+    background: #c4c4c4; }
+  .modal .modal-close::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.modal .modal-inner {
+  background: #fff;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 0;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  -webkit-transition: opacity 0.25s ease;
+          transition: opacity 0.25s ease;
+  width: 95%; }
+  @media screen and (min-width: 40em) {
+    .modal .modal-inner {
+      max-height: 70%;
+      padding: 3em;
+      width: 60%; } }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-inner {
+      width: 50%; } }
+  .modal .modal-inner .modal-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 1rem 1rem 0;
+    background-position: center;
+    border-radius: 50%; }
+  .modal .modal-inner h1 {
+    color: #333;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal .modal-inner p {
+    color: #333;
+    line-height: 1.5em; }
+  .modal .modal-inner .modal-intro {
+    margin-bottom: 1em; }
+  .modal .modal-inner .modal-content {
+    color: #333; }
+    @media screen and (min-width: 40em) {
+      .modal .modal-inner .modal-content {
+        -webkit-columns: 2 8em;
+           -moz-columns: 2 8em;
+                columns: 2 8em; } }
+  .modal .modal-inner a.cta {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+
+.modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em; }
+
+.modal-open {
+  overflow: hidden; }
+
 .home-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   @media (max-width: 800px) {
     .home-wrap {
       display: block;
@@ -552,7 +682,7 @@ h1, h2, h3 {
   font-weight: 300; }
 
 .title-text {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 1rem 0;
   letter-spacing: .1rem;
   text-align: center;
@@ -720,6 +850,17 @@ h1, h2, h3 {
             animation-duration: 300ms;
     -webkit-animation-delay: 1300ms;
             animation-delay: 1300ms;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .home-wrap .site-nav .link-list li:nth-child(6) {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -940,7 +1081,7 @@ section.startscreen {
   .section-about .title-text {
     color: white; }
   .section-about .lead-text {
-    color: #333;
+    color: #555;
     font-size: 1.2rem; }
   .section-about .button-cta {
     border: 1px solid #aaa;
@@ -999,7 +1140,8 @@ section.startscreen {
         .section-about #about-block .block--about .col-side h2 {
           border-bottom: 1px solid rgba(51, 51, 51, 0.2);
           display: inline-block;
-          margin: .4rem 0 .2rem 0; }
+          margin: .4rem 0 .2rem 0;
+          font-style: italic; }
         .section-about #about-block .block--about .col-side .lead-text {
           color: #666;
           text-align: left;
@@ -1009,6 +1151,35 @@ section.startscreen {
         padding: 1rem 2rem;
         border-radius: 0;
         box-shadow: inset 0px 7px 14px -7px rgba(0, 0, 0, 0.2); } }
+
+section.team {
+  background-image: url(../img/cream_pixels.png); }
+  section.team .lead-text {
+    text-align: center;
+    font-style: italic; }
+  section.team .team-member-box {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  section.team .team-member {
+    margin-bottom: 3rem; }
+    section.team .team-member .member-content {
+      margin: 0 4rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: white;
+      padding: 1rem 3rem;
+      position: relative; }
+      section.team .team-member .member-content .member-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: -20px;
+        left: -20px; }
+      section.team .team-member .member-content p {
+        color: #666; }
 
 section.projects {
   padding: 0;
@@ -1083,7 +1254,7 @@ section.projects {
           background-color: #f6f6f6; }
 
 section.participate {
-  background-color: #99d6bb;
+  background-color: #bcecff;
   min-height: 600px;
   color: white; }
   section.participate .col-spread {
@@ -1158,7 +1329,7 @@ section.participate {
         width: auto; } }
 
 section.newsletter {
-  background-image: url(../img/newsletter-bg.jpg);
+  background-image: url(../img/newsletter-bg3.jpg);
   background-size: cover; }
   section.newsletter .input-group {
     display: -webkit-box;

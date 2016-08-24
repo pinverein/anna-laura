@@ -1,6 +1,20 @@
 (function ($) {
 
+  launchingElements = function(wScroll) {
+    if (wScroll > $('#team').offset().top - $(window).height()) {
+      var offset = Math.min(0, wScroll - $('#team').offset().top);
+      var offset2 = Math.min(0, wScroll - $('#team').offset().top);
 
+      $('.team-member--left').css({
+        'transform': 'translate('+ offset +'px, 0px)'
+
+      });
+
+      $('.team-member--right').css({
+        'transform': 'translate('+ Math.abs(offset2) +'px, 0px)'
+      });
+    }
+  };
 
   toggleMobileMenu = function() {
     $('.mobile-nav-toggle').on('click', function() {
@@ -30,6 +44,8 @@
     bgElementParticipate.css({'background-position': (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
 
     bgElementDonate.css({'background-position': '-'+ (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
+
+    launchingElements(wScroll);
 
   };
 

@@ -18,6 +18,10 @@ nav:
       title: Über uns
       href: about
 
+    - ref: team
+      title: Team
+      href: team
+
     - ref: projects
       title: Projekte
       href: projects
@@ -43,6 +47,10 @@ nav:
       title: About us
       href: about
 
+    - ref: team
+      title: Team
+      href: team
+      
     - ref: projects
       title: Projects
       href: projects
