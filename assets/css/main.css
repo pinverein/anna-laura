@@ -676,7 +676,9 @@ a {
   .col-2, .col-3 {
     max-width: 100%; }
   .col-side {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .col-spread {
+    padding: 0 2rem; } }
 
 h1, h2, h3 {
   font-weight: 300; }
@@ -687,6 +689,9 @@ h1, h2, h3 {
   letter-spacing: .1rem;
   text-align: center;
   text-transform: uppercase; }
+  @media (max-width: 500px) {
+    .title-text {
+      font-size: 3rem; } }
 
 .lead-text {
   letter-spacing: .1rem; }
@@ -1152,13 +1157,17 @@ section.startscreen {
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
   .section-about .title-text {
-    color: white; }
+    color: white;
+    margin-bottom: 3rem; }
   .section-about .lead-text {
     color: #555;
-    font-size: 1.2rem; }
+    font-size: 1.1rem;
+    margin: 4rem 0; }
   .section-about .button-cta {
     border: 1px solid #aaa;
-    margin-top: 2rem; }
+    margin: 3rem 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
     .section-about .button-cta.hidden {
       display: none; }
   .section-about #about-block {
@@ -1227,12 +1236,15 @@ section.startscreen {
 
 section.team {
   background-image: url(../img/ps_neutral.png); }
+  section.team .col-spread {
+    padding: 0; }
   section.team .lead-text {
     text-align: center;
     font-style: italic; }
   section.team .team-member-box {
     margin-top: 3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    max-width: 680px; }
   section.team .team-member {
     margin-bottom: 3rem; }
     section.team .team-member .member-content {
@@ -1253,6 +1265,11 @@ section.team {
         left: -20px; }
       section.team .team-member .member-content p {
         color: #666; }
+  @media (max-width: 680px) {
+    section.team .col-spread {
+      margin: 0 1rem; }
+      section.team .col-spread .member-content {
+        margin: 0 1rem; } }
 
 section.projects {
   padding: 0;
@@ -1327,38 +1344,42 @@ section.projects {
           background-color: #f6f6f6; }
 
 section.participate {
-  background-color: #bcecff;
+  background-color: #9ee4ff;
   min-height: 600px;
   color: white; }
   section.participate .col-spread {
-    padding-bottom: 2rem;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto 2rem;
+    padding: 0 2rem; }
   section.participate .col-1 {
-    width: 100%;
+    width: 401px;
+    height: 401px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 1rem; }
-    section.participate .col-1 .image {
-      width: 100%;
-      height: 330px; }
-    section.participate .col-1.col--participate .image {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    -webkit-filter: blur(1px) grayscale(0.5);
+            filter: blur(1px) grayscale(0.5); }
+    section.participate .col-1:hover {
+      -webkit-filter: blur(0px);
+              filter: blur(0px); }
+    section.participate .col-1:hover .col-content {
+      opacity: 1; }
+    section.participate .col-1.col--participate {
       background-image: url(../img/participate-icon_small_desat.png);
       background-repeat: repeat;
-      background-position: center 0px;
       background-attachment: fixed; }
-    section.participate .col-1.col--donate .image {
+    section.participate .col-1.col--donate {
       background-image: url(../img/donate-icon_small_desat.png);
       background-repeat: repeat;
-      background-position: center 0px;
+      background-position: center;
       background-attachment: fixed; }
     section.participate .col-1 .col-content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(188, 236, 255, 0.9);
+      opacity: 0;
+      -webkit-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      background-color: rgba(158, 228, 255, 0.95);
+      border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1372,12 +1393,20 @@ section.participate {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      color: #222;
+      color: white;
       padding: 20px 60px;
-      text-align: center; }
+      text-align: center;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      -webkit-filter: blur(0px);
+              filter: blur(0px); }
       section.participate .col-1 .col-content h1 {
         font-size: 3rem;
-        margin: 0; }
+        margin: 0;
+        text-transform: uppercase; }
       section.participate .col-1 .col-content p {
         font-weight: 300; }
   @media (max-width: 1024px) {
@@ -1387,12 +1416,21 @@ section.participate {
       margin: 1rem auto; }
       section.participate .col-1 .col-content {
         padding: 20px 30px; } }
+  @media (max-width: 800px) {
+    section.participate .col-1 {
+      -webkit-filter: none;
+              filter: none; }
+      section.participate .col-1 .col-content {
+        opacity: 1 !important; } }
   @media (max-width: 480px) {
     section.participate .col-1 {
-      width: auto;
-      margin: 1rem; }
-      section.participate .col-1 .image {
-        width: auto; } }
+      border-radius: 0;
+      width: 100%;
+      height: 250px;
+      padding: 1rem 0;
+      margin: 1rem auto; }
+      section.participate .col-1 .col-content {
+        border-radius: 0; } }
 
 section.newsletter {
   background-image: url(../img/newsletter-bg3.jpg);
@@ -1408,7 +1446,11 @@ section.newsletter {
     margin: 3rem;
     border: 3px solid white;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    section.newsletter .input-group:hover {
+      box-shadow: 0px 3px 18px rgba(255, 255, 255, 0.3); }
     section.newsletter .input-group .mc-field-group {
       position: relative;
       -webkit-box-flex: 2;
@@ -1448,6 +1490,15 @@ section.newsletter {
   section.newsletter .lead-text {
     text-align: center;
     color: white; }
+  @media (max-width: 920px) {
+    section.newsletter .input-group {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      section.newsletter .input-group .mc-field-group:first-child {
+        border-bottom: 3px solid white;
+        border-right: 0px; } }
 
 section.contact {
   background: #7FDBFF; }

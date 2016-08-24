@@ -2,6 +2,9 @@ section.team
   background:
     image: url(../img/ps_neutral.png)
 
+  .col-spread
+    padding: 0
+
   .lead-text
     text-align: center
     font-style: italic
@@ -9,6 +12,7 @@ section.team
   .team-member-box
     margin-top: 3rem
     margin-bottom: 3rem
+    max-width: 680px
 
   .team-member
     margin-bottom: 3rem
@@ -37,3 +41,12 @@ section.team
 
       p
         color: #666
+
+
+
+  @media (max-width: 680px)
+    .col-spread
+      margin: 0 1rem
+
+      .member-content
+        margin: 0 1rem

@@ -37,13 +37,13 @@
 
   scrollBackground = function() {
     var wScroll = $(window).scrollTop(),
-        bgElementParticipate = $('.col--participate .image'),
-        bgElementDonate = $('.col--donate .image'),
+        bgElementParticipate = $('.col--participate'),
+        bgElementDonate = $('.col--donate'),
         bgTop = $('section.participate .col-1').offset().top;
 
-    bgElementParticipate.css({'background-position': (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
+    bgElementParticipate.css({'background-position': (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
 
-    bgElementDonate.css({'background-position': '-'+ (wScroll / 2) + 'px '+ (wScroll - bgTop) / 2 +'px'});
+    bgElementDonate.css({'background-position': '-'+ (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
 
     launchingElements(wScroll);
 
