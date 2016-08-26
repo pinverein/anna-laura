@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400|Ubuntu+Mono';
 html {
   box-sizing: border-box; }
 
@@ -683,8 +684,13 @@ a {
 h1, h2, h3 {
   font-weight: 300; }
 
+p {
+  font-family: 'Open Sans'; }
+
 .title-text {
+  font-family: 'Oswald';
   font-size: 4rem;
+  font-weight: light;
   margin: 1rem 0;
   letter-spacing: .1rem;
   text-align: center;
@@ -1163,6 +1169,42 @@ section.startscreen {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+.news-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 2rem;
+  right: 0;
+  height: 100vh;
+  width: 240px;
+  padding-right: 2rem;
+  overflow: scroll; }
+  .news-wrapper .news-box {
+    color: #444;
+    opacity: .2;
+    font-family: "Ubuntu Mono";
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+    .news-wrapper .news-box:hover {
+      opacity: 1; }
+    .news-wrapper .news-box h2 {
+      text-align: right;
+      cursor: pointer; }
+      .news-wrapper .news-box h2 .fa-plus {
+        display: inline-block;
+        margin-right: .4rem;
+        font-size: .8em; }
+    .news-wrapper .news-box .news-item {
+      text-align: right;
+      font-size: .9rem;
+      border-bottom: 1px solid #eee; }
+      .news-wrapper .news-box .news-item .news-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .news-wrapper .news-box .news-item .news-date {
+        margin-top: -.4rem;
+        font-style: italic; }
+
 @media (max-width: 800px) {
   .startscreen {
     height: calc(100vh - 3.5rem); }
@@ -1308,6 +1350,7 @@ section.team {
 
 section.projects {
   padding: 0;
+  color: white;
   background-color: #b1e6cb;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1318,6 +1361,7 @@ section.projects {
     section.projects .projects-wrap .col-spread {
       margin-bottom: 2rem; }
     section.projects .projects-wrap .cards {
+      color: #444;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1330,7 +1374,7 @@ section.projects {
       background-color: #f6f6f6;
       border: 1px solid gainsboro;
       border-radius: 3px;
-      box-shadow: 0 2px 4px #e6e6e6;
+      box-shadow: 0 2px 4px #8adab1;
       cursor: pointer;
       -ms-flex-preferred-size: 15em;
           flex-basis: 15em;
@@ -1378,9 +1422,9 @@ section.projects {
           background-color: #f6f6f6; }
 
 section.participate {
-  background-color: #9ee4ff;
+  background-color: white;
   min-height: 600px;
-  color: white; }
+  color: #444; }
   section.participate .col-spread {
     text-align: center;
     margin: 0 auto 2rem;
@@ -1412,7 +1456,7 @@ section.participate {
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      background-color: rgba(158, 228, 255, 0.95);
+      background-color: rgba(177, 230, 203, 0.95);
       border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1535,7 +1579,7 @@ section.newsletter {
         border-right: 0px; } }
 
 section.contact {
-  background: #7FDBFF; }
+  background: #b1e6cb; }
   section.contact h1 {
     font-size: 8vw;
     text-align: center;

@@ -1,5 +1,6 @@
 section.projects
   padding: 0
+  color: white
   background:
     color: $background-color
     // image: url(../img/projects-bg.png)
@@ -16,6 +17,7 @@ section.projects
       margin-bottom: 2rem
 
     .cards
+      color: #444
       display: flex
       flex-wrap: wrap
       justify-content: space-between
@@ -24,7 +26,7 @@ section.projects
     .card
       $base-border-color: gainsboro !default
       $base-border-radius: 3px !default
-      $base-background-color: white !default
+      $base-background-color: $background-color !default
       $base-spacing: 1.5em !default
       $action-color: #477DCA !default
       $dark-gray: #333 !default

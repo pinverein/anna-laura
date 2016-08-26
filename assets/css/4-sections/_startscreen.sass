@@ -40,6 +40,51 @@ section.startscreen
       opacity: 1
       transform: scale(1)
 
+.news-wrapper
+  position: absolute
+  top: 0
+  bottom: 2rem
+  right: 0
+  height: 100vh
+  width: 240px
+  padding-right: 2rem
+
+  overflow: scroll
+
+
+  .news-box
+    color: #444
+    opacity: .2
+    font-family: "Ubuntu Mono"
+    +transition
+
+    &:hover
+      opacity: 1
+
+    h2
+      text-align: right
+      cursor: pointer
+
+      .fa-plus
+        display: inline-block
+        margin-right: .4rem
+        font-size: .8em
+
+
+    .news-item
+      text-align: right
+      // opacity: 0
+      font-size: .9rem
+      border-bottom: 1px solid #eee
+
+      .news-title
+        font-size: 1.3rem
+        font-weight: bold
+        margin-bottom: 0
+
+      .news-date
+        margin-top: -.4rem
+        font-style: italic
 
 
 @media (max-width: 800px)

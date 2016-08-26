@@ -1,19 +1,22 @@
-mixin news-item()
+mixin news-item(title, date, content)
   .news-item
-    h3.news-title title
-    p.news-date 11.12.2016
-    p.news-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-
+    h3.news-title= title
+    p.news-date= date
+    p.news-content= content
 section.startscreen#start
   .flex.flex--center
     .col-full
       h1.start-logo
       
-    .news-box
-      h2 News
-      
-      +news-item
-      +news-item
-      +news-item
+    .news-wrapper  
+      .news-box
+        h2
+          i(class="fa fa-plus")
+          | News
+        
+        +news-item("Erster Termin", "22.11.2016", "in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")  
+        +news-item("Zweiter Termin", "14.12.2016", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        +news-item("Ein Langer Titel für einen Termin", "24.02.2017", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.")
+
 
 // TODO: side-bar rechts für termine und aktuelles
