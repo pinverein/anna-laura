@@ -4,9 +4,9 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 baseurl: '' # the subpath of your site, e.g. /blog
 
-index:
-  de:
-  en: en/index.html
+# index:
+#   de:
+#   en: /en/
 
 nav:
 # de
@@ -44,7 +44,7 @@ nav:
 
 # en
  - language: en
-   index: /en
+   index: en
    links:
 
     - ref: about

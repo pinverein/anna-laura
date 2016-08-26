@@ -1284,8 +1284,8 @@ section.startscreen {
       .section-about #about-block .block--about .col-side {
         margin: 0 0 4.5rem;
         padding: 2rem 4rem;
-        border: 4px dashed #bcecff;
-        background: #e5f8ff; }
+        border: 4px dashed #b1e6cb;
+        background: #d8f2e5; }
         .section-about #about-block .block--about .col-side.col-side--left {
           border-left: none;
           border-top-right-radius: 20px;
@@ -1326,8 +1326,10 @@ section.team {
     margin-bottom: 3rem; }
     section.team .team-member .member-content {
       margin: 0 4rem;
+      border: 2px dotted #b1e6cb;
+      border-radius: 3px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      background: #f2daa0;
+      background: #e7f7ef;
       padding: 1rem 3rem;
       position: relative; }
       section.team .team-member .member-content .member-img {
@@ -1340,6 +1342,14 @@ section.team {
         position: absolute;
         top: -20px;
         left: -20px; }
+      section.team .team-member .member-content h2 {
+        font-family: 'Oswald';
+        font-size: 1.8rem;
+        font-weight: lighten;
+        letter-spacing: .12rem;
+        display: block;
+        border-bottom: 1px solid rgba(177, 230, 203, 0.5);
+        box-shadow: 0px 1px 0px #ebf9f2; }
       section.team .team-member .member-content p {
         color: #666; }
   @media (max-width: 680px) {
@@ -1386,7 +1396,7 @@ section.projects {
       -webkit-transition: all 0.2s ease-in-out;
               transition: all 0.2s ease-in-out; }
       section.projects .projects-wrap .card .card-image {
-        background-color: #F8F2B4;
+        background-color: #daa41f;
         height: 150px;
         max-height: 150px;
         overflow: hidden; }
