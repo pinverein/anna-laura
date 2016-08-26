@@ -38,6 +38,10 @@ nav:
       title: Kontakt
       href: contact
 
+    - ref: donate
+      title: Spenden
+      href: donate
+
 # en
  - language: en
    index: /en
@@ -50,7 +54,7 @@ nav:
     - ref: team
       title: Team
       href: team
-      
+
     - ref: projects
       title: Projects
       href: projects
@@ -66,6 +70,10 @@ nav:
     - ref: contact
       title: Contact
       href: contact
+
+    - ref: donate
+      title: Donate
+      href: donate
 
 
  # en:

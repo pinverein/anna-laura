@@ -1,5 +1,19 @@
+mixin news-item()
+  .news-item
+    h3.news-title title
+    p.news-date 11.12.2016
+    p.news-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
 section.startscreen#start
   .flex.flex--center
     .col-full
       h1.start-logo
       
+    .news-box
+      h2 News
+      
+      +news-item
+      +news-item
+      +news-item
+
+// TODO: side-bar rechts für termine und aktuelles
