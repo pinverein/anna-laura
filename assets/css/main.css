@@ -680,12 +680,10 @@ a {
   float: right; }
 
 @media (max-width: 640px) {
-  .col-2, .col-3 {
-    max-width: 100%; }
-  .col-side {
-    max-width: 100%; }
-  .col-spread {
-    padding: 0 2rem; } }
+  .col-2, .col-3, .col-side, .col-spread {
+    max-width: 100%;
+    margin: 0 .5rem;
+    padding: 0 .5rem; } }
 
 h1, h2, h3 {
   font-weight: 300; }
@@ -1313,6 +1311,7 @@ section.startscreen {
         margin: 3rem auto;
         max-width: 680px;
         text-align: center;
+        padding: 0 2rem;
         z-index: 4; }
         .section-about #about-block .block .col-full h2 {
           font-size: 1.6rem;
@@ -1325,10 +1324,8 @@ section.startscreen {
           text-align: left;
           font-size: 1rem; }
     @media (max-width: 640px) {
-      .section-about #about-block .col-side.col-side--left, .section-about #about-block .col-side.col-side--right {
-        padding: 1rem 2rem;
-        border-radius: 0;
-        box-shadow: inset 0px 7px 14px -7px rgba(0, 0, 0, 0.2); } }
+      .section-about #about-block .col-spread {
+        padding: 1rem; } }
 
 section.team {
   background-color: white; }
