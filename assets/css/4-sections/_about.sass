@@ -3,10 +3,12 @@ $about-border-radius: 20px
 .section-about
   background: $bg-main
   // @include linear-gradient(to left, lighten($aqua, 28%), lighten($aqua, 12%))
-  min-height: 100vh
+  // min-height: 100vh
   display: flex
   justify-content: center
   flex-direction: column
+
+  // padding: 0 !important
 
   .col-spread
     +transition
@@ -17,17 +19,19 @@ $about-border-radius: 20px
     margin-bottom: 3rem
 
   .lead-text
-    color: #555
+    color: $white
     // text-align: center
     font-size: 1.1rem
     margin: 4rem 0
 
   .button-cta
     // background: rgba(white, .5)
-    // border: 1px solid #aaa
+    border: 1px solid $bg-main
     margin: 3rem 0
     transform: scale(1)
 
+    &:hover
+      background: darken($bg-main, 10%)
 
     &.hidden
       display: none
@@ -36,10 +40,33 @@ $about-border-radius: 20px
   #about-block
     overflow: hidden
 
-    .block--about
-      padding: 2rem 0 0
+
+
+
+    .block
+      // padding: 2rem 0 0
       // position: absolute
       display: none
+      background: lighten($bg-main, 12%)
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 150px
+        @include linear-gradient(to bottom, $bg-main, lighten($bg-main, 12%))
+
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100px
+        @include linear-gradient(to top, $bg-main, lighten($bg-main, 12%))
 
       &.is-open
         display: block
@@ -57,37 +84,38 @@ $about-border-radius: 20px
           opacity: 1
           transform: translateY(0px)
 
-      .col-side
-        margin: 0 0 4.5rem
-        padding: 2rem 4rem
-        border: 4px dashed $bg-main
-        background: lighten($bg-main, 10%)
+      .col-full
+        margin: 3rem auto
+        max-width: 680px
+        text-align: center
 
-        &.col-side--left
-          // @include linear-gradient(to bottom, lighten($aqua, 18%), lighten($aqua, 12%))
-          border-left: none
-
-          border-top-right-radius: $about-border-radius
-          border-bottom-right-radius: $about-border-radius
-          // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 0%)
-          padding-left: 10rem
-
-        &.col-side--right
-          // @include linear-gradient(to left, white, lighten($aqua, 12%))
-          border-right: none
-          border-top-left-radius: $about-border-radius
-          border-bottom-left-radius: $about-border-radius
-          // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 12%)
-          padding-right: 10rem
+        z-index: 4
+        // &.col-side--left
+        //   // @include linear-gradient(to bottom, lighten($aqua, 18%), lighten($aqua, 12%))
+        //   border-left: none
+        //
+        //   border-top-right-radius: $about-border-radius
+        //   border-bottom-right-radius: $about-border-radius
+        //   // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 0%)
+        //   padding-left: 10rem
+        //
+        // &.col-side--right
+        //   // @include linear-gradient(to left, white, lighten($aqua, 12%))
+        //   border-right: none
+        //   border-top-left-radius: $about-border-radius
+        //   border-bottom-left-radius: $about-border-radius
+        //   // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 12%)
+        //   padding-right: 10rem
 
         h2
-          border-bottom: 1px solid transparentize(#333, 0.8)
+          font-size: 1.6rem
+          border-bottom: 1px solid transparentize(#fff, 0.6)
           display: inline-block
           margin: .4rem 0 .2rem 0
-          font-style: italic
+          color: $white
 
         .lead-text
-          color: #666
+          color: $black
           text-align: left
           font-size: 1rem
 

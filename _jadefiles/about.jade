@@ -44,19 +44,21 @@ section.section-about#about
       .about-cta.button-cta read more
   
   #about-block
-    .block.block--left-right.block--about
+    .block.block--about
+      .col-full
+        .about-block--info
+          h2.title-text {{participationHeader}}
+          .lead-text {{participationContent}}
       
-      .col-side.col-side--left
-        h2 {{participationHeader}}
-        .lead-text {{participationContent}}
-      
-      .col-side.col-side--right
-        h2 {{integrationHeader}}
-        .lead-text {{integrationContent}}
+      .col-full
+        .about-block--info
+          h2.title-text {{integrationHeader}}
+          .lead-text {{integrationContent}}
         
-      .col-side.col-side--left
-        h2 {{sustainabilityHeader}}
-        .lead-text {{sustainabilityContent}}
+      .col-full
+        .about-block--info
+          h2.title-text {{sustainabilityHeader}}
+          .lead-text {{sustainabilityContent}}
       
     
       
