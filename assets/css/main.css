@@ -382,6 +382,12 @@ html, body {
   -webkit-text-size-adjust: 100%;
   background: #f5f5f5; }
 
+hr {
+  background: none;
+  color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+
 a {
   color: #666;
   text-decoration: none;
@@ -1314,9 +1320,6 @@ section.team {
   background-color: white; }
   section.team .col-spread {
     padding: 0; }
-  section.team .lead-text {
-    text-align: center;
-    font-style: italic; }
   section.team .team-member-box {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -1325,12 +1328,21 @@ section.team {
     margin-bottom: 3rem; }
     section.team .team-member .member-content {
       margin: 0 4rem;
-      border: 2px dotted #B2DFDB;
-      border-radius: 3px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      background: #e4f4f3;
+      border: 4px solid #00BFA5;
+      background: #f7f7f7;
       padding: 1rem 3rem;
       position: relative; }
+      section.team .team-member .member-content:after {
+        content: '';
+        display: block;
+        height: 10px;
+        position: absolute;
+        top: calc(100% + 4px);
+        left: -4px;
+        right: -4px;
+        background-color: rgba(178, 223, 219, 0.5);
+        background-image: -webkit-linear-gradient(top, rgba(178, 223, 219, 0.5) 40%, rgba(178, 223, 219, 0.2) 60%, white 100%);
+        background-image: linear-gradient(to bottom,rgba(178, 223, 219, 0.5) 40%, rgba(178, 223, 219, 0.2) 60%, white 100%); }
       section.team .team-member .member-content .member-img {
         width: 60px;
         height: 60px;
@@ -1347,8 +1359,8 @@ section.team {
         font-weight: lighten;
         letter-spacing: .12rem;
         display: block;
-        border-bottom: 1px solid rgba(178, 223, 219, 0.5);
-        box-shadow: 0px 1px 0px #e8f5f4; }
+        border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+        box-shadow: 0px 1px 0px white; }
       section.team .team-member .member-content p {
         color: #666; }
   @media (max-width: 680px) {
