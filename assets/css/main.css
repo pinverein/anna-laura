@@ -437,7 +437,7 @@ a {
 
 .button-cta {
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid #00BFA5;
   padding: 10px 20px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   background: white;
@@ -450,7 +450,7 @@ a {
   width: auto;
   text-align: center; }
   .button-cta:hover {
-    background: #74c8a3;
+    background: #00BFA5;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -815,9 +815,9 @@ p {
         max-width: 100px;
         float: right;
         padding: 4px 8px;
-        box-shadow: 0px 0px 0px 1px #8adab1;
+        box-shadow: 0px 0px 0px 1px #8ed0ca;
         background: white;
-        color: #8adab1;
+        color: #8ed0ca;
         -webkit-transform-origin: right;
                 transform-origin: right;
         -webkit-transition: all 200ms ease-in-out;
@@ -827,8 +827,8 @@ p {
         width: auto;
         text-align: center; }
         .home-wrap .site-nav .link-list li .scroll-on-page-link.donate:hover {
-          box-shadow: 0px 0px 1px 1px #8adab1;
-          background: #b1e6cb;
+          box-shadow: 0px 0px 1px 1px #8ed0ca;
+          background: #B2DFDB;
           color: white; }
       .home-wrap .site-nav .link-list li .scroll-on-page-link .fa-gift {
         display: block;
@@ -1218,7 +1218,7 @@ section.startscreen {
     margin: -6rem 1rem 0; } }
 
 .section-about {
-  background: #b1e6cb;
+  background: #B2DFDB;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1241,7 +1241,6 @@ section.startscreen {
     font-size: 1.1rem;
     margin: 4rem 0; }
   .section-about .button-cta {
-    border: 1px solid #aaa;
     margin: 3rem 0;
     -webkit-transform: scale(1);
             transform: scale(1); }
@@ -1284,8 +1283,8 @@ section.startscreen {
       .section-about #about-block .block--about .col-side {
         margin: 0 0 4.5rem;
         padding: 2rem 4rem;
-        border: 4px dashed #b1e6cb;
-        background: #d8f2e5; }
+        border: 4px dashed #B2DFDB;
+        background: #d6eeec; }
         .section-about #about-block .block--about .col-side.col-side--left {
           border-left: none;
           border-top-right-radius: 20px;
@@ -1326,10 +1325,10 @@ section.team {
     margin-bottom: 3rem; }
     section.team .team-member .member-content {
       margin: 0 4rem;
-      border: 2px dotted #b1e6cb;
+      border: 2px dotted #B2DFDB;
       border-radius: 3px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      background: #e7f7ef;
+      background: #e4f4f3;
       padding: 1rem 3rem;
       position: relative; }
       section.team .team-member .member-content .member-img {
@@ -1348,8 +1347,8 @@ section.team {
         font-weight: lighten;
         letter-spacing: .12rem;
         display: block;
-        border-bottom: 1px solid rgba(177, 230, 203, 0.5);
-        box-shadow: 0px 1px 0px #ebf9f2; }
+        border-bottom: 1px solid rgba(178, 223, 219, 0.5);
+        box-shadow: 0px 1px 0px #e8f5f4; }
       section.team .team-member .member-content p {
         color: #666; }
   @media (max-width: 680px) {
@@ -1361,7 +1360,7 @@ section.team {
 section.projects {
   padding: 0;
   color: white;
-  background-color: #b1e6cb;
+  background-color: #B2DFDB;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1384,7 +1383,7 @@ section.projects {
       background-color: #f6f6f6;
       border: 1px solid gainsboro;
       border-radius: 3px;
-      box-shadow: 0 2px 4px #8adab1;
+      box-shadow: 0 2px 4px #8ed0ca;
       cursor: pointer;
       -ms-flex-preferred-size: 15em;
           flex-basis: 15em;
@@ -1466,7 +1465,7 @@ section.participate {
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      background-color: rgba(177, 230, 203, 0.95);
+      background-color: rgba(178, 223, 219, 0.95);
       border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1589,7 +1588,7 @@ section.newsletter {
         border-right: 0px; } }
 
 section.contact {
-  background: #b1e6cb; }
+  background: #B2DFDB; }
   section.contact h1 {
     font-size: 8vw;
     text-align: center;
