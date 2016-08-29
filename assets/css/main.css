@@ -821,9 +821,9 @@ p {
         max-width: 100px;
         float: right;
         padding: 4px 8px;
-        box-shadow: 0px 0px 0px 1px #8ed0ca;
+        box-shadow: 0px 0px 0px 1px #749d8c;
         background: white;
-        color: #8ed0ca;
+        color: #749d8c;
         -webkit-transform-origin: right;
                 transform-origin: right;
         -webkit-transition: all 200ms ease-in-out;
@@ -833,8 +833,8 @@ p {
         width: auto;
         text-align: center; }
         .home-wrap .site-nav .link-list li .scroll-on-page-link.donate:hover {
-          box-shadow: 0px 0px 1px 1px #8ed0ca;
-          background: #B2DFDB;
+          box-shadow: 0px 0px 1px 1px #749d8c;
+          background: #92b2a5;
           color: white; }
       .home-wrap .site-nav .link-list li .scroll-on-page-link .fa-gift {
         display: block;
@@ -1340,9 +1340,9 @@ section.team {
         top: calc(100% + 4px);
         left: -4px;
         right: -4px;
-        background-color: rgba(178, 223, 219, 0.5);
-        background-image: -webkit-linear-gradient(top, rgba(178, 223, 219, 0.5) 40%, rgba(178, 223, 219, 0.2) 60%, white 100%);
-        background-image: linear-gradient(to bottom,rgba(178, 223, 219, 0.5) 40%, rgba(178, 223, 219, 0.2) 60%, white 100%); }
+        background-color: rgba(146, 178, 165, 0.5);
+        background-image: -webkit-linear-gradient(top, rgba(146, 178, 165, 0.5) 40%, rgba(146, 178, 165, 0.2) 60%, white 100%);
+        background-image: linear-gradient(to bottom,rgba(146, 178, 165, 0.5) 40%, rgba(146, 178, 165, 0.2) 60%, white 100%); }
       section.team .team-member .member-content .member-img {
         width: 60px;
         height: 60px;
@@ -1372,7 +1372,7 @@ section.team {
 section.projects {
   padding: 0;
   color: white;
-  background-color: #B2DFDB;
+  background-color: #b5cb95;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1395,7 +1395,7 @@ section.projects {
       background-color: #f6f6f6;
       border: 1px solid gainsboro;
       border-radius: 3px;
-      box-shadow: 0 2px 4px #8ed0ca;
+      box-shadow: 0 2px 4px #9dba73;
       cursor: pointer;
       -ms-flex-preferred-size: 15em;
           flex-basis: 15em;
@@ -1477,7 +1477,7 @@ section.participate {
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      background-color: rgba(178, 223, 219, 0.95);
+      background-color: rgba(146, 178, 165, 0.95);
       border-radius: 50%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1532,8 +1532,7 @@ section.participate {
         border-radius: 0; } }
 
 section.newsletter {
-  background-image: url(../img/newsletter-bg3.jpg);
-  background-size: cover; }
+  background-color: #5793b2; }
   section.newsletter .input-group {
     display: -webkit-box;
     display: -ms-flexbox;
