@@ -1,6 +1,6 @@
 <section id="about" class="section-about">{% assign posts = site.posts | where:'categories', 'about' %}
-{% assign de_posts=posts | where:'language', page.language %}
-{% for post in de_posts %}{% if post.title == 'about_main' %}
+{% assign lang_posts=posts | where:'language', page.language %}
+{% for post in lang_posts %}{% if post.title == 'about_main' %}
 {% assign mainHeader = post.header %}  
 {% assign mainContent = post.content %}  
 {% endif %}{% if post.title == 'about_participation' %}

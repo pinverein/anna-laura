@@ -1,9 +1,9 @@
 section.section-about#about
 
   {% assign posts = site.posts | where:'categories', 'about' %}
-  {% assign de_posts=posts | where:'language', page.language %}
+  {% assign lang_posts=posts | where:'language', page.language %}
   
-  {% for post in de_posts %}
+  {% for post in lang_posts %}
   
   
   
