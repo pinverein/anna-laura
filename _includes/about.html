@@ -1,17 +1,6 @@
-<section id="about" class="section-about">{% assign posts = site.posts | where:'categories', 'about' %}
-{% assign lang_posts=posts | where:'language', page.language %}
-{% for post in lang_posts %}{% if post.title == 'about_main' %}
-{% assign mainHeader = post.header %}  
-{% assign mainContent = post.content %}  
-{% endif %}{% if post.title == 'about_participation' %}
-{% assign participationHeader = post.header %}  
-{% assign participationContent = post.content %}  
-{% endif %}{% if post.title == 'about_integration' %}
-{% assign integrationHeader = post.header %}  
-{% assign integrationContent = post.content %}  
-{% endif %}{% if post.title == 'about_sustainability' %}
-{% assign sustainabilityHeader = post.header %}  
-{% assign sustainabilityContent = post.content %}  
+<section id="about" class="section-about">{% assign pages = site.pages | where: 'ref', 'about' %}
+{% for this_page in pages %}
+{% if this_page.language == page.language %}
+{{this_page.content}}
 {% endif %}
-{% endfor %}<div class="flex flex--center"><div class="col-spread"><h1 class="title-text">{{mainHeader}}</h1><div class="lead-text"> 
-{{mainContent}}</div><div class="about-cta button-cta">read more</div></div></div><div id="about-block"><div class="block block--about"><div class="col-full"><div class="about-block--info"><h2 class="title-text">{{participationHeader}}</h2><div class="lead-text">{{participationContent}}</div></div></div><div class="col-full"><div class="about-block--info"><h2 class="title-text">{{integrationHeader}}</h2><div class="lead-text">{{integrationContent}}</div></div></div><div class="col-full"><div class="about-block--info"><h2 class="title-text">{{sustainabilityHeader}}</h2><div class="lead-text">{{sustainabilityContent}}</div></div></div></div></div></section>
+{% endfor %}</section>
