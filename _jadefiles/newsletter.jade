@@ -1,8 +1,16 @@
 section.newsletter#newsletter
   .flex.flex--center
     .col-spread
-      .lead-text Subscribe to our
-      h1.title-text Newsletter
+      
+      {% assign pages = site.pages | where: 'ref', 'newsletter' %}
+      
+      
+      {% for this_page in pages %}
+      
+      {% if this_page.language == page.language %}
+
+      {{this_page.content}}
+            
       
       .nl-signup-box.
         <div id="mc_embed_signup">
@@ -23,7 +31,7 @@ section.newsletter#newsletter
                 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
               	
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <input type="submit" value="{{this_page.button}}" name="subscribe" id="mc-embedded-subscribe" class="button">
               
               </div>
               
@@ -42,7 +50,7 @@ section.newsletter#newsletter
           </form>
         
         </div>
-        
-      .lead-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-
+  
+      {% endif %}
       
+      {% endfor %}

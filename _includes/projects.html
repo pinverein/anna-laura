@@ -1,6 +1,9 @@
 <section id="projects" class="projects"><div class="projects-wrap"> <div class="flex flex--center"><div class="col-spread">{% assign pages = site.pages | where: 'ref', 'projects' %}
 {% for this_page in pages %}
-{% if this_page.language == page.language %}<h1 class="title-text">{{this_page.title}}</h1><p class="lead-text">{{this_page.content}} </p>{% endif %}
+{% if this_page.language == page.language %}<h1 class="title-text"> 
+{{this_page.title}}</h1><p class="lead-text"> 
+{{this_page.content}} </p>{% endif %}
 {% endfor %}</div></div><div class="flex flex--center"><div class="col-full"><div class="cards">{% assign posts = site.posts | where:'categories', 'projects' %}
 {% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
-{% for post in lang_posts %}<div class="card"><div class="card-image"><img src="{{ post.image }}" alt=""/></div><div class="card-header">{{ post.title }}</div><div class="card-copy"><p>{{ post.content }}          </p></div></div>{% endfor %}</div></div></div></div></section>
+{% for post in lang_posts %}<div class="card"><div class="card-image"><img src="{{ post.image }}" alt=""/></div><div class="card-header"><div class="title-text small">{{ post.title }}</div></div><div class="card-copy"><div class="lead-text"> 
+{{ post.content }}          </div></div></div>{% endfor %}</div></div></div></div></section>

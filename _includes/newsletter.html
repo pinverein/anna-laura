@@ -1,4 +1,7 @@
-<section id="newsletter" class="newsletter"><div class="flex flex--center"><div class="col-spread"><div class="lead-text">Subscribe to our</div><h1 class="title-text">Newsletter</h1><div class="nl-signup-box"><div id="mc_embed_signup">
+<section id="newsletter" class="newsletter"><div class="flex flex--center"><div class="col-spread">{% assign pages = site.pages | where: 'ref', 'newsletter' %}
+{% for this_page in pages %}
+{% if this_page.language == page.language %}
+{{this_page.content}}<div class="nl-signup-box"><div id="mc_embed_signup">
   
   <form action="//g3n3.us12.list-manage.com/subscribe/post?u=3d8cc565d72ea36d070f746e5&amp;id=18b6d27bcd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     
@@ -16,7 +19,7 @@
         	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
         </div>
       	
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        <input type="submit" value="{{this_page.button}}" name="subscribe" id="mc-embedded-subscribe" class="button">
       
       </div>
       
@@ -35,4 +38,5 @@
   </form>
 
 </div>
-</div><div class="lead-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div></div></div></section>
+</div>{% endif %}
+{% endfor %}</div></div></section>

@@ -761,6 +761,9 @@ p {
   letter-spacing: .1rem;
   text-align: center;
   text-transform: uppercase; }
+  .title-text.small {
+    font-size: 1.6rem;
+    font-weight: 300; }
   @media (max-width: 500px) {
     .title-text {
       font-size: 3rem; } }
