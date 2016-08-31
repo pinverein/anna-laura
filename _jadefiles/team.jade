@@ -2,7 +2,7 @@ section.team#team
   .flex.flex--center
     .col-spread
       .page-content
-        {% assign pages = site.pages | where: 'title', 'team' %}
+        {% assign pages = site.pages | where: 'ref', 'team' %}
         
         {% for this_page in pages %}
         

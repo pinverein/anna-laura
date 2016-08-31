@@ -441,6 +441,68 @@ a {
   .bullets img {
     max-width: 100%; }
 
+.cards {
+  color: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.card {
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #9dba73;
+  cursor: pointer;
+  -ms-flex-preferred-size: 15em;
+      flex-basis: 15em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+  .card .card-image {
+    background-color: #ebc974;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden; }
+    .card .card-image img {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      opacity: 1;
+      -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+      width: 100%; }
+  .card .card-header {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 0.5em 0.75em;
+    -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+  .card .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 0.75em 0.75em; }
+    .card .card-copy p {
+      margin: 0 0 0.75em; }
+  .card:focus, .card:hover {
+    cursor: pointer; }
+    .card:focus img, .card:hover img {
+      opacity: 0.7; }
+  .card:active {
+    background-color: #f6f6f6; }
+    .card:active .card-header {
+      background-color: #f6f6f6; }
+
 .button-cta {
   display: block;
   border: 1px solid #00E676;
@@ -1392,66 +1454,6 @@ section.projects {
     padding: 3rem 0; }
     section.projects .projects-wrap .col-spread {
       margin-bottom: 2rem; }
-    section.projects .projects-wrap .cards {
-      color: #444;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    section.projects .projects-wrap .card {
-      background-color: #f6f6f6;
-      border: 1px solid gainsboro;
-      border-radius: 3px;
-      box-shadow: 0 2px 4px #9dba73;
-      cursor: pointer;
-      -ms-flex-preferred-size: 15em;
-          flex-basis: 15em;
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      margin: 0 1em 1.5em 1em;
-      position: relative;
-      -webkit-transition: all 0.2s ease-in-out;
-              transition: all 0.2s ease-in-out; }
-      section.projects .projects-wrap .card .card-image {
-        background-color: #daa41f;
-        height: 150px;
-        max-height: 150px;
-        overflow: hidden; }
-        section.projects .projects-wrap .card .card-image img {
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
-          opacity: 1;
-          -webkit-transition: all 0.2s ease-in-out;
-                  transition: all 0.2s ease-in-out;
-          width: 100%; }
-      section.projects .projects-wrap .card .card-header {
-        background-color: #f6f6f6;
-        border-bottom: 1px solid gainsboro;
-        border-radius: 3px 3px 0 0;
-        font-weight: bold;
-        line-height: 1.5em;
-        padding: 0.5em 0.75em;
-        -webkit-transition: all 0.2s ease-in-out;
-                transition: all 0.2s ease-in-out; }
-      section.projects .projects-wrap .card .card-copy {
-        font-size: 0.9em;
-        line-height: 1.5em;
-        padding: 0.75em 0.75em; }
-        section.projects .projects-wrap .card .card-copy p {
-          margin: 0 0 0.75em; }
-      section.projects .projects-wrap .card:focus, section.projects .projects-wrap .card:hover {
-        cursor: pointer; }
-        section.projects .projects-wrap .card:focus img, section.projects .projects-wrap .card:hover img {
-          opacity: 0.7; }
-      section.projects .projects-wrap .card:active {
-        background-color: #f6f6f6; }
-        section.projects .projects-wrap .card:active .card-header {
-          background-color: #f6f6f6; }
 
 section.participate {
   background-color: white;

@@ -2,41 +2,42 @@ section.projects#projects
   .projects-wrap  
     .flex.flex--center
       .col-spread
-        h1.title-text Projects
-        p.lead-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        {% assign pages = site.pages | where: 'ref', 'projects' %}
+        
+        
+        {% for this_page in pages %}
+        
+        {% if this_page.language == page.language %}
+        
+        h1.title-text {{this_page.title}}
+        
+        p.lead-text {{this_page.content}} 
+        
+        {% endif %}
+        
+        {% endfor %}
     
     .flex.flex--center
       .col-full
 
         .cards
+          
+          {% assign posts = site.posts | where:'categories', 'projects' %}
+          {% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
+          
+          
+          {% for post in lang_posts %}
+          
           .card
             .card-image
-              img(src='http://fillmurray.com/g/260/210', alt='')
+              img(src='{{ post.image }}', alt='')
                 
             .card-header
-              | First Project
+              {{ post.title }}
+              
                  
             .card-copy
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+              p {{ post.content }}          
+          {% endfor %}
                
-          .card
-            .card-image
-              img(src='http://placebear.com/g/200/300', alt='') 
-
-            .card-header
-              | Another Project
-              
-            .card-copy
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
-            
-          .card
-            .card-image
-              img(src='http://placekitten.com/g/300/280', alt='')
-               
-            .card-header
-              | Third Project
-                
-            .card-copy
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          
