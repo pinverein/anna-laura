@@ -4,9 +4,16 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 baseurl: '' # the subpath of your site, e.g. /blog
 
+future: true
 # index:
 #   de:
 #   en: /en/
+
+date-style:
+  - language: de
+    format: "%d-%m-%Y"
+  - language: en
+    format: "%Y-%m-%d"
 
 nav:
 # de

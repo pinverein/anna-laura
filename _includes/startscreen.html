@@ -1,3 +1,5 @@
 <section id="start" class="startscreen"><div class="flex flex--center"><div class="col-full"><h1 class="start-logo"></h1></div><div class="news-wrapper"> <div class="news-box"><h2><i class="fa fa-plus"></i>News</h2>{% assign posts = site.posts | where:'categories', 'news' %}
-{% for post in posts %}<p>hallo </p>
-{% endfor %}</div></div></div></section>
+{% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
+{% assign date-style=site.date-style | where:'language', page.language | first %}
+{% for post in lang_posts %}<a href="#{{ post.newsID }}" class="news-item-box modal"><div class="news-item"><h3 class="news-title">{{post.title}}</h3><p class="news-date">{{ post.date | date: date-style.format }}</p><p class="news-content">{{post.excerpt}}</p></div></a><div id="{{post.newsID}}" class="news-item-full modal-inner"><div class="modal-content-wrapper"><h1>{{post.title}}</h1><p class="modal-intro">{{ post.date | date: date-style.format }}</p><div class="modal-content">{{post.content}}</div><a href="#" class="close-modal">close</a></div></div>{% endfor %}
+</div></div></div></section>
