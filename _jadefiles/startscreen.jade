@@ -2,7 +2,7 @@ mixin news-item(title, date, content)
   .news-item
     h3.news-title= title
     p.news-date= date
-    p.news-content= content
+    .news-content= content
 section.startscreen#start
   .flex.flex--center
     .col-full
@@ -11,7 +11,7 @@ section.startscreen#start
     .news-wrapper  
       .news-box
         h2
-          i(class="fa fa-plus")
+          //- i(class="fa fa-plus")
           | News
         
         {% assign posts = site.posts | where:'categories', 'news' %}
@@ -24,7 +24,7 @@ section.startscreen#start
         
         a(href='#{{ post.newsID }}').news-item-box.modal
         
-          +news-item("{{post.title}}", "{{ post.date | date: date-style.format }}", "{{post.excerpt}}")
+          +news-item("{{post.title}}", "{{ post.date | date: date-style.format }}", "{{post.excerpt}}...")
            
         .news-item-full.modal-inner(id='{{post.newsID}}')
           
@@ -34,10 +34,12 @@ section.startscreen#start
               
             .modal-content {{post.content}}
             
-            a(href='#').close-modal close
+            
+            a(href='#')
+              .close-modal close
             
         {% endfor %}
- 
+    
         //- div.          
         //-   <div class="modal">
         //-     <label for="modal-1">
