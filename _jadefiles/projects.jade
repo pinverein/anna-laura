@@ -25,7 +25,6 @@ section.projects#projects
           {% assign posts = site.posts | where:'categories', 'projects' %}
           {% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
           
-          
           {% for post in lang_posts %}
           
           .card
