@@ -40,6 +40,9 @@ section.startscreen
       opacity: 1
       transform: scale(1)
 
+  @media (max-width: 930px)
+    width: calc(100% - 200px)
+
 .news-wrapper
   position: absolute
   top: 0
@@ -50,25 +53,25 @@ section.startscreen
   padding-right: 2rem
   color: #aaa
   // overflow: scroll
+  @media (max-width: 930px)
+    width: 200px
+
+
+  h2
+    text-align: right
+    cursor: pointer
+
+    .fa-plus
+      display: inline-block
+      margin-right: .4rem
+      font-size: .8em
 
 
   .news-box
-    color: #444
     // opacity: .2
     font-family: $monospace
     +transition
-    //
-    // &:hover
-    //   opacity: 1
 
-    h2
-      text-align: right
-      cursor: pointer
-
-      .fa-plus
-        display: inline-block
-        margin-right: .4rem
-        font-size: .8em
 
 
     .news-item
@@ -76,9 +79,14 @@ section.startscreen
       // opacity: 0
       font-size: .9rem
       // border-bottom: 1px solid #eee
+      color: #ccc
+
+      &:hover
+        color: #666
 
       .news-title, .news-date, .news-content
         font-family: $monospace
+
 
         p
           // font-family: $monospace

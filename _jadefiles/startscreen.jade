@@ -9,10 +9,9 @@ section.startscreen#start
       h1.start-logo
       
     .news-wrapper  
+      h2 News
+        
       .news-box
-        h2
-          //- i(class="fa fa-plus")
-          | News
         
         {% assign posts = site.posts | where:'categories', 'news' %}
         {% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
