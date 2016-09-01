@@ -1,5 +1,4 @@
-<section id="participate" class="participate"><div class="flex flex--center"><div class="col-spread">{% assign pages = site.pages | where: 'ref', 'participate' %}
+<section id="participate" class="participate">{% assign pages = site.pages | where: 'ref', 'participate' %}
 {% for this_page in pages %}
-{% if this_page.language == page.language %}<h1 class="title-text"> 
-{{this_page.title}}</h1><div>{{this_page.content}} </div>{% endif %}
-{% endfor %}</div></div><div class="flex flex--center"><div class="col-1 col-scroll-bg col--participate"><div class="image"></div><div class="col-content col-content--participate"> <h1>Participate</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a class="button-cta col-cta">Join now </a></div></div><div class="col-1 col-scroll-bg col--donate"><div class="image"></div><div class="col-content col-content--donate"><h1>Donate</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni</p><a class="button-cta col-cta">Donate now </a></div></div></div></section>
+{% if this_page.language == page.language %}<div>{{this_page.content}} </div>{% endif %}
+{% endfor %}</section>

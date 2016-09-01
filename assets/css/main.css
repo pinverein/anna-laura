@@ -570,6 +570,11 @@ a {
     position: relative;
     text-align: center;
     pointer-events: auto; }
+    @media (max-width: 800px) {
+      .modal-inner .modal-content-wrapper {
+        padding: 2rem 2rem !important;
+        max-height: 100vh !important;
+        overflow: scroll; } }
     .modal-inner .modal-content-wrapper h1 {
       border-bottom: 1px solid #eee; }
     .modal-inner .modal-content-wrapper .modal-intro {
@@ -1219,6 +1224,8 @@ section.startscreen {
   .news-wrapper {
     left: 0;
     right: 0;
+    bottom: 0;
+    top: 0;
     width: 100%; }
     .news-wrapper h2 {
       text-align: left;
@@ -1234,9 +1241,11 @@ section.startscreen {
       top: 78px;
       left: 0;
       right: 0;
+      bottom: 0;
+      overflow: scroll;
       width: 100%;
       opacity: 1;
-      padding: 2rem 3rem;
+      padding: 2rem 1rem;
       opacity: 0;
       -webkit-transition: all 200ms ease-in-out;
               transition: all 200ms ease-in-out; }
@@ -1437,33 +1446,24 @@ section.participate {
     padding: 0 2rem; }
   section.participate .col-1 {
     width: 401px;
-    height: 401px;
+    height: 340px;
     margin: 0 auto;
     position: relative;
-    border-radius: 50%;
+    border: 2px solid #eee;
     margin-bottom: 1rem;
-    -webkit-filter: blur(1px) grayscale(0.5);
-            filter: blur(1px) grayscale(0.5); }
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
     section.participate .col-1:hover {
-      -webkit-filter: blur(0px);
-              filter: blur(0px); }
-    section.participate .col-1:hover .col-content {
-      opacity: 1; }
-    section.participate .col-1.col--participate {
-      background-image: url(../img/participate-icon_small_desat.png);
-      background-repeat: repeat;
-      background-attachment: fixed; }
-    section.participate .col-1.col--donate {
-      background-image: url(../img/donate-icon_small_desat.png);
-      background-repeat: repeat;
-      background-position: center;
-      background-attachment: fixed; }
+      background: rgba(146, 178, 165, 0.95); }
+      section.participate .col-1:hover .col-content h1 {
+        color: white; }
+      section.participate .col-1:hover .col-content p {
+        opacity: 1; }
     section.participate .col-1 .col-content {
-      opacity: 0;
+      opacity: 1;
       -webkit-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
-      background-color: rgba(146, 178, 165, 0.95);
-      border-radius: 50%;
+      background-color: transparent;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1471,35 +1471,30 @@ section.participate {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       color: white;
       padding: 20px 60px;
-      text-align: center;
-      position: absolute;
-      top: -2px;
-      right: -2px;
-      bottom: -2px;
-      left: -2px;
-      -webkit-filter: blur(0px);
-              filter: blur(0px); }
+      text-align: center; }
       section.participate .col-1 .col-content h1 {
-        font-size: 3rem;
-        margin: 0;
-        text-transform: uppercase; }
+        color: #daa41f; }
       section.participate .col-1 .col-content p {
-        font-weight: 300; }
+        font-weight: 300;
+        opacity: 0; }
   @media (max-width: 1024px) {
     section.participate .flex {
       display: block; }
     section.participate .col-1 {
-      margin: 1rem auto; }
+      margin: 1rem auto;
+      background: rgba(146, 178, 165, 0.95); }
       section.participate .col-1 .col-content {
-        padding: 20px 30px; } }
+        padding: 20px 30px; }
+        section.participate .col-1 .col-content p {
+          opacity: 1; } }
   @media (max-width: 800px) {
     section.participate .col-1 {
       -webkit-filter: none;

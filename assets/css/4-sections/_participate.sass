@@ -13,78 +13,55 @@ section.participate
 
   .col-1
     width: 401px
-    height: 401px
+    height: 340px
     margin: 0 auto
     position: relative
-    border-radius: 50%
+    border: 2px solid #eee
     margin-bottom: 1rem
-    // overflow: hidden
-    filter: blur(1px) grayscale(.5)
+    +transition
+
 
     &:hover
-      filter: blur(0px)
 
-    &:hover .col-content
-      opacity: 1
-    // .image
-    //   width: 460px
-    //   height: 460px
+      background: rgba($background-color, .95)
 
-      border-radius: 50%
+      .col-content
+        // background: rgba($background-color, .95)
 
-    &.col--participate
-      // .image
-      background:
-        image: url(../img/participate-icon_small_desat.png)
-        repeat: repeat
-        attachment: fixed
+        h1
+          color: white
 
-    &.col--donate
-      // .image
-      background:
-        // color: pink
-        image: url(../img/donate-icon_small_desat.png)
-        repeat: repeat
-        position: center
-        attachment: fixed
+        p
+          opacity: 1
 
 
 
 
     .col-content
 
-      opacity: 0
+      opacity: 1
       +transition
       // @include position (absolute, 0)
       background:
-        color: rgba($background-color, .95)
+        color: transparent
 
-      border-radius: 50%
+      // border-radius: 50%
       display: flex
       flex-direction: column
-      justify-content: center
+      justify-content: flex-start
       align-items: center
       color: white
       padding: 20px 60px
       text-align: center
-      @include position(absolute, -2px)
-      filter: blur(0px)
-      // border: 3px solid rgba(black, .3)
-
-      // &.col-content--participate
-      //   box-shadow: 1px 1px 3px rgba(black, .5) inset
-      //
-      // &.col-content--donate
-      //   box-shadow: -1px 1px 3px rgba(black, .5) inset
-
+      // @include position(absolute, -2px)
 
       h1
-        font-size: 3rem
-        margin: 0
-        text-transform: uppercase
+        color: $brand-color
 
       p
         font-weight: 300
+        opacity: 0
+        // height: 5rem
 
 
 
@@ -94,10 +71,13 @@ section.participate
 
     .col-1
       margin: 1rem auto
-
+      background: rgba($background-color, .95)
 
       .col-content
         padding: 20px 30px
+
+        p
+          opacity: 1
 
   @media (max-width: 800px)
     .col-1
