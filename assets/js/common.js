@@ -5,6 +5,18 @@
       var $this = $(this);
       $this.toggleClass('is-active');
       $('.mobile-nav').toggleClass('is-active');
+      $('.news-box.is-active').removeClass('is-active');
+      $('.toggle-news.is-active').removeClass('is-active');
+
+    });
+  };
+
+  toggleMobileNews = function() {
+    $('.toggle-news').on('click', function() {
+      console.log('hahaha');
+      var $this = $(this);
+      $this.toggleClass('is-active');
+      $('.news-box').toggleClass('is-active');
     });
   };
 
@@ -67,6 +79,7 @@
   $(document).ready(function() {
     $.mark.jump();
     toggleMobileMenu();
+    toggleMobileNews();
 
     $('.about-cta').click(function(){
       $('.block--about').toggleClass('is-open');

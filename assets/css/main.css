@@ -1070,7 +1070,7 @@ p {
 @media (max-width: 800px) {
   .home-wrap header {
     width: auto;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 5.6rem;
     background: white; }
     .home-wrap header .header-position {
       position: relative;
@@ -1091,6 +1091,8 @@ p {
       display: flex; }
     .home-wrap header .site-nav,
     .home-wrap header .placeholder {
+      display: none; }
+    .home-wrap header .logo-link {
       display: none; }
     .home-wrap header .logo {
       height: 2.5rem;
@@ -1187,10 +1189,6 @@ section.startscreen {
   .news-wrapper h2 {
     text-align: right;
     cursor: pointer; }
-    .news-wrapper h2 .fa-plus {
-      display: inline-block;
-      margin-right: .4rem;
-      font-size: .8em; }
   .news-wrapper .news-box {
     font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
     -webkit-transition: all 0.15s ease-out 0s;
@@ -1217,7 +1215,40 @@ section.startscreen {
     height: calc(100vh - 3.5rem); }
   .start-logo {
     width: auto;
-    margin: -6rem 1rem 0; } }
+    margin: -6rem 1rem 0; }
+  .news-wrapper {
+    left: 0;
+    right: 0;
+    width: 100%; }
+    .news-wrapper h2 {
+      text-align: left;
+      color: #555;
+      padding-top: .5rem;
+      padding-left: 2rem;
+      z-index: 3; }
+    .news-wrapper .news-box {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0px 18px 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 78px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      opacity: 1;
+      padding: 2rem 3rem;
+      opacity: 0;
+      -webkit-transition: all 200ms ease-in-out;
+              transition: all 200ms ease-in-out; }
+      .news-wrapper .news-box.is-active {
+        opacity: 1; }
+      .news-wrapper .news-box .news-item {
+        text-align: left;
+        color: #666 !important; }
+        .news-wrapper .news-box .news-item h3:first-child {
+          margin-top: 0; }
+        .news-wrapper .news-box .news-item .news-content {
+          font-size: 1rem; } }
 
 @media (max-width: 400px) {
   .start-logo {
@@ -1484,6 +1515,68 @@ section.participate {
       margin: 1rem auto; }
       section.participate .col-1 .col-content {
         border-radius: 0; } }
+
+section.donate {
+  position: relative; }
+  section.donate .donate-wrapper {
+    background-image: url(../img/donate-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    section.donate .donate-wrapper:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 128, 66, 0.9); }
+    section.donate .donate-wrapper .col-spread {
+      z-index: 2;
+      color: white;
+      text-align: center; }
+      section.donate .donate-wrapper .col-spread h2 {
+        font-size: 1.5rem;
+        color: #555;
+        text-align: center; }
+      section.donate .donate-wrapper .col-spread .donate-info-box {
+        max-width: 350px;
+        margin: 3rem auto;
+        border-radius: 1rem;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem 2rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.7);
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+        section.donate .donate-wrapper .col-spread .donate-info-box:hover {
+          box-shadow: 0 5px 20px rgba(0, 230, 118, 0.4);
+          background: white; }
+          section.donate .donate-wrapper .col-spread .donate-info-box:hover .bank-body {
+            background: rgba(113, 197, 189, 0.2);
+            border: 1px solid #eee; }
+        section.donate .donate-wrapper .col-spread .donate-info-box .bank-head {
+          color: #999;
+          font-weight: bold;
+          margin: .5rem 0 .1rem;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          text-transform: uppercase;
+          font-size: .9rem; }
+        section.donate .donate-wrapper .col-spread .donate-info-box .bank-body {
+          border-radius: 4px;
+          color: #777;
+          border: 1px solid transparent;
+          font-family: 'Courier';
+          font-size: 1.2rem;
+          background: rgba(255, 255, 255, 0.3);
+          padding: .5rem 0;
+          margin: 0; }
+          @media (max-width: 800px) {
+            section.donate .donate-wrapper .col-spread .donate-info-box .bank-body {
+              font-size: 1rem; } }
 
 section.newsletter {
   background-color: #5793b2; }

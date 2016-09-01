@@ -61,11 +61,6 @@ section.startscreen
     text-align: right
     cursor: pointer
 
-    .fa-plus
-      display: inline-block
-      margin-right: .4rem
-      font-size: .8em
-
 
   .news-box
     // opacity: .2
@@ -110,6 +105,48 @@ section.startscreen
   .start-logo
     width: auto
     margin: -6rem 1rem 0
+
+  .news-wrapper
+    left: 0
+    right: 0
+    width: 100%
+
+    h2
+      text-align: left
+      color: #555
+      padding-top: .5rem
+      padding-left: 2rem
+      z-index: 3
+
+    .news-box
+      background: white
+      border-bottom: 1px solid #ddd
+      box-shadow: 0px 18px 10px rgba(black, .1)
+      position: absolute
+      top: 78px
+      left: 0
+      right: 0
+      width: 100%
+      opacity: 1
+      padding: 2rem 3rem
+
+      opacity: 0
+      transition: all 200ms ease-in-out
+
+      &.is-active
+        opacity: 1
+
+      .news-item
+        text-align: left
+        color: #666 !important
+
+        h3:first-child
+          margin-top: 0
+
+        .news-content
+          font-size: 1rem
+
+
 @media (max-width: 400px)
   .col-full
     // margin: 0
