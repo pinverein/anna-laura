@@ -1458,7 +1458,7 @@ section.participate {
       section.participate .col-1:hover .col-content h1 {
         color: white; }
       section.participate .col-1:hover .col-content p {
-        opacity: 1; }
+        color: white; }
     section.participate .col-1 .col-content {
       opacity: 1;
       -webkit-transition: all 0.15s ease-out 0s;
@@ -1484,17 +1484,14 @@ section.participate {
         color: #daa41f; }
       section.participate .col-1 .col-content p {
         font-weight: 300;
-        opacity: 0; }
+        color: black; }
   @media (max-width: 1024px) {
     section.participate .flex {
       display: block; }
     section.participate .col-1 {
-      margin: 1rem auto;
-      background: rgba(146, 178, 165, 0.95); }
+      margin: 1rem auto; }
       section.participate .col-1 .col-content {
-        padding: 20px 30px; }
-        section.participate .col-1 .col-content p {
-          opacity: 1; } }
+        padding: 20px 30px; } }
   @media (max-width: 800px) {
     section.participate .col-1 {
       -webkit-filter: none;
