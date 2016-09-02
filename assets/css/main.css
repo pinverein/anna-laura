@@ -1395,9 +1395,9 @@ section.startscreen {
         padding: 1rem; } }
 
 section.team {
-  background-color: #efd38f;
-  background-image: -webkit-linear-gradient(top left, #efd38f, #daa41f, #efd38f);
-  background-image: linear-gradient(to bottom right,#efd38f, #daa41f, #efd38f); }
+  background-color: #e2b035;
+  background-image: -webkit-linear-gradient(top left, #e2b035, #f5e5bb, #e2b035);
+  background-image: linear-gradient(to bottom right,#e2b035, #f5e5bb, #e2b035); }
   section.team .col-spread {
     padding: 0; }
   section.team .team-member-box {
@@ -1408,7 +1408,7 @@ section.team {
       section.team .team-member-box .team-member .member-content {
         margin: 0;
         border: 1px solid #aaa;
-        background: #f7f7f7;
+        background: #fff;
         padding: 1rem 3rem;
         position: relative; }
         section.team .team-member-box .team-member .member-content h2 {
@@ -1433,9 +1433,10 @@ section.team {
           -ms-flex-pack: center;
               justify-content: center; }
       section.team .team-member-box .sub-box .member-column {
-        padding: 0 2rem; }
-        section.team .team-member-box .sub-box .member-column:first-child {
-          border-right: 1px solid rgba(221, 221, 221, 0.5); }
+        padding: 0 2rem;
+        border-right: 1px solid rgba(221, 221, 221, 0.5); }
+        section.team .team-member-box .sub-box .member-column:last-child {
+          border-right: none; }
         section.team .team-member-box .sub-box .member-column h2 {
           margin: 0;
           border-bottom: none;
@@ -1458,11 +1459,14 @@ section.team {
   @media (max-width: 500px) {
     section.team .team-member-box .sub-box {
       display: block; }
-      section.team .team-member-box .sub-box .member-column:first-child {
+      section.team .team-member-box .sub-box .member-column {
+        text-align: center;
         border-right: none;
         border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
-      section.team .team-member-box .sub-box .member-column h2 {
-        margin: 1rem 0; } }
+        section.team .team-member-box .sub-box .member-column:last-child {
+          border-bottom: none; }
+        section.team .team-member-box .sub-box .member-column h2 {
+          margin: 1rem 0; } }
   @media (max-width: 400px) {
     section.team .team-member-box .team-member {
       margin: 1rem .3rem; }

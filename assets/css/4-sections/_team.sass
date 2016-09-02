@@ -1,6 +1,6 @@
 section.team
   // background:
-  +linear-gradient(to bottom right, lighten($brand-color, 26%), $brand-color, lighten($brand-color, 26%))
+  +linear-gradient(to bottom right, lighten($brand-color, 6%), lighten($brand-color, 36%), lighten($brand-color, 6%))
 
 
   .col-spread
@@ -23,7 +23,7 @@ section.team
         border: 1px solid #aaa
         // border-radius: 3px
         // box-shadow: 0 8px 0px rgba($highlight-color, .4)
-        background: lighten($silver, 10%)
+        background: $white
         padding: 1rem 3rem
         position: relative
 
@@ -49,9 +49,10 @@ section.team
       .member-column
         // margin: 0 1rem
         padding: 0 2rem
+        border-right: 1px solid rgba($silver, .5)
 
-        &:first-child
-          border-right: 1px solid rgba($silver, .5)
+        &:last-child
+          border-right: none
 
         h2
           margin: 0
@@ -93,9 +94,12 @@ section.team
         display: block
 
         .member-column
-          &:first-child
-            border-right: none
-            border-bottom: 1px solid rgba($silver, .5)
+          text-align: center
+          border-right: none
+          border-bottom: 1px solid rgba($silver, .5)
+
+          &:last-child
+            border-bottom: none
 
           h2
             margin: 1rem 0
