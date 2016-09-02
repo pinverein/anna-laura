@@ -117,9 +117,11 @@ section.startscreen
     h2
       text-align: left
       color: #555
-      padding-top: .5rem
-      padding-left: 2rem
+      // padding-top: .5rem
+      padding-left: 1.5rem
+      margin: 0
       z-index: 3
+      line-height: 72px
 
     .news-box
       background: white
@@ -145,12 +147,17 @@ section.startscreen
       .news-item
         text-align: left
         color: #666 !important
-        
+
         h3:first-child
           margin-top: 0
 
         .news-content
           font-size: 1rem
+
+@media (max-width: 680px)
+  .news-wrapper
+    h2
+      line-height: 58px
 
 
 @media (max-width: 400px)

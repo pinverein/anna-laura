@@ -72,7 +72,7 @@
 
   $(window).scroll(function() {
     showLogoOnScroll();
-    scrollBackground();
+    // scrollBackground();
   });
 
 
