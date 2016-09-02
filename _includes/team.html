@@ -1,6 +1,6 @@
-<section id="team" class="team"><div class="flex flex--center"><div class="col-spread"><div class="page-content">{% assign pages = site.pages | where: 'ref', 'team' %}
+<section id="team" class="team">{% assign pages = site.pages | where: 'ref', 'team' %}
 {% for this_page in pages %}
 {% if this_page.language == page.language %}
 {{this_page.content}}
 {% endif %}
-{% endfor %}</div></div></div></section>
+{% endfor %}</section>
