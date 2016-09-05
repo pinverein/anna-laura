@@ -1324,7 +1324,7 @@ section.startscreen {
     overflow: hidden; }
     .section-about #about-block .block {
       display: none;
-      background: #78c8c0;
+      background: #4DB6AC;
       position: relative; }
       .section-about #about-block .block:before {
         content: '';
@@ -1332,20 +1332,14 @@ section.startscreen {
         top: 0;
         left: 0;
         right: 0;
-        height: 150px;
-        background-color: #4DB6AC;
-        background-image: -webkit-linear-gradient(top, #4DB6AC, #78c8c0);
-        background-image: linear-gradient(to bottom,#4DB6AC, #78c8c0); }
+        height: 150px; }
       .section-about #about-block .block:after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100px;
-        background-color: #4DB6AC;
-        background-image: -webkit-linear-gradient(bottom, #4DB6AC, #78c8c0);
-        background-image: linear-gradient(to top,#4DB6AC, #78c8c0); }
+        height: 100px; }
       .section-about #about-block .block.is-open {
         display: block;
         -webkit-animation: slideIn 600ms ease-in-out;

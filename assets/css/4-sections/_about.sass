@@ -47,7 +47,7 @@ $about-border-radius: 20px
       // padding: 2rem 0 0
       // position: absolute
       display: none
-      background: lighten($bg-main, 12%)
+      background: $bg-main
       position: relative
 
       &:before
@@ -57,7 +57,7 @@ $about-border-radius: 20px
         left: 0
         right: 0
         height: 150px
-        @include linear-gradient(to bottom, $bg-main, lighten($bg-main, 12%))
+        // @include linear-gradient(to bottom, $bg-main, lighten($bg-main, 12%))
 
       &:after
         content: ''
@@ -66,7 +66,7 @@ $about-border-radius: 20px
         left: 0
         right: 0
         height: 100px
-        @include linear-gradient(to top, $bg-main, lighten($bg-main, 12%))
+        // @include linear-gradient(to top, $bg-main, lighten($bg-main, 12%))
 
       &.is-open
         display: block
