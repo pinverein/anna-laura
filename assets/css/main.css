@@ -674,7 +674,8 @@ a {
 
 @media (max-width: 800px) {
   .main-wrapper {
-    margin-left: 0; } }
+    margin-left: 0;
+    margin-bottom: 1000px; } }
 
 @media (max-width: 640px) {
   .col-2, .col-3, .col-side, .col-spread {
@@ -1477,11 +1478,7 @@ section.team {
 section.projects {
   padding: 0;
   color: white;
-  background-color: #b5cb95;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
+  background-color: #b5cb95; }
   section.projects .projects-wrap {
     padding: 3rem 0; }
     section.projects .projects-wrap .col-full {
@@ -1494,7 +1491,7 @@ section.projects {
       margin: 0; } }
 
 section.participate {
-  background-color: white;
+  background-color: #fff;
   min-height: 600px;
   color: #444; }
   section.participate .col-spread {
@@ -1769,4 +1766,7 @@ footer {
       color: #777; }
   @media (max-width: 800px) {
     footer {
-      left: 0px; } }
+      left: 0px;
+      display: block; }
+      footer .footer-wrapper .footer-lists {
+        display: block; } }

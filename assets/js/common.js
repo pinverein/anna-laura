@@ -13,7 +13,6 @@
 
   toggleMobileNews = function() {
     $('.toggle-news').on('click', function() {
-      console.log('hahaha');
       var $this = $(this);
       $this.toggleClass('is-active');
       $('.news-box').toggleClass('is-active');
@@ -31,19 +30,19 @@
     }
   };
 
-  scrollBackground = function() {
-    var wScroll = $(window).scrollTop(),
-        bgElementParticipate = $('.col--participate'),
-        bgElementDonate = $('.col--donate'),
-        bgTop = $('section.participate .col-1').offset().top;
-
-    bgElementParticipate.css({'background-position': (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
-
-    bgElementDonate.css({'background-position': '-'+ (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
+  // scrollBackground = function() {
+  //   var wScroll = $(window).scrollTop(),
+  //       bgElementParticipate = $('.col--participate'),
+  //       bgElementDonate = $('.col--donate'),
+  //       bgTop = $('section.participate .col-1').offset().top;
+  //
+  //   bgElementParticipate.css({'background-position': (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
+  //
+  //   bgElementDonate.css({'background-position': '-'+ (wScroll / 6) + 'px, '+ (wScroll + bgTop) / 5 +'px'});
 
     // launchingElements(wScroll);
 
-  };
+  // };
 
   $.mark = {
     jump: function (options) {
