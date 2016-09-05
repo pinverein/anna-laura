@@ -1390,7 +1390,7 @@ section.startscreen {
         padding: 1rem; } }
 
 section.team {
-  background: #c4d5aa; }
+  background: white; }
   section.team .col-spread {
     padding: 0; }
   section.team .team-member-box {
@@ -1401,7 +1401,7 @@ section.team {
       section.team .team-member-box .team-member .member-content {
         margin: 0;
         background: rgba(255, 255, 255, 0);
-        padding: 1rem 3rem;
+        padding: 0rem 3rem 1rem;
         position: relative; }
         section.team .team-member-box .team-member .member-content h2 {
           font-family: 'Open Sans';
