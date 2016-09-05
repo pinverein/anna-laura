@@ -1,6 +1,6 @@
 section.team
-  // background:
-  +linear-gradient(to bottom right, lighten($brand-color, 6%), lighten($brand-color, 36%), lighten($brand-color, 6%))
+  background: tint($bg-alt-color, 20%)
+  // +linear-gradient(to bottom right, lighten($brand-color, 6%), lighten($brand-color, 36%), lighten($brand-color, 6%))
 
 
   .col-spread
@@ -20,25 +20,25 @@ section.team
 
       .member-content
         margin: 0
-        border: 1px solid #aaa
+        // border: 1px solid #fff
         // border-radius: 3px
         // box-shadow: 0 8px 0px rgba($highlight-color, .4)
-        background: $white
+        background: rgba($white, 0)
         padding: 1rem 3rem
         position: relative
 
         h2
           font:
-            family: 'Oswald'
-            size: 1.8rem
-            weight: lighten
-          letter-spacing: .12rem
+            family: 'Open Sans'
+            size: 1.5rem
+            weight: 700
+          // letter-spacing: .06rem
           display: block
           border-bottom: 1px solid rgba($silver, .5)
           box-shadow: 0px 1px 0px lighten($silver, 15%)
 
         p
-          color: #666
+          color: #333
 
     .sub-box
       display: flex

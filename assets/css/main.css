@@ -456,7 +456,7 @@ a {
   background-color: #f6f6f6;
   border: 1px solid gainsboro;
   border-radius: 3px;
-  box-shadow: 0 2px 4px #9dba73;
+  box-shadow: 0 2px 4px #b3b3b3;
   cursor: pointer;
   -ms-flex-preferred-size: 15em;
       flex-basis: 15em;
@@ -821,9 +821,9 @@ p {
           max-width: 100px;
           float: right;
           padding: 4px 8px;
-          box-shadow: 0px 0px 0px 1px #00b35c;
+          box-shadow: 0px 0px 0px 1px #4db6ac;
           background: white;
-          color: #00b35c;
+          color: #4db6ac;
           -webkit-transform-origin: right;
                   transform-origin: right;
           -webkit-transition: all 200ms ease-in-out;
@@ -833,8 +833,8 @@ p {
           width: auto;
           text-align: center; }
           .home-wrap .site-nav .link-list li .scroll-on-page-link.donate:hover {
-            box-shadow: 0px 0px 1px 1px #00b35c;
-            background: #00E676;
+            box-shadow: 0px 0px 1px 1px #3c948b;
+            background: #4DB6AC;
             color: white; }
         .home-wrap .site-nav .link-list li .scroll-on-page-link .fa-gift {
           display: block;
@@ -1221,9 +1221,9 @@ section.startscreen {
     .news-wrapper .news-box .news-item {
       text-align: right;
       font-size: .9rem;
-      color: #ccc; }
+      color: #777; }
       .news-wrapper .news-box .news-item:hover {
-        color: #666; }
+        color: #444; }
       .news-wrapper .news-box .news-item .news-title, .news-wrapper .news-box .news-item .news-date, .news-wrapper .news-box .news-item .news-content {
         font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace; }
         .news-wrapper .news-box .news-item .news-title p, .news-wrapper .news-box .news-item .news-date p, .news-wrapper .news-box .news-item .news-content p {
@@ -1290,7 +1290,7 @@ section.startscreen {
     margin: -6rem 1rem 0; } }
 
 .section-about {
-  background: #4DB6AC;
+  background: #92b2a5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1324,7 +1324,7 @@ section.startscreen {
     overflow: hidden; }
     .section-about #about-block .block {
       display: none;
-      background: #4DB6AC;
+      background: #92b2a5;
       position: relative; }
       .section-about #about-block .block:before {
         content: '';
@@ -1390,9 +1390,7 @@ section.startscreen {
         padding: 1rem; } }
 
 section.team {
-  background-color: #e2b035;
-  background-image: -webkit-linear-gradient(top left, #e2b035, #f5e5bb, #e2b035);
-  background-image: linear-gradient(to bottom right,#e2b035, #f5e5bb, #e2b035); }
+  background: #c4d5aa; }
   section.team .col-spread {
     padding: 0; }
   section.team .team-member-box {
@@ -1402,20 +1400,18 @@ section.team {
       margin: 0 1rem; }
       section.team .team-member-box .team-member .member-content {
         margin: 0;
-        border: 1px solid #aaa;
-        background: #fff;
+        background: rgba(255, 255, 255, 0);
         padding: 1rem 3rem;
         position: relative; }
         section.team .team-member-box .team-member .member-content h2 {
-          font-family: 'Oswald';
-          font-size: 1.8rem;
-          font-weight: lighten;
-          letter-spacing: .12rem;
+          font-family: 'Open Sans';
+          font-size: 1.5rem;
+          font-weight: 700;
           display: block;
           border-bottom: 1px solid rgba(221, 221, 221, 0.5);
           box-shadow: 0px 1px 0px white; }
         section.team .team-member-box .team-member .member-content p {
-          color: #666; }
+          color: #333; }
     section.team .team-member-box .sub-box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1471,8 +1467,12 @@ section.team {
 
 section.projects {
   padding: 0;
-  color: white;
-  background-color: #b5cb95; }
+  color: #555;
+  background-color: #e8e4c5; }
+  section.projects a {
+    color: #4DB6AC; }
+    section.projects a:hover {
+      color: #daa41f; }
   section.projects .projects-wrap {
     padding: 3rem 0; }
     section.projects .projects-wrap .col-full {
@@ -1500,6 +1500,7 @@ section.participate {
     position: relative;
     border: 2px solid #eee;
     margin-bottom: 1rem;
+    background: white;
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
     section.participate .col-1.col--participate {
@@ -1568,7 +1569,7 @@ section.donate {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(0, 128, 66, 0.9); }
+      background: rgba(218, 164, 31, 0.8); }
     section.donate .donate-wrapper .col-spread {
       z-index: 2;
       color: white;
@@ -1617,7 +1618,7 @@ section.donate {
               font-size: 1rem; } }
 
 section.newsletter {
-  background-color: #5793b2; }
+  background-color: #79a9c1; }
   section.newsletter .input-group {
     display: -webkit-box;
     display: -ms-flexbox;
