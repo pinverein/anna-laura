@@ -1701,13 +1701,17 @@ section.team {
         padding: .6rem 1rem; } }
 
 section.network {
-  background: #b0c7be;
-  padding: 2rem; }
+  background-image: url(../img/network-bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  color: white; }
   section.network .list-wrapper {
     margin: 3rem 0 0;
     padding: 1rem 2rem;
-    border: 1px solid #ddd;
-    background: rgba(255, 255, 255, 0.2); }
+    background: rgba(255, 255, 255, 0.3); }
+    section.network .list-wrapper h2 {
+      color: #444; }
   section.network .network-list {
     list-style: none;
     padding: 0; }
