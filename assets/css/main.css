@@ -653,9 +653,15 @@ a {
 .col-full {
   margin: 0 2.5rem; }
 
-.col-spread {
+.col-lead {
   max-width: 680px;
   margin: 0 2.5rem; }
+
+.col-spread {
+  max-width: 680px;
+  text-align: center;
+  margin: 0 auto 2rem;
+  padding: 0 2rem; }
 
 .col-3 {
   max-width: 32%;
@@ -1304,7 +1310,7 @@ section.startscreen {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .section-about .col-spread {
+  .section-about .col-lead {
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
   .section-about .title-text {
@@ -1391,84 +1397,6 @@ section.startscreen {
     @media (max-width: 640px) {
       .section-about #about-block .col-spread {
         padding: 1rem; } }
-
-section.team {
-  background: white; }
-  section.team .col-spread {
-    padding: 0; }
-  section.team .team-member-box {
-    max-width: 980px;
-    margin: 3rem auto; }
-    section.team .team-member-box .team-member {
-      margin: 0 1rem; }
-      section.team .team-member-box .team-member .member-content {
-        margin: 0;
-        background: rgba(255, 255, 255, 0);
-        padding: 0rem 3rem 1rem;
-        position: relative; }
-        section.team .team-member-box .team-member .member-content h2 {
-          font-family: 'Open Sans';
-          font-size: 1.5rem;
-          font-weight: 700;
-          display: block;
-          border-bottom: 1px solid rgba(221, 221, 221, 0.5);
-          box-shadow: 0px 1px 0px white; }
-        section.team .team-member-box .team-member .member-content p {
-          color: #333; }
-    section.team .team-member-box .sub-box {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      section.team .team-member-box .sub-box .member-column {
-        padding: 0 2rem;
-        border-right: 1px solid rgba(221, 221, 221, 0.5); }
-        section.team .team-member-box .sub-box .member-column:last-child {
-          border-right: none; }
-        section.team .team-member-box .sub-box .member-column h2 {
-          margin: 0;
-          border-bottom: none;
-          box-shadow: none; }
-        section.team .team-member-box .sub-box .member-column h3 {
-          margin-bottom: 0;
-          color: #333; }
-        section.team .team-member-box .sub-box .member-column p {
-          margin-top: 0;
-          color: #666; }
-  @media (max-width: 1024px) {
-    section.team .team-member-box {
-      display: block; }
-      section.team .team-member-box .team-member {
-        margin: 3rem; } }
-  @media (max-width: 580px) {
-    section.team .team-member-box .team-member {
-      margin: 1rem; }
-      section.team .team-member-box .team-member .member-content {
-        margin: 0;
-        padding: 1rem 2rem; } }
-  @media (max-width: 500px) {
-    section.team .team-member-box .sub-box {
-      display: block; }
-      section.team .team-member-box .sub-box .member-column {
-        text-align: center;
-        border-right: none;
-        border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
-        section.team .team-member-box .sub-box .member-column:last-child {
-          border-bottom: none; }
-        section.team .team-member-box .sub-box .member-column h2 {
-          margin: 1rem 0; } }
-  @media (max-width: 400px) {
-    section.team .team-member-box .team-member {
-      margin: 1rem .3rem; }
-      section.team .team-member-box .team-member .member-content {
-        margin: 0;
-        padding: .6rem 1rem; } }
 
 section.projects {
   padding: 0;
@@ -1584,7 +1512,7 @@ section.donate {
         color: #555;
         text-align: center; }
       section.donate .donate-wrapper .col-spread .donate-info-box {
-        max-width: 350px;
+        max-width: 380px;
         margin: 3rem auto;
         border-radius: 1rem;
         box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
@@ -1624,6 +1552,8 @@ section.donate {
 
 section.newsletter {
   background-color: #79a9c1; }
+  section.newsletter .col-spread {
+    max-width: 700px; }
   section.newsletter .input-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1657,7 +1587,7 @@ section.newsletter {
       outline: none; }
     section.newsletter input[type='text'], section.newsletter input[type='email'] {
       font-size: 1.2rem;
-      padding: 0 10px;
+      padding: 0 .7rem;
       color: white; }
     section.newsletter input[type='submit'] {
       -webkit-box-flex: 1;
@@ -1666,13 +1596,13 @@ section.newsletter {
       font-size: 1.6rem;
       background-color: white;
       color: #daa41f;
-      padding: 0 15px;
+      padding: 0 1rem;
       cursor: pointer; }
   section.newsletter label {
     position: absolute;
     font-size: .8rem;
     color: white;
-    left: 10px; }
+    left: .7rem; }
   section.newsletter .title-text {
     margin-top: 0;
     color: white; }
@@ -1691,6 +1621,96 @@ section.newsletter {
   @media (max-width: 400px) {
     section.newsletter .input-group {
       margin: 3rem 0; } }
+
+section.team {
+  background: white; }
+  section.team .col-spread {
+    padding: 0; }
+  section.team .team-member-box {
+    max-width: 980px;
+    margin: 3rem auto; }
+    section.team .team-member-box .team-member {
+      margin: 0 1rem; }
+      section.team .team-member-box .team-member .member-content {
+        margin: 0;
+        background: rgba(255, 255, 255, 0);
+        padding: 0rem 3rem 1rem;
+        position: relative; }
+        section.team .team-member-box .team-member .member-content h2 {
+          font-family: 'Open Sans';
+          font-size: 1.5rem;
+          font-weight: 700;
+          display: block;
+          border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+          box-shadow: 0px 1px 0px white; }
+        section.team .team-member-box .team-member .member-content p {
+          color: #333; }
+    section.team .team-member-box .sub-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      section.team .team-member-box .sub-box .member-column {
+        padding: 0 2rem;
+        border-right: 1px solid rgba(221, 221, 221, 0.5); }
+        section.team .team-member-box .sub-box .member-column:last-child {
+          border-right: none; }
+        section.team .team-member-box .sub-box .member-column h2 {
+          margin: 0;
+          border-bottom: none;
+          box-shadow: none; }
+        section.team .team-member-box .sub-box .member-column h3 {
+          margin-bottom: 0;
+          color: #333; }
+        section.team .team-member-box .sub-box .member-column p {
+          margin-top: 0;
+          color: #666; }
+  @media (max-width: 1024px) {
+    section.team .team-member-box {
+      display: block; }
+      section.team .team-member-box .team-member {
+        margin: 3rem; } }
+  @media (max-width: 580px) {
+    section.team .team-member-box .team-member {
+      margin: 1rem; }
+      section.team .team-member-box .team-member .member-content {
+        margin: 0;
+        padding: 1rem 2rem; } }
+  @media (max-width: 500px) {
+    section.team .team-member-box .sub-box {
+      display: block; }
+      section.team .team-member-box .sub-box .member-column {
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid rgba(221, 221, 221, 0.5); }
+        section.team .team-member-box .sub-box .member-column:last-child {
+          border-bottom: none; }
+        section.team .team-member-box .sub-box .member-column h2 {
+          margin: 1rem 0; } }
+  @media (max-width: 400px) {
+    section.team .team-member-box .team-member {
+      margin: 1rem .3rem; }
+      section.team .team-member-box .team-member .member-content {
+        margin: 0;
+        padding: .6rem 1rem; } }
+
+section.network {
+  background: #b0c7be;
+  padding: 2rem; }
+  section.network .list-wrapper {
+    margin: 3rem 0 0;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.2); }
+  section.network .network-list {
+    list-style: none;
+    padding: 0; }
 
 section.contact {
   background: #4DB6AC;

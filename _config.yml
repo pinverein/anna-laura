@@ -2,7 +2,7 @@ name: pin
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-baseurl: '/pin' # /pin 
+baseurl: '/pin' # /pin
 
 future: true
 # index:
@@ -41,6 +41,10 @@ nav:
       title: Team
       href: team
 
+    - ref: network
+      title: Netzwerk
+      href: network
+
     - ref: contact
       title: Kontakt
       href: contact
@@ -73,6 +77,10 @@ nav:
     - ref: team
       title: Team
       href: team
+
+    - ref: network
+      title: Network
+      href: network
 
     - ref: contact
       title: Contact

@@ -5,6 +5,9 @@ section.newsletter
     // size: cover
     color: tint($color-bg-newsletter, 20%)
 
+  .col-spread
+    max-width: 700px
+
   .input-group
     display: flex
     flex-direction: row
@@ -41,7 +44,7 @@ section.newsletter
     &[type='text'],
     &[type='email']
       font-size: 1.2rem
-      padding: 0 10px
+      padding: 0 .7rem
       color: white
 
     &[type='submit']
@@ -49,14 +52,14 @@ section.newsletter
       font-size: 1.6rem
       background-color: white
       color: $brand-color
-      padding: 0 15px
+      padding: 0 1rem
       cursor: pointer
 
   label
     position: absolute
     font-size: .8rem
     color: white
-    left: 10px
+    left: .7rem
 
   .title-text
     margin-top: 0
