@@ -1332,17 +1332,19 @@ section.startscreen {
       right: 0;
       overflow: scroll;
       width: 100%;
-      opacity: 1;
       padding: 2rem 1rem;
       opacity: 0;
+      pointer-events: none;
       -webkit-transition: all 200ms ease-in-out;
               transition: all 200ms ease-in-out; }
       .news-wrapper .news-box.is-active {
-        opacity: 1; }
+        opacity: 1;
+        pointer-events: auto; }
       .news-wrapper .news-box .news-item {
         text-align: left;
         color: #666 !important;
         border-bottom: 1px solid #ddd;
+        z-index: 1000000;
         margin-bottom: .5rem; }
         .news-wrapper .news-box .news-item h3:first-child {
           margin-top: 0; }

@@ -1,5 +1,53 @@
 (function ($) {
+
+  var cookie = readCookie('language');
+
+  if (cookie !== null) {
+    // window.location.href = cookie;
+  }
+
   var clickToActivate;
+
+    // COOKIES!
+
+  function createCookie(name, value, days, href) {
+  	if (days) {
+  		var date = new Date();
+  		date.setTime(date.getTime()+(days*24*60*60*1000));
+  		var expires = "; expires="+date.toGMTString();
+  	}
+  	else var expires = "";
+  	document.cookie = name+"="+value+expires+"; path=/";
+    // window.location.href = href;
+  }
+
+  function readCookie(name) {
+  	var nameEQ = name + "=";
+  	var ca = document.cookie.split(';');
+  	for(var i=0;i < ca.length;i++) {
+  		var c = ca[i];
+  		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+  		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  	}
+  	return null;
+  }
+
+  function eraseCookie(name) {
+  	createCookie(name,"",-1);
+  }
+
+  function setCookie() {
+    return $('.lang-link').on('click', function(e) {
+      var $this = $(this),
+          cookieValue = $this.attr('href');
+      console.log(cookieValue);
+      // e.preventDefault();
+
+      createCookie('language', cookieValue, 50, $this.attr('href'));
+
+    });
+  }
+
 
   toggleMobileMenu = function() {
     $('.mobile-nav-toggle').on('click', function() {
@@ -105,6 +153,9 @@
     $.mark.jump();
     toggleMobileMenu();
     toggleMobileNews();
+    setCookie();
+
+    console.log(readCookie('language'));
 
     $('.about-cta').click(function(){
       $('.block--about').toggleClass('is-open');

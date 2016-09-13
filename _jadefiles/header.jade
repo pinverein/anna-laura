@@ -4,7 +4,7 @@ mixin nav-content()
 		{% for lang in languages %}
 		{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}
 
-		li: a(class='{{has_class}}' href='{{site.baseurl}}/{{lang.index}}') {{lang.language}} 
+		li: a(class='lang-link {{has_class}}' href='{{site.baseurl}}/{{lang.index}}') {{lang.language}} 
 		
 		{% endfor %}
 		
