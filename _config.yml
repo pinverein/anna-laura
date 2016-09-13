@@ -15,6 +15,12 @@ date-style:
   - language: en
     format: "%Y-%m-%d"
 
+read-more:
+  - language: de
+    phrase: "Details anzeigen"
+  - language: en
+    phrase: "Show details"
+
 nav:
 # de
  - language: de

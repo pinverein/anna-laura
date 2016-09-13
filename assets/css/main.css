@@ -454,9 +454,8 @@ a {
 
 .card {
   background-color: #f6f6f6;
-  border: 1px solid gainsboro;
   border-radius: 3px;
-  box-shadow: 0 2px 4px #b3b3b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   -ms-flex-preferred-size: 15em;
       flex-basis: 15em;
@@ -491,7 +490,7 @@ a {
   .card .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;
-    padding: 0.75em 0.75em; }
+    padding: 1.5em 1.5em; }
     .card .card-copy p {
       margin: 0 0 0.75em; }
   .card:focus, .card:hover {
@@ -1441,6 +1440,11 @@ section.projects {
       max-width: 920px; }
     section.projects .projects-wrap .col-spread {
       margin-bottom: 2rem; }
+    section.projects .projects-wrap .read-more {
+      text-align: center;
+      color: #bbb;
+      text-decoration: underline;
+      margin-bottom: .6rem; }
   @media (max-width: 800px) {
     section.projects .col-full {
       margin: 0; } }

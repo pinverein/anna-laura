@@ -22,9 +22,9 @@
   $card-image-hover-color: lighten($brand-color, 20%)
 
   background-color: $card-background
-  border: $card-border
+  // border: $card-border
   border-radius: $base-border-radius
-  box-shadow: 0 2px 4px darken($base-background-color, 10%)
+  box-shadow: 0 2px 4px rgba(black, .2)
   cursor: pointer
   flex-basis: 15em
   flex-grow: 1
@@ -59,7 +59,7 @@
   .card-copy
     font-size: 0.9em
     line-height: 1.5em
-    padding: ($base-spacing / 2) ($base-spacing / 2)
+    padding: ($base-spacing) ($base-spacing)
 
     p
       margin: 0 0 ($base-spacing / 2)

@@ -26,7 +26,7 @@ section.projects#projects
           
           {% assign posts = site.posts | where:'categories', 'projects' %}
           {% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
-          
+          {% assign read-more=site.read-more | where:'language', page.language | first %}
           {% for post in lang_posts %}
           
           .card
@@ -39,7 +39,13 @@ section.projects#projects
                  
             .card-copy
               div 
-                {{ post.content }}          
+                {{ post.excerpt }}
+                
+              .read-more
+                {{ read-more.phrase }}
+              
+              .card-footer
+                {{ post.footer }}   
           {% endfor %}
                
           
