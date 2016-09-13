@@ -49,7 +49,7 @@
       height: 1px
       @include linear-gradient(to left, #ddd, white)
       opacity: 0
-      animation: langFade 400ms 800ms ease-in-out forwards
+      animation: langFade 120ms 700ms ease-in-out forwards
 
 
     ul
@@ -68,7 +68,7 @@
       display: flex
       justify-content: flex-end
       opacity: 0
-      animation: langFade 400ms 600ms ease-in-out forwards
+      animation: langFade 120ms 600ms ease-in-out forwards
       @keyframes langFade
         0%
           transform: translateX(-30px)
@@ -132,8 +132,8 @@
           &:nth-child(#{$i})
             animation:
               name: fadeIn
-              duration: 300ms
-              delay: 1100ms + (100ms * $i - 300)
+              duration: 120ms
+              delay: 800ms + (100ms * $i - 100)
               timing-function: ease-in-out
               fill-mode: forwards
 
@@ -173,7 +173,7 @@
           animation:
             name: fadeInIcons
             duration: 500ms
-            delay: 2200ms + (100ms * $i - 300)
+            delay: 1600ms + (100ms * $i - 300)
             timing-function: ease-in-out
             fill-mode: forwards
 

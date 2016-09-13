@@ -52,7 +52,25 @@ section.startscreen
   width: 240px
   padding-right: 2rem
   color: #aaa
+  transform-origin: top right
+  opacity: 0
   // overflow: scroll
+
+  animation: newsFade 1600ms 1400ms ease-in-out forwards
+
+  @keyframes newsFade
+    0%
+      transform: translateY(-10%) rotateZ(-90deg) scale(0)
+      opacity: 0
+
+    80%
+      transform: translateY(0%) rotateZ(6deg) scale(1)
+      opacity: 1
+
+    100%
+      transform: translateY(0%) rotateZ(0deg) scale(1)
+      opacity: 1
+
   @media (max-width: 930px)
     width: 200px
 
@@ -131,14 +149,14 @@ section.startscreen
       line-height: 72px
 
     .news-box
-      background: white
+      +linear-gradient(to bottom, white, lighten($bg-yellowgrey, 10%) 10%)
       border-bottom: 1px solid #ddd
-      box-shadow: 0px 18px 10px rgba(black, .1)
+      box-shadow: 0px 6px 15px rgba(black, .1)
       position: absolute
-      top: 78px
+      top: 50px
       left: 0
       right: 0
-      bottom: 0
+      // bottom: 0
       overflow: scroll
       width: 100%
       opacity: 1
@@ -154,7 +172,8 @@ section.startscreen
       .news-item
         text-align: left
         color: #666 !important
-
+        border-bottom: 1px solid #ddd
+        margin-bottom: .5rem
         h3:first-child
           margin-top: 0
 
