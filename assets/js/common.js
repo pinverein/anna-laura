@@ -82,7 +82,7 @@
         var offset = $(target).offset().top;
         $('.link--active').removeClass('link--active');
         jumpobj.addClass('link--active');
-        clickToActivate = true
+        clickToActivate = true;
         console.log(clickToActivate);
         $('html,body').animate({
           scrollTop: offset

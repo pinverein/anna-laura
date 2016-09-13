@@ -2,61 +2,18 @@
 footer
   background: black
   color: white
-  padding: 2rem 0
+  padding: 3rem 1rem 2rem
   position: fixed
   bottom: 0
   right: 0
   // width: 100%
   left: 200px
-  display: flex
-  flex-direction: row
-  // justify-content: space-between
-  // align-items: center
+  // display: flex
+  // flex-direction: row
 
+  @media(max-width: 800px)
+    left: 0
 
   .footer-wrapper
     text-align: center
-    width: 720px
-    margin: 0 auto
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    align-items: center
-    position: relative
-
-    // @include outer-container
-
-    .footer-lists
-      width: 100%
-      display: flex
-      flex-direction: row
-      justify-content: space-around
-      align-items: flex-start
-
-      .footer-content
-        max-width: 200px
-        margin: 0 1rem
-        // @include span-columns(4)
-
-        ul
-          list-style: none
-          padding: 0
-          text-align: left
-          font-size: 1.3rem
-          li
-            font-size: .9rem
-            color: #888
-            a
-              color: lighten($aqua, 2%)
-              &:hover
-                color: $brand-color
-    .footer-base
-      font-style: italic
-      color: #777
-  @media (max-width: 800px)
-    left: 0px
-    display: block
-
-    .footer-wrapper
-      .footer-lists
-        display: block
+    color: #777

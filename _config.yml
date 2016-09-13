@@ -39,6 +39,10 @@ nav:
       title: Mitmachen
       href: participate
 
+    - ref: network
+      title: Netzwerk
+      href: network
+
     - ref: newsletter
       title: Newsletter
       href: newsletter
@@ -46,10 +50,6 @@ nav:
     - ref: team
       title: Team
       href: team
-
-    - ref: network
-      title: Netzwerk
-      href: network
 
     - ref: contact
       title: Kontakt
@@ -76,6 +76,10 @@ nav:
       title: Participate
       href: participate
 
+    - ref: network
+      title: Network
+      href: network
+
     - ref: newsletter
       title: Newsletter
       href: newsletter
@@ -83,10 +87,6 @@ nav:
     - ref: team
       title: Team
       href: team
-
-    - ref: network
-      title: Network
-      href: network
 
     - ref: contact
       title: Contact

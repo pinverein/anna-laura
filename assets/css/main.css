@@ -603,7 +603,7 @@ a {
       -ms-flex: 1;
           flex: 1;
   position: relative;
-  margin-bottom: 272px;
+  margin-bottom: 175px;
   margin-left: 200px;
   z-index: 2;
   background: white; }
@@ -683,7 +683,7 @@ a {
 @media (max-width: 800px) {
   .main-wrapper {
     margin-left: 0;
-    margin-bottom: 1000px; } }
+    margin-bottom: 175px; } }
 
 @media (max-width: 640px) {
   .col-2, .col-3, .col-side, .col-spread {
@@ -1256,8 +1256,7 @@ section.startscreen {
     .news-wrapper {
       width: 200px; } }
   .news-wrapper h2 {
-    text-align: right;
-    cursor: pointer; }
+    text-align: right; }
   .news-wrapper .news-box {
     font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
     -webkit-transition: all 0.15s ease-out 0s;
@@ -1271,9 +1270,13 @@ section.startscreen {
       .news-wrapper .news-box .news-item .news-title, .news-wrapper .news-box .news-item .news-date, .news-wrapper .news-box .news-item .news-content {
         font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace; }
         .news-wrapper .news-box .news-item .news-title p, .news-wrapper .news-box .news-item .news-date p, .news-wrapper .news-box .news-item .news-content p {
+          font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
           line-height: 1.1rem; }
+      .news-wrapper .news-box .news-item .read-more {
+        font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+        color: #aaa; }
       .news-wrapper .news-box .news-item .news-title {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         margin-bottom: 0; }
       .news-wrapper .news-box .news-item .news-date {
@@ -1771,70 +1774,14 @@ section.contact {
 footer {
   background: black;
   color: white;
-  padding: 2rem 0;
+  padding: 3rem 1rem 2rem;
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  footer .footer-wrapper {
-    text-align: center;
-    width: 720px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative; }
-    footer .footer-wrapper .footer-lists {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
-      footer .footer-wrapper .footer-lists .footer-content {
-        max-width: 200px;
-        margin: 0 1rem; }
-        footer .footer-wrapper .footer-lists .footer-content ul {
-          list-style: none;
-          padding: 0;
-          text-align: left;
-          font-size: 1.3rem; }
-          footer .footer-wrapper .footer-lists .footer-content ul li {
-            font-size: .9rem;
-            color: #888; }
-            footer .footer-wrapper .footer-lists .footer-content ul li a {
-              color: #89deff; }
-              footer .footer-wrapper .footer-lists .footer-content ul li a:hover {
-                color: #daa41f; }
-    footer .footer-wrapper .footer-base {
-      font-style: italic;
-      color: #777; }
+  left: 200px; }
   @media (max-width: 800px) {
     footer {
-      left: 0px;
-      display: block; }
-      footer .footer-wrapper .footer-lists {
-        display: block; } }
+      left: 0; } }
+  footer .footer-wrapper {
+    text-align: center;
+    color: #777; }
