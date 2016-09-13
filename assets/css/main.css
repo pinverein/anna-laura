@@ -1255,35 +1255,19 @@ section.startscreen {
   -webkit-transform-origin: top right;
           transform-origin: top right;
   opacity: 0;
-  -webkit-animation: newsFade 1600ms 1400ms ease-in-out forwards;
-          animation: newsFade 1600ms 1400ms ease-in-out forwards; }
+  -webkit-animation: newsFade 400ms 1800ms ease-in-out forwards;
+          animation: newsFade 400ms 1800ms ease-in-out forwards; }
 
 @-webkit-keyframes newsFade {
   0% {
-    -webkit-transform: translateY(-10%) rotateZ(-90deg) scale(0);
-            transform: translateY(-10%) rotateZ(-90deg) scale(0);
     opacity: 0; }
-  80% {
-    -webkit-transform: translateY(0%) rotateZ(6deg) scale(1);
-            transform: translateY(0%) rotateZ(6deg) scale(1);
-    opacity: 1; }
   100% {
-    -webkit-transform: translateY(0%) rotateZ(0deg) scale(1);
-            transform: translateY(0%) rotateZ(0deg) scale(1);
     opacity: 1; } }
 
 @keyframes newsFade {
   0% {
-    -webkit-transform: translateY(-10%) rotateZ(-90deg) scale(0);
-            transform: translateY(-10%) rotateZ(-90deg) scale(0);
     opacity: 0; }
-  80% {
-    -webkit-transform: translateY(0%) rotateZ(6deg) scale(1);
-            transform: translateY(0%) rotateZ(6deg) scale(1);
-    opacity: 1; }
   100% {
-    -webkit-transform: translateY(0%) rotateZ(0deg) scale(1);
-            transform: translateY(0%) rotateZ(0deg) scale(1);
     opacity: 1; } }
   @media (max-width: 930px) {
     .news-wrapper {
