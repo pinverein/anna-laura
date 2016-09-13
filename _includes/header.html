@@ -1,12 +1,12 @@
 <div class="mobile-nav"><ul class="language-list">{% assign languages = site.nav %}
 {% for lang in languages %}
-{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}<li><a href="{{lang.index}}" class="{{has_class}}">{{lang.language}} </a></li>{% endfor %}</ul><div class="nav-seperator"></div><ul class="link-list">{% assign navigation=site.nav | where:'language', page.language %}{% for nav in navigation %}
+{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}<li><a href="{{site.baseurl}}/{{lang.index}}" class="{{has_class}}">{{lang.language}} </a></li>{% endfor %}</ul><div class="nav-seperator"></div><ul class="link-list">{% assign navigation=site.nav | where:'language', page.language %}{% for nav in navigation %}
 {% for link in nav.links %}<li> <a href="#{{link.href}}" class="{{link.href}} scroll-on-page-link"> 
 {% if link.href=='donate' %}<i id="donate-icon" class="icon-gift"></i>{% endif %}
 {{link.title}}</a></li>{% endfor %}
 {% endfor %} </ul></div><header><div class="header-position"><a href="#start" class="scroll-on-page-link logo-link"><h1 class="logo logo--invisible">pin</h1></a><nav class="site-nav"><ul class="language-list">{% assign languages = site.nav %}
 {% for lang in languages %}
-{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}<li><a href="{{lang.index}}" class="{{has_class}}">{{lang.language}} </a></li>{% endfor %}</ul><div class="nav-seperator"></div><ul class="link-list">{% assign navigation=site.nav | where:'language', page.language %}{% for nav in navigation %}
+{% if lang.language == page.language %} {% assign has_class='language--active' %} {% else %} {% assign has_class='' %} {% endif %}<li><a href="{{site.baseurl}}/{{lang.index}}" class="{{has_class}}">{{lang.language}} </a></li>{% endfor %}</ul><div class="nav-seperator"></div><ul class="link-list">{% assign navigation=site.nav | where:'language', page.language %}{% for nav in navigation %}
 {% for link in nav.links %}<li> <a href="#{{link.href}}" class="{{link.href}} scroll-on-page-link"> 
 {% if link.href=='donate' %}<i id="donate-icon" class="icon-gift"></i>{% endif %}
 {{link.title}}</a></li>{% endfor %}
