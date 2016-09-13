@@ -1,4 +1,5 @@
 (function ($) {
+  var clickToActivate;
 
   toggleMobileMenu = function() {
     $('.mobile-nav-toggle').on('click', function() {
@@ -37,11 +38,13 @@
     $('.link-list li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.outerHeight() - 10 > scrollPos && clickToActivate !== true) {
+            // console.log(clickToActivate);
             $('.link-list li a').removeClass("link--active");
             currLink.addClass("link--active");
+            // console.log('ohla');
         }
-        else{
+        else if (clickToActivate !== true){
             currLink.removeClass("link--active");
         }
     });
@@ -79,9 +82,13 @@
         var offset = $(target).offset().top;
         $('.link--active').removeClass('link--active');
         jumpobj.addClass('link--active');
+        clickToActivate = true
+        console.log(clickToActivate);
         $('html,body').animate({
           scrollTop: offset
-        }, thespeed, 'swing');
+        }, thespeed, 'swing', function(){
+          setTimeout(function(){clickToActivate = false;}, 100);
+        });
         // e.preventDefault();
       });
     }

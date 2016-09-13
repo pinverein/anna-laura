@@ -839,7 +839,8 @@ p {
           cursor: pointer;
           font-weight: bold;
           width: auto;
-          text-align: center; }
+          text-align: center;
+          z-index: 5; }
           .home-wrap .site-nav .link-list li .scroll-on-page-link.donate:hover {
             box-shadow: 0px 0px 1px 1px #3c948b;
             background: #4DB6AC;
@@ -920,6 +921,17 @@ p {
                 animation-duration: 300ms;
         -webkit-animation-delay: 1500ms;
                 animation-delay: 1500ms;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; }
+      .home-wrap .site-nav .link-list li:nth-child(8) {
+        -webkit-animation-name: fadeIn;
+                animation-name: fadeIn;
+        -webkit-animation-duration: 300ms;
+                animation-duration: 300ms;
+        -webkit-animation-delay: 1600ms;
+                animation-delay: 1600ms;
         -webkit-animation-timing-function: ease-in-out;
                 animation-timing-function: ease-in-out;
         -webkit-animation-fill-mode: forwards;
