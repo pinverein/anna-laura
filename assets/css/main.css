@@ -1,5 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
-@import 'https://fonts.googleapis.com/css?family=Oswald:300,400|Ubuntu+Mono';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:300,400|Oswald:300,400';
 html {
   box-sizing: border-box; }
 
@@ -845,9 +844,10 @@ p {
             box-shadow: 0px 0px 1px 1px #3c948b;
             background: #4DB6AC;
             color: white; }
-        .home-wrap .site-nav .link-list li .scroll-on-page-link .fa-gift {
+        .home-wrap .site-nav .link-list li .scroll-on-page-link .icon-gift {
           display: block;
-          font-size: 2em; }
+          font-size: 2rem;
+          line-height: 2rem; }
       .home-wrap .site-nav .link-list li:nth-child(1) {
         -webkit-animation-name: fadeIn;
                 animation-name: fadeIn;
@@ -1275,7 +1275,7 @@ section.startscreen {
   .news-wrapper h2 {
     text-align: right; }
   .news-wrapper .news-box {
-    font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+    font-family: 'Roboto Condensed';
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
     .news-wrapper .news-box .news-item {
@@ -1285,12 +1285,12 @@ section.startscreen {
       .news-wrapper .news-box .news-item:hover {
         color: #444; }
       .news-wrapper .news-box .news-item .news-title, .news-wrapper .news-box .news-item .news-date, .news-wrapper .news-box .news-item .news-content {
-        font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace; }
+        font-family: 'Roboto Condensed'; }
         .news-wrapper .news-box .news-item .news-title p, .news-wrapper .news-box .news-item .news-date p, .news-wrapper .news-box .news-item .news-content p {
-          font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+          font-family: 'Roboto Condensed';
           line-height: 1.1rem; }
       .news-wrapper .news-box .news-item .read-more {
-        font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+        font-family: 'Roboto Condensed';
         color: #aaa; }
       .news-wrapper .news-box .news-item .news-title {
         font-size: 1.1rem;
