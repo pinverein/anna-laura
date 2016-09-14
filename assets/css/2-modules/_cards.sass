@@ -33,16 +33,24 @@
   transition: all 0.2s ease-in-out
 
   .card-image
-    background-color: $card-image-hover-color
+    background:
+
+      position: center !important
+      size: cover !important
+
     height: 150px
     max-height: 150px
     overflow: hidden
+    opacity: 1
 
-    img
-      @include border-top-radius($base-border-radius)
-      opacity: 1
-      transition: all 0.2s ease-in-out
-      width: 100%
+
+
+    // img
+    //   @include border-top-radius($base-border-radius)
+    //   opacity: 1
+    //   transition: all 0.2s ease-in-out
+    //   width: 100%
+    //   vertical-align: middle
 
 
 
@@ -70,7 +78,7 @@
   &:hover
     cursor: pointer
 
-    img
+    .card-image
       opacity: $card-image-hover-opacity
 
 

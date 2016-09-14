@@ -466,17 +466,12 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out; }
   .card .card-image {
-    background-color: #ebc974;
+    background-position: center !important;
+    background-size: cover !important;
     height: 150px;
     max-height: 150px;
-    overflow: hidden; }
-    .card .card-image img {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      opacity: 1;
-      -webkit-transition: all 0.2s ease-in-out;
-              transition: all 0.2s ease-in-out;
-      width: 100%; }
+    overflow: hidden;
+    opacity: 1; }
   .card .card-header {
     background-color: #f6f6f6;
     border-bottom: 1px solid gainsboro;
@@ -494,7 +489,7 @@ a {
       margin: 0 0 0.75em; }
   .card:focus, .card:hover {
     cursor: pointer; }
-    .card:focus img, .card:hover img {
+    .card:focus .card-image, .card:hover .card-image {
       opacity: 0.7; }
   .card:active {
     background-color: #f6f6f6; }
