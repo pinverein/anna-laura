@@ -107,6 +107,11 @@
     });
   };
 
+  activateProject = function(obj, id) {
+    var $this = $(obj);
+    $this.toggleClass('project--active');
+    // console.log();
+  };
 
   // scrollBackground = function() {
   //   var wScroll = $(window).scrollTop(),
@@ -164,7 +169,7 @@
     toggleMobileNews();
     setCookie();
 
-    
+
 
     $('.about-cta').click(function(){
       $('.block--about').toggleClass('is-open');

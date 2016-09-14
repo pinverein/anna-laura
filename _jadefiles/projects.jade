@@ -29,23 +29,49 @@ section.projects#projects
           {% assign read-more=site.read-more | where:'language', page.language | first %}
           {% for post in lang_posts %}
           
-          .card
-            .card-image(style='background: url({{ post.image }})')
-              //- img(src='{{ post.image }}', alt='')
+          .card(onclick='activateProject(this, {{post.projectID}})')
+            .card-background(style='background: url({{ post.image }})')
+            .card-short  
+              .card-image(style='background: url({{ post.image }})')
+                //- img(src='{{ post.image }}', alt='')
+                  
+              .card-header
+                .title-text.small {{ post.title }}
                 
-            .card-header
-              .title-text.small {{ post.title }}
-              
-                 
-            .card-copy
-              div 
-                {{ post.excerpt }}
-                
-              .read-more
-                {{ read-more.phrase }}
+                   
+              .card-copy
+                div 
+                  {{ post.excerpt }}
+                  
+                .read-more
+                  {{ read-more.phrase }}
               
               //- .card-footer
               //-   {{ post.footer }}   
+              
+            .project-item-full.card-long(id='{{post.projectID}}')
+              .project-content-wrapper
+                h1.title-text.lead {{post.title}}
+                
+                  
+                .project-content {{post.content}}
+                
+              
           {% endfor %}
                
-          
+  //-         
+  //- a(href='#{{ post.newsID }}').news-item-box.modal
+  //- 
+  //-   +news-item("{{post.title}}", "{{ post.date | date: date-style.format }}", "{{post.excerpt}}", "{{read-more.phrase}}")
+  //-    
+  //- .news-item-full.modal-inner(id='{{post.newsID}}')
+  //-   
+  //-   .modal-content-wrapper
+  //-     h1 {{post.title}}
+  //-     p.modal-intro {{ post.date | date: date-style.format }}
+  //-       
+  //-     .modal-content {{post.content}}
+  //-     
+  //-     
+  //-     a(href='#')
+  //-       .close-modal close
