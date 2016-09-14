@@ -109,6 +109,7 @@
 
   activateProject = function(obj, id) {
     var $this = $(obj);
+    $this.siblings().removeClass('project--active');
     $this.toggleClass('project--active');
     // console.log();
   };

@@ -29,7 +29,7 @@ section.projects#projects
           {% assign read-more=site.read-more | where:'language', page.language | first %}
           {% for post in lang_posts %}
           
-          .card(onclick='activateProject(this, {{post.projectID}})')
+          .card(onclick='activateProject(this)')
             .card-background(style='background: url({{ post.image }})')
             .card-short  
               .card-image(style='background: url({{ post.image }})')
@@ -49,7 +49,7 @@ section.projects#projects
               //- .card-footer
               //-   {{ post.footer }}   
               
-            .project-item-full.card-long(id='{{post.projectID}}')
+            .project-item-full.card-long()
               .project-content-wrapper
                 h1.title-text.lead {{post.title}}
                 

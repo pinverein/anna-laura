@@ -464,7 +464,8 @@ a {
   margin: 0 1em 1.5em 1em;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+          transition: all 0.2s ease-in-out;
+  height: 0%; }
   .card .card-background {
     opacity: 0;
     position: absolute;
@@ -472,7 +473,14 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: cover !important; }
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    border: 1px solid #bbb;
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat; }
     .card .card-background:after {
       content: '';
       position: absolute;
@@ -480,7 +488,7 @@ a {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.6); }
+      background: rgba(255, 255, 255, 0.8); }
   .card .card-long {
     color: #444;
     position: relative;
@@ -488,7 +496,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: .5rem 1rem;
+    padding: .8rem 1.6rem;
     display: none; }
     .card .card-long h1 {
       font-size: 1.3rem;
@@ -496,7 +504,6 @@ a {
     .card .card-long p {
       font-size: .9rem; }
   .card.project--active {
-    background-size: cover !important;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
     .card.project--active .card-background {
@@ -513,7 +520,9 @@ a {
     height: 150px;
     max-height: 150px;
     overflow: hidden;
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out; }
   .card .card-header {
     background-color: #f6f6f6;
     border-bottom: 1px solid gainsboro;
@@ -530,7 +539,8 @@ a {
     .card .card-copy p {
       margin: 0 0 0.75em; }
   .card:focus, .card:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); }
     .card:focus .card-image, .card:hover .card-image {
       opacity: 0.7; }
   .card:active {
