@@ -2,7 +2,16 @@
 
   var cookie = readCookie('language');
 
-  if (cookie !== null) {
+  if (cookie !== null && cookie != '/') {
+    console.log(window.location.href, cookie);
+    var currentLocation = window.location.href,
+        alreadyOnPage = currentLocation.indexOf(cookie) >= 0;
+
+    if (alreadyOnPage === false) {
+      window.location.href = cookie;
+    }
+
+    console.log(alreadyOnPage);
     // window.location.href = cookie;
   }
 
@@ -43,7 +52,7 @@
       console.log(cookieValue);
       // e.preventDefault();
 
-      createCookie('language', cookieValue, 50, $this.attr('href'));
+      createCookie('language', cookieValue, 360, $this.attr('href'));
 
     });
   }
