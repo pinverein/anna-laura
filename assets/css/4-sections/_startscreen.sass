@@ -80,38 +80,93 @@ section.startscreen
     +transition
 
 
+    .news-item-box
+      *
+        font-family: 'Roboto Condensed' !important
 
-    .news-item
-      text-align: right
-      // opacity: 0
-      font-size: .9rem
-      // border-bottom: 1px solid #eee
-      color: #777
 
-      &:hover
+      .news-item
+        text-align: right
+        // opacity: 0
+        font-size: .9rem
+        // border-bottom: 1px solid #eee
+        color: #777 !important
+
+        &:hover
+          color: #444 !important
+          cursor: pointer
+
+
+
+
+        .news-title, .news-date, .news-content
+          // font-family: 'Roboto Condensed' !important
+
+
+          p
+            // font-family: 'Roboto Condensed'
+            line-height: 1.1rem
+
+        .read-more
+          // font-family: 'Roboto Condensed'
+          color: #aaa
+
+
+        .news-title
+          font-size: 1.1rem
+          font-weight: bold
+          margin-bottom: 0
+
+        .news-date
+          margin-top: -.4rem
+          // font-style: italic
+
+      .news-item-full
         color: #444
 
-      .news-title, .news-date, .news-content
+@media (min-width: 801px)
+  .news-item-box
+
+    &.news--active
+
+      .news-item
+        // transform: scaleY(0)
+        // height: 0
+
+      .news-item-full
+
+        transform: translateX(-50%)
+        // height: auto
+
+    .news-item-full
+      border-left: 1px solid #ddd
+      padding: 1rem 2rem
+      background: #fafafa
+      box-shadow: -4px 0 16px rgba(black, .1)
+
+      // height: 0
+      transition: all 200ms ease-in-out
+      transform: translateX(100%)
+      transform-origin: right
+      width: 180%
+      +position(absolute, 0)
+
+      .close-button
+        position: absolute
+        top: 20px
+        right: 20px
+
+        a
+          font:
+            family: 'Helvetica Neue' !important
+            size: 3rem
+            weight: lighter
+          cursor: pointer
+          &:hover
+            color: black
+
+      *
         font-family: 'Roboto Condensed'
-
-
-        p
-          font-family: 'Roboto Condensed'
-          line-height: 1.1rem
-
-      .read-more
-        font-family: 'Roboto Condensed'
-        color: #aaa
-
-
-      .news-title
-        font-size: 1.1rem
-        font-weight: bold
-        margin-bottom: 0
-
-      .news-date
-        margin-top: -.4rem
-        // font-style: italic
 
 
 @media (max-width: 800px)
@@ -143,7 +198,7 @@ section.startscreen
       line-height: 72px
 
     .news-box
-      +linear-gradient(to bottom, white, lighten($bg-yellowgrey, 10%) 10%)
+      background: #fafafa
       border-bottom: 1px solid #ddd
       box-shadow: 0px 6px 15px rgba(black, .1)
       position: absolute
@@ -164,16 +219,50 @@ section.startscreen
         pointer-events: auto
 
       .news-item
-        text-align: left
+        text-align: left !important
         color: #666 !important
         border-bottom: 1px solid #ddd
         z-index: 1000000
         margin-bottom: .5rem
+        transition: all 200ms ease-in-out
         h3:first-child
           margin-top: 0
 
         .news-content
           font-size: 1rem
+
+      .news-item-box
+
+        &.news--active
+
+          .news-item
+
+            transform: scaleY(0)
+            height: 0
+
+          .news-item-full
+            transform: translateY(0%)
+            pointer-events: all
+
+            height: auto
+            opacity: 1
+
+        .news-item-full
+
+          transition: all 200ms ease-in-out
+
+          opacity: 0
+          height: 0
+          transform: translateY(-100%)
+          pointer-events: none
+          border-bottom: 1px solid #ddd
+          margin-bottom: .5rem
+
+          .close-button
+            display: none
+
+          p
+            color: #777 !important
 
 @media (max-width: 680px)
   .news-wrapper

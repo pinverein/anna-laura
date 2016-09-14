@@ -25,21 +25,21 @@ section.startscreen#start
           
         {% for post in lang_posts %}
         
-        a(href='#{{ post.newsID }}').news-item-box.modal
+        .news-item-box.news(onclick='showFullNews(this)')
         
           +news-item("{{post.title}}", "{{ post.date | date: date-style.format }}", "{{post.excerpt}}", "{{read-more.phrase}}")
            
-        .news-item-full.modal-inner(id='{{post.newsID}}')
-          
-          .modal-content-wrapper
-            h1 {{post.title}}
-            p.modal-intro {{ post.date | date: date-style.format }}
+          .news-item-full.news-inner
+            
+            .news-content-wrapper
+              h1 {{post.title}}
+              p.news-intro {{ post.date | date: date-style.format }}
+              .news-content {{post.content}}
               
-            .modal-content {{post.content}}
-            
-            
-            a(href='#')
-              .close-modal close
+              
+              .close-button 
+                a x
+              //-   .close-modal close
             
         {% endfor %}
     

@@ -107,7 +107,14 @@
     });
   };
 
-  activateProject = function(obj, id) {
+  showFullNews = function(obj) {
+    var $this = $(obj);
+    $this.siblings().removeClass('news--active');
+    $this.toggleClass('news--active');
+    // console.log();
+  };
+
+  activateProject = function(obj) {
     var $this = $(obj);
     $this.siblings().removeClass('project--active');
     $this.toggleClass('project--active');
