@@ -3,7 +3,7 @@
   var cookie = readCookie('language');
 
   if (cookie !== null && cookie != '/') {
-    console.log(window.location.href, cookie);
+
     var currentLocation = window.location.href,
         alreadyOnPage = currentLocation.indexOf(cookie) >= 0;
 
@@ -11,7 +11,7 @@
       window.location.href = cookie;
     }
 
-    console.log(alreadyOnPage);
+
     // window.location.href = cookie;
   }
 
@@ -49,7 +49,7 @@
     return $('.lang-link').on('click', function(e) {
       var $this = $(this),
           cookieValue = $this.attr('href');
-      console.log(cookieValue);
+      
       // e.preventDefault();
 
       createCookie('language', cookieValue, 360, $this.attr('href'));
