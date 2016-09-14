@@ -51,14 +51,14 @@
     &:after
       content: ''
       +position(absolute, 0)
-      background: rgba(white, .8)
+      background: rgba(white, .87)
 
   .card-short
     // background: rgba($card-background, .8)
     // display: none
 
   .card-long
-    color: #444
+    color: #000
     +position(relative, 0)
     padding: .8rem 1.6rem
     display: none
@@ -70,7 +70,10 @@
     p
       font-size: .9rem
 
-
+    ul
+      font-size: .9rem
+      list-style: circle
+      padding-left: 1.5rem
 
   &.project--active
     transform: rotateY(180deg)
@@ -106,10 +109,16 @@
     border-bottom: $card-border
     border-radius: $base-border-radius $base-border-radius 0 0
     font-weight: bold
-    line-height: 1.5em
+    line-height: 2.2rem
     padding: ($base-spacing / 3) ($base-spacing / 2)
     transition: all 0.2s ease-in-out
 
+    .title--project
+      text-transform: capitalize
+
+    .project-sub-title
+
+      text-align: center
 
   .card-copy
     font-size: 0.9em

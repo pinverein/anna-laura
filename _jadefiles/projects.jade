@@ -30,14 +30,15 @@ section.projects#projects
           {% for post in lang_posts %}
           
           .card(onclick='activateProject(this)')
-            .card-background(style='background: url({{site.baseurl}}/{{ post.image }})')
+            .card-background(style='background: url({{site.baseurl}}{{ post.image }})')
             .card-short  
-              .card-image(style='background: url({{site.baseurl}}/{{ post.image }})')
+              .card-image(style='background: url({{site.baseurl}}{{ post.image }})')
                 //- img(src='{{ post.image }}', alt='')
                   
               .card-header
-                .title-text.small {{ post.title }}
+                .title-text.small.title--project {{ post.title }}
                 
+                .project-sub-title.lead-text {{ post.subtitle }}
                    
               .card-copy
                 div 
@@ -46,13 +47,14 @@ section.projects#projects
                 .read-more
                   {{ read-more.phrase }}
               
-              //- .card-footer
-              //-   {{ post.footer }}   
+                .card-footer
+                  {{ post.footer }}   
               
             .project-item-full.card-long()
               .project-content-wrapper
                 h1.title-text.lead {{post.title}}
                 
+                .project-sub-title.lead-text {{ post.subtitle }}
                   
                 .project-content {{post.content}}
                 

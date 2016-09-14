@@ -116,8 +116,11 @@
 
   activateProject = function(obj) {
     var $this = $(obj);
+    // if (!$this.hasClass('project--active')){
+
     $this.siblings().removeClass('project--active');
     $this.toggleClass('project--active');
+    // }
     // console.log();
   };
 

@@ -488,9 +488,9 @@ a {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.8); }
+      background: rgba(255, 255, 255, 0.87); }
   .card .card-long {
-    color: #444;
+    color: #000;
     position: relative;
     top: 0;
     right: 0;
@@ -503,6 +503,10 @@ a {
       text-align: center; }
     .card .card-long p {
       font-size: .9rem; }
+    .card .card-long ul {
+      font-size: .9rem;
+      list-style: circle;
+      padding-left: 1.5rem; }
   .card.project--active {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
@@ -528,10 +532,14 @@ a {
     border-bottom: 1px solid gainsboro;
     border-radius: 3px 3px 0 0;
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 2.2rem;
     padding: 0.5em 0.75em;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out; }
+    .card .card-header .title--project {
+      text-transform: capitalize; }
+    .card .card-header .project-sub-title {
+      text-align: center; }
   .card .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;
@@ -1295,7 +1303,7 @@ section.startscreen {
   .news-item-box .news-item-full {
     border-left: 1px solid #ddd;
     padding: 1rem 2rem;
-    background: #fafafa;
+    background: #fff;
     box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 200ms ease-in-out;
             transition: all 200ms ease-in-out;
@@ -1345,9 +1353,9 @@ section.startscreen {
       z-index: 3;
       line-height: 72px; }
     .news-wrapper .news-box {
-      background: #fafafa;
+      background: #fff;
       border-bottom: 1px solid #ddd;
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 6px 15px -15px rgba(0, 0, 0, 0.1);
       position: absolute;
       top: 50px;
       left: 0;
