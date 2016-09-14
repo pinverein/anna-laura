@@ -49,7 +49,7 @@
     return $('.lang-link').on('click', function(e) {
       var $this = $(this),
           cookieValue = $this.attr('href');
-      
+
       // e.preventDefault();
 
       createCookie('language', cookieValue, 360, $this.attr('href'));
@@ -140,7 +140,7 @@
         $('.link--active').removeClass('link--active');
         jumpobj.addClass('link--active');
         clickToActivate = true;
-        console.log(clickToActivate);
+
         $('html,body').animate({
           scrollTop: offset
         }, thespeed, 'swing', function(){
@@ -164,7 +164,7 @@
     toggleMobileNews();
     setCookie();
 
-    console.log(readCookie('language'));
+    
 
     $('.about-cta').click(function(){
       $('.block--about').toggleClass('is-open');
