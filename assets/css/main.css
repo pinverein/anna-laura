@@ -1286,7 +1286,8 @@ section.startscreen {
     .news-wrapper {
       width: 200px; } }
   .news-wrapper h2 {
-    text-align: right; }
+    text-align: right;
+    font-size: 2rem; }
   .news-wrapper .news-box {
     font-family: 'Roboto Condensed';
     -webkit-transition: all 0.15s ease-out 0s;
