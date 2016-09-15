@@ -13,6 +13,6 @@ Dancing, especially Voguing, is conducive to strengthening our identities and to
 
 At the end of the semester Improper Walls and *pin* will host a “Finissage” to get together, reflect, dance and perform for friends and families.  
 
-**Where**: GB*10, Quellenstraße 149, 1100 Wien
-**When**: Tuesday, Oct 4th 2016 - Jan 31st 2017, 6:30pm-8:00pm
+**Where**: GB*10, Quellenstraße 149, 1100 Vienna  
+**When**: Tuesday, Oct 4th 2016 - Jan 31st 2017, 6:30pm-8:00pm  
 **Entry**: free of charge, only with pre-registration
