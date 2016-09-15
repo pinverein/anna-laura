@@ -13,4 +13,4 @@ There will be an info kick-off event on the **30th of September 2016**, where po
 
 **Where**: IMPROPER WALLS Galerie, Reindorfgasse 42, 1150 Wien  
 **When**: 30. September 2016, 18:00 - 21:00  
-**Entry** fee: for free / without registration  
+**Entry fee**: for free / without registration  
