@@ -1315,8 +1315,8 @@ section.startscreen {
 
 @media (min-width: 801px) {
   .news-item-box.news--active .news-item-full {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+    -webkit-transform: translateX(-62%);
+            transform: translateX(-62%); }
   .news-item-box .news-item-full {
     border-left: 1px solid #ddd;
     padding: 1rem 2rem;
@@ -1328,7 +1328,7 @@ section.startscreen {
             transform: translateX(100%);
     -webkit-transform-origin: right;
             transform-origin: right;
-    width: 180%;
+    width: 250%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1336,7 +1336,7 @@ section.startscreen {
     left: 0; }
     .news-item-box .news-item-full .close-button {
       position: absolute;
-      top: 20px;
+      top: 0px;
       right: 20px; }
       .news-item-box .news-item-full .close-button a {
         font-family: 'Helvetica Neue' !important;
