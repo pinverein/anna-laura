@@ -1740,7 +1740,8 @@ section.newsletter {
       background-color: white;
       color: #daa41f;
       padding: 0 1rem;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 0 !important; }
   section.newsletter label {
     position: absolute;
     font-size: .8rem;
