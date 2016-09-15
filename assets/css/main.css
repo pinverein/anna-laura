@@ -537,7 +537,7 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out; }
     .card .card-header .title--project {
-      text-transform: capitalize; }
+      text-transform: none; }
     .card .card-header .project-sub-title {
       text-align: center; }
   .card .card-copy {
