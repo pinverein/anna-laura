@@ -2,7 +2,7 @@ name: pin
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-baseurl: '' # /pin
+baseurl: '/pin' # /pin
 
 future: true
 # index:
