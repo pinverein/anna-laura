@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  'Tanzkurs: Voguing - Gegen Exklusion und Intoleranz'
+title:  'Dancing class: Voguing - Against Exclusion and Intolerance'
 language: en
 categories: news
 weight: 1
 newsID: 'news2'
 ---
 
-Anschließend an den Infoabend, startet der Voguing-Tanzkurs am 04.10.2016 und wird darauffolgend jeden Dienstag von 18:30-20:00 in den Räumlichkeiten der GB*10 in der Quellenstraße 149 stattfinden.
+After the info evening, the **Voguing dancing class** will start on the 4th of October 2016.  and following that the classes will continue every Tuesday from 18:30 to 20:00 at the premises of the GB*10, Quellenstraße 149.
 
-Tanzen, speziell Voguing, trägt zur Stärkung der eigenen Identität bei und dekonstruiert Intoleranz und Exklusion. Es wird sich eine 16-Personen Tanzgruppe (bestehend aus Mitgliedern von [Improper Walls](http://www.improperwalls.com) und *pin* sowie Personen mit Fluchterfahrung aus dem 10.Bezirk) zusammenfinden und über ein Semester (4.10.2016 - 31.01.2017) gemeinsam Tanzstunden bei Karin Cheng besuchen, um gemeinsam eigene sowie kollektive Identität, innerhalb eines sicheren Raumes ohne Intoleranz und Exklusion, zu stärken. Die Tanzstunden und Vorbereitung auf die Abschlussperformance werden für Teilnehmende **kostenfrei** sein.
+Dancing, especially Voguing, is conducive to strengthening our identities and to deconstruct intolerance and exclusion. A group of 16 people will come together (consisting of members of Improper Walls and *pin* and persons with experiences of displacement, living in the 10th district) and take Voguing classes during the whole upcoming semester (Oct 4th 2016 - Jan 31st 2017), conducted by dance teacher Karin Cheng, in order to strengthen own and collective identity, within a secure space without intolerance and exclusion. The dancing lessons as well as preparation for a final performance are **free of charge** for the participants.
 
-Am Ende des Semesters werden Improper Walls und *pin* eine Finissage veranstalten um gemeinsam zu reflektieren, zu tanzen und vor Freund*innen und Familie zu performen!
+At the end of the semester Improper Walls and *pin* will host a “Finissage” to get together, reflect, dance and perform for friends and families.  
 
-**Wo**: GB*10, Quellenstraße 149, 1100 Wien  
-**Wann**: immer Dienstag, 04.10.2016 - 31.01.2017, 18:30-20:00  
-**Eintritt**: kostenfrei, aber nur mit Voranmeldung!
+**Where**: GB*10, Quellenstraße 149, 1100 Wien
+**When**: Tuesday, Oct 4th 2016 - Jan 31st 2017, 6:30pm-8:00pm
+**Entry**: free of charge, only with pre-registration
