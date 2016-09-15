@@ -1180,6 +1180,9 @@ p {
     .home-wrap header .logo {
       height: 2.5rem;
       margin-left: -1rem; }
+    .home-wrap header .icon-box .icon {
+      -webkit-filter: grayscale(1) blur(0px) opacity(0.4);
+              filter: grayscale(1) blur(0px) opacity(0.4); }
     .home-wrap header .mobile-nav-toggle {
       display: -webkit-box;
       display: -ms-flexbox;
