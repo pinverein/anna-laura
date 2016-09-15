@@ -1855,6 +1855,8 @@ section.network {
     background: rgba(255, 255, 255, 0.3); }
     section.network .list-wrapper h2 {
       color: #444; }
+    section.network .list-wrapper a {
+      font-size: 1.4rem; }
   section.network .network-list {
     list-style: none;
     padding: 0; }
