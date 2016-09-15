@@ -157,6 +157,26 @@
     justify-content: center
     margin: 0 auto
 
+    &:before
+      transition: all 200ms ease-in-out
+      content: 'coming soon'
+      position: absolute
+      display: block
+      // top: 10px
+      width: 130px
+      padding: .6rem 1rem
+      text-align: center
+      background: rgba(white, .5)
+      font:
+        family: 'Open Sans'
+        weight: bold
+      letter-spacing: .1rem
+      z-index: 10
+      opacity: 0
+
+    &:hover
+      &:before
+        opacity: 1
 
     .icon
       width: 30px
@@ -190,6 +210,8 @@
 
       &:hover
         filter: grayscale(0) blur(0px) opacity(1)
+
+
 
       &.icon--fb
         background:
