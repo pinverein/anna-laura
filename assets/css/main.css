@@ -1398,7 +1398,9 @@ section.startscreen {
     right: 0;
     bottom: 0;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    text-align: left;
+    padding: 0; }
     .news-wrapper .toggle-news {
       text-align: left;
       color: #555;
