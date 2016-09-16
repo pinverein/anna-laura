@@ -1372,6 +1372,7 @@ section.startscreen {
         font-family: 'Helvetica Neue' !important;
         font-size: 3rem;
         font-weight: lighter;
+        color: #888;
         cursor: pointer; }
         .news-item-box .news-item-full .close-button a:hover {
           color: black; }
