@@ -1301,6 +1301,10 @@ section.startscreen {
     font-family: 'Roboto Condensed';
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
+    .news-wrapper .news-box a {
+      color: #f0dba5; }
+      .news-wrapper .news-box a:hover, .news-wrapper .news-box a:focus {
+        color: #daa41f; }
     .news-wrapper .news-box .news-item-box * {
       font-family: 'Roboto Condensed' !important; }
     .news-wrapper .news-box .news-item-box .news-item {
