@@ -52,7 +52,11 @@ section.startscreen
   right: 0
   height: 100vh
   width: 240px
+  padding-top: 1rem
   padding-right: 2rem
+  font:
+    family: 'Roboto Condensed'
+    weight: lighter
   color: #aaa
   transform-origin: top right
   opacity: 0
@@ -74,13 +78,16 @@ section.startscreen
   .toggle-news
     text-align: right
     font-size: 2rem
+    color: #888
     // cursor: pointer
-
+    &:hover
+      color: #888
 
   .news-box
     text-align: left
     font-family: 'Roboto Condensed'
     +transition
+
 
     a
       color: darken(tint($brand-color, 60%), 10%)
@@ -168,7 +175,7 @@ section.startscreen
             family: 'Helvetica Neue' !important
             size: 3rem
             weight: lighter
-          color: #888 
+          color: #888
           cursor: pointer
           &:hover
             color: black

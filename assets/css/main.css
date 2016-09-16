@@ -1286,7 +1286,10 @@ section.startscreen {
   right: 0;
   height: 100vh;
   width: 240px;
+  padding-top: 1rem;
   padding-right: 2rem;
+  font-family: 'Roboto Condensed';
+  font-weight: lighter;
   color: #aaa;
   -webkit-transform-origin: top right;
           transform-origin: top right;
@@ -1311,7 +1314,10 @@ section.startscreen {
       width: 200px; } }
   .news-wrapper .toggle-news {
     text-align: right;
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: #888; }
+    .news-wrapper .toggle-news:hover {
+      color: #888; }
   .news-wrapper .news-box {
     text-align: left;
     font-family: 'Roboto Condensed';
