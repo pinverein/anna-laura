@@ -505,7 +505,8 @@ a {
     display: none; }
     .card .card-long h1 {
       font-size: 1.3rem;
-      text-align: center; }
+      text-align: center;
+      text-shadow: 0 0 0 transparent, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white; }
     .card .card-long p {
       font-size: .9rem; }
     .card .card-long ul {
