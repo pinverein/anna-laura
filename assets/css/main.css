@@ -505,8 +505,7 @@ a {
     display: none; }
     .card .card-long h1 {
       font-size: 1.3rem;
-      text-align: center;
-      text-shadow: 0 0 0 transparent, -1px -1px 0 white, 0px -1px 0 white, 1px -1px 0 white, -1px 0px 0 white, 0px 0px 0 white, 1px 0px 0 white, -1px 1px 0 white, 0px 1px 0 white, 1px 1px 0 white; }
+      text-align: center; }
     .card .card-long p {
       font-size: .9rem; }
     .card .card-long ul {
@@ -1292,6 +1291,7 @@ section.startscreen {
   -webkit-transform-origin: top right;
           transform-origin: top right;
   opacity: 0;
+  text-align: right;
   -webkit-animation: newsFade 400ms 1800ms ease-in-out forwards;
           animation: newsFade 400ms 1800ms ease-in-out forwards; }
 
@@ -1313,6 +1313,7 @@ section.startscreen {
     text-align: right;
     font-size: 2rem; }
   .news-wrapper .news-box {
+    text-align: left;
     font-family: 'Roboto Condensed';
     -webkit-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
