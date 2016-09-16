@@ -92,22 +92,7 @@ $about-border-radius: 20px
         padding: 0 2rem
 
         z-index: 4
-        // &.col-side--left
-        //   // @include linear-gradient(to bottom, lighten($aqua, 18%), lighten($aqua, 12%))
-        //   border-left: none
-        //
-        //   border-top-right-radius: $about-border-radius
-        //   border-bottom-right-radius: $about-border-radius
-        //   // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 0%)
-        //   padding-left: 10rem
-        //
-        // &.col-side--right
-        //   // @include linear-gradient(to left, white, lighten($aqua, 12%))
-        //   border-right: none
-        //   border-top-left-radius: $about-border-radius
-        //   border-bottom-left-radius: $about-border-radius
-        //   // box-shadow: inset 0px 7px 9px -9px lighten($aqua, 12%)
-        //   padding-right: 10rem
+
 
         h2
           font-size: 1.6rem
@@ -121,7 +106,18 @@ $about-border-radius: 20px
           text-align: left
           font-size: 1rem
 
+          ul
+            list-style: circle
+            padding-left: 2rem
 
-    @media (max-width: 640px)
-      .col-spread
-        padding: 1rem
+            li
+              margin: .2rem 0
+
+
+  @media (max-width: 640px)
+    .col-lead
+      margin: 0 1rem
+
+
+    .col-full
+      padding: 0 1.5rem !important

@@ -71,7 +71,7 @@ section.startscreen
     width: 200px
 
 
-  h2
+  .toggle-news
     text-align: right
     font-size: 2rem
     // cursor: pointer
@@ -195,14 +195,22 @@ section.startscreen
     width: 100%
 
 
-    h2
+    .toggle-news
       text-align: left
       color: #555
       // padding-top: .5rem
-      padding-left: 1.5rem
+      padding: 0 1.5rem
+      border-radius: .2rem
       margin: 0
       z-index: 3
-      line-height: 72px
+      line-height: 5.2rem
+      z-index: 6 !important
+      font-size: 1.4rem
+
+      &.is-active
+        color: $brand-color
+
+
 
     .news-box
       background: #fff
@@ -273,8 +281,8 @@ section.startscreen
 
 @media (max-width: 680px)
   .news-wrapper
-    h2
-      line-height: 58px
+    .toggle-news
+      line-height: 4.15rem
 
 
 @media (max-width: 400px)

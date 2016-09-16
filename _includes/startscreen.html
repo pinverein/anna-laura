@@ -1,4 +1,4 @@
-<section id="start" class="startscreen"><div class="flex flex--center"><div class="col-full"><h1 class="start-logo"></h1></div><div class="news-wrapper"> <h2><div class="toggle-news">News</div></h2><div class="news-box">{% assign posts = site.posts | where:'categories', 'news' %}
+<section id="start" class="startscreen"><div class="flex flex--center"><div class="col-full"><h1 class="start-logo"></h1></div><div class="news-wrapper"> <a class="toggle-news">News</a><div class="news-box">{% assign posts = site.posts | where:'categories', 'news' %}
 {% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
 {% assign date-style=site.date-style | where:'language', page.language | first %}
 {% assign read-more=site.read-more | where:'language', page.language | first %}

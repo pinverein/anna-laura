@@ -328,7 +328,7 @@
   .home-wrap
     header
       width: auto
-      padding: 1rem 1rem 1rem 3.6rem
+      padding: 1rem 1rem 1rem 7rem
       background: white
       .header-position
         position: relative
@@ -355,12 +355,35 @@
         // display: none
 
       .icon-box
+        // margin-left: 4.5rem
         .icon
+
           filter: grayscale(1) blur(0px) opacity(.4)
 
       .mobile-nav-toggle
         display: flex
+        margin-left: 2rem
 
     .mobile-nav.is-active
       display: block
       transform: translateY(0%)
+
+  @media (max-width: 350px)
+    .home-wrap
+      header
+        padding: 1rem .5rem 1rem 5rem
+
+
+
+        .icon-box
+          // margin-left: 4.5rem
+          .icon
+            width: 20px
+            height: 20px
+
+        .mobile-nav-toggle
+          margin-left: 0rem
+
+      .mobile-nav.is-active
+        display: block
+        transform: translateY(0%)
