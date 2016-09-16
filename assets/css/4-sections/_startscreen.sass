@@ -19,11 +19,12 @@ section.startscreen
 
 .start-logo
   +hide-text
-  height: 8rem
+  height: 6.4rem
   width: calc(100% - 160px)
   margin: 0
-  +retina-image('../img/logo-pin', 500px 115px)
+  // +retina-image(../img/logo-pin, contain)
   background:
+    image: url(../img/logo-pin.svg)
     size: contain
     repeat: no-repeat
     position: center
@@ -40,8 +41,9 @@ section.startscreen
       opacity: 1
       transform: scale(1)
 
-  @media (max-width: 930px)
-    width: calc(100% - 200px)
+  @media (max-width: 980px)
+    height: 6rem
+    width: calc(100% - 220px)
 
 .news-wrapper
   position: absolute
@@ -276,4 +278,4 @@ section.startscreen
 
   .start-logo
     width: auto
-    margin: -6rem 0 0
+    // margin: -6rem 0 0

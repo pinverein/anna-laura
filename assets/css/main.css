@@ -1228,10 +1228,10 @@ section.startscreen {
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
-  height: 8rem;
+  height: 6.4rem;
   width: calc(100% - 160px);
   margin: 0;
-  background-image: url("../img/logo-pin.png");
+  background-image: url(../img/logo-pin.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1240,10 +1240,6 @@ section.startscreen {
           transform-origin: top;
   -webkit-animation: logoFade 800ms ease-in-out;
           animation: logoFade 800ms ease-in-out; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-    .start-logo {
-      background-image: url("../img/logo-pin_2x.png");
-      background-size: 500px 115px; } }
 
 @-webkit-keyframes logoFade {
   0% {
@@ -1264,9 +1260,10 @@ section.startscreen {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1); } }
-  @media (max-width: 930px) {
+  @media (max-width: 980px) {
     .start-logo {
-      width: calc(100% - 200px); } }
+      height: 6rem;
+      width: calc(100% - 220px); } }
 
 .news-wrapper {
   position: absolute;
@@ -1445,8 +1442,7 @@ section.startscreen {
   .col-full {
     margin: 0 1rem; }
   .start-logo {
-    width: auto;
-    margin: -6rem 0 0; } }
+    width: auto; } }
 
 .section-about {
   background: #92b2a5;
