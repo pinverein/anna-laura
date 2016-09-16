@@ -225,7 +225,7 @@ section.startscreen
     .news-box
       background: #fff
       border-bottom: 1px solid #ddd
-      box-shadow: 0px 6px 15px -15px rgba(black, .1)
+      box-shadow: 0px 4px 15px -4px rgba(black, .3)
       position: absolute
       top: 50px
       left: 0
@@ -246,12 +246,23 @@ section.startscreen
       .news-item
         text-align: left !important
         color: #666 !important
-        border-bottom: 1px solid #ddd
+        // border-top: 1px solid #eee
         z-index: 1000000
         margin-bottom: .5rem
         transition: all 200ms ease-in-out
-        h3:first-child
-          margin-top: 0
+
+        // &:first-child
+        //   border-top: none
+
+        .news-title
+          border-bottom: 1px solid #eee
+
+          &:first-child
+            margin-top: 0
+
+        .news-date
+          margin-top: .3rem !important
+          font-weight: bold
 
         .news-content
           font-size: 1rem
@@ -271,6 +282,7 @@ section.startscreen
 
             height: auto
             opacity: 1
+            margin-bottom: 2.5rem
 
         .news-item-full
 
@@ -280,7 +292,7 @@ section.startscreen
           height: 0
           transform: translateY(-100%)
           pointer-events: none
-          border-bottom: 1px solid #ddd
+          border-bottom: 1px solid #eee
           margin-bottom: .5rem
 
           .close-button
