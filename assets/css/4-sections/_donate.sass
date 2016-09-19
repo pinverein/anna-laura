@@ -17,10 +17,9 @@ section.donate
       // rgba(darken($highlight-color, 20%), .9)
 
     .col-spread
-      z-index: 2
       color: white
       text-align: center
-
+      z-index: 2
 
       h2
         font-size: 1.5rem
@@ -44,7 +43,6 @@ section.donate
         +transition
         z-index: -1
 
-
         // &:hover
         //
         //   .donate-info
@@ -59,7 +57,7 @@ section.donate
           height: 0
           top: 0
           width: 100%
-
+          z-index: -10
 
           &__container
             position: absolute
@@ -170,6 +168,13 @@ section.donate
               @media (max-width: 800px)
 
                 font-size: 1rem
+
+      @media only screen and (max-width: 321px) and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)
+
+        .donate-info-box
+          z-index: 0 !important
+
+
 
   @media (max-width: 560px)
     .donate-wrapper
