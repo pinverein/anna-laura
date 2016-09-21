@@ -485,7 +485,9 @@ a {
     border: 1px solid #bbb;
     background-size: cover !important;
     background-position: center center !important;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%); }
     .card .card-background:after {
       content: '';
       position: absolute;
@@ -533,7 +535,6 @@ a {
       margin-left: 0;
       margin-right: 0; }
     .card.project--inactive {
-      opacity: .5;
       margin-left: .4rem;
       margin-right: .4rem;
       -webkit-box-flex: 0;
@@ -581,10 +582,10 @@ a {
     padding: 0.5em 0.75em;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out; }
-    .card .card-header .title--project {
-      text-transform: none; }
-    .card .card-header .project-sub-title {
-      text-align: center; }
+  .card .title--project {
+    text-transform: none; }
+  .card .project-sub-title {
+    text-align: center; }
   .card .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;

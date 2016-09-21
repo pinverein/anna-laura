@@ -46,12 +46,14 @@
       size: cover !important
       position: center center !important
       repeat: no-repeat
+    +filter(grayscale(60%))
     // z-index: -1
 
     &:after
       content: ''
       +position(absolute, 0)
       background: rgba(white, .85)
+
 
   .card-short
     // background: rgba($card-background, .8)
@@ -101,10 +103,9 @@
       margin-right: 0
 
     &.project--inactive
-      opacity: .5
+      // opacity: .5
       margin-left: .4rem
       margin-right: .4rem
-
       flex-grow: 0
 
   @media only screen and (max-width: 321px) and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)
@@ -157,12 +158,12 @@
     padding: ($base-spacing / 3) ($base-spacing / 2)
     transition: all 0.2s ease-in-out
 
-    .title--project
-      text-transform: none
+  .title--project
+    text-transform: none
 
-    .project-sub-title
+  .project-sub-title
 
-      text-align: center
+    text-align: center
 
   .card-copy
     font-size: 0.9em
