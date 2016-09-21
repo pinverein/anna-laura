@@ -514,7 +514,10 @@ a {
       padding-left: 1.5rem; }
   .card.project--active {
     -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg); }
+            transform: rotateY(180deg);
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
     .card.project--active .card-background {
       opacity: 1; }
     .card.project--active .card-short {
