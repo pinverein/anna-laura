@@ -51,7 +51,7 @@
     &:after
       content: ''
       +position(absolute, 0)
-      background: rgba(white, .8)
+      background: rgba(white, .85)
 
   .card-short
     // background: rgba($card-background, .8)
@@ -80,7 +80,8 @@
 
   &.project--active
     transform: rotateY(180deg)
-    flex-grow: 2
+
+
 
     .card-background
       opacity: 1
@@ -92,6 +93,19 @@
       display: block
       transform: rotateY(180deg)
 
+  @media (min-width: 914px)
+    &.project--active
+      transform: rotateY(180deg)
+      flex-grow: 2
+      margin-left: 0
+      margin-right: 0
+
+    &.project--inactive
+      opacity: .5
+      margin-left: .4rem
+      margin-right: .4rem
+
+      flex-grow: 0
 
   @media only screen and (max-width: 321px) and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)
     &.project--active

@@ -493,7 +493,7 @@ a {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.8); }
+      background: rgba(255, 255, 255, 0.85); }
   .card .card-long {
     color: #000;
     position: relative;
@@ -514,10 +514,7 @@ a {
       padding-left: 1.5rem; }
   .card.project--active {
     -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2; }
+            transform: rotateY(180deg); }
     .card.project--active .card-background {
       opacity: 1; }
     .card.project--active .card-short {
@@ -526,6 +523,22 @@ a {
       display: block;
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg); }
+  @media (min-width: 914px) {
+    .card.project--active {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+              flex-grow: 2;
+      margin-left: 0;
+      margin-right: 0; }
+    .card.project--inactive {
+      opacity: .5;
+      margin-left: .4rem;
+      margin-right: .4rem;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; } }
   @media only screen and (max-width: 321px) and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .card.project--active {
       -webkit-transform: rotateY(0deg);
