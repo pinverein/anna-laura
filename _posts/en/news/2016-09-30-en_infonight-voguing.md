@@ -7,7 +7,7 @@ weight: 1
 newsID: 'news1'
 ---
 
-We, dancer Karin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) and *pin*, dedicate ourselves to Voguing and we want to invite 8 people to dance with us.
+We, dancer Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) and *pin*, dedicate ourselves to Voguing and we want to invite 8 people to dance with us.
 
 There will be an info kick-off event on the **30th of September 2016**, where potential participants can meet and get to know each other, in order to find out more about the specific dance style - VOGUING - and those, who are interested in taking Voguing dancing lessons, can sign in for the following dancing cours.
 
