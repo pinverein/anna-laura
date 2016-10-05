@@ -10,7 +10,7 @@
 
         <!-- Google verification -->
         <meta name="google-site-verification" content="u6mzEFPkp8pWrEMysWNZG7uqexc6ihIYWyXLw-2SZtA" />
-        
+
         <!-- favicons -->
 
         <link rel="shortcut icon" href="/assets/favicon.ico?" type="image/x-icon">
@@ -27,7 +27,21 @@
         <script type="text/javascript" src={{"/assets/js/modal.js" | prepend: site.baseurl}} ></script>
         <script type="text/javascript" src={{"/assets/js/common.min.js" | prepend: site.baseurl}} ></script>
 
-
+        <!-- Piwik -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//analytics.bawyl.com/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p><img src="//analytics.bawyl.com/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
     </head>
     <body>
 
