@@ -3,7 +3,7 @@ layout: post
 title:  'Dancing class: Voguing - Against Exclusion and Intolerance'
 language: en
 categories: news
-weight: 2
+weight: 3
 newsID: 'news2'
 ---
 
