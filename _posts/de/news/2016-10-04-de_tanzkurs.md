@@ -3,7 +3,7 @@ layout: post
 title:  'Tanzkurs: Voguing - Gegen Exklusion und Intoleranz'
 language: de
 categories: news
-weight: 1
+weight: 2
 newsID: 'news2'
 ---
 
