@@ -4,7 +4,7 @@ title: 'projekt'
 subtitle:
 language: de
 categories: projects
-weight: 3
+weight: 4
 
 image: /assets/img/20475_325837775394_5755325_n.jpg
 ---
