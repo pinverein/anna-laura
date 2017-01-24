@@ -50,6 +50,10 @@ nav:
       title: Netzwerk
       href: network
 
+    - ref: archive
+      title: Archiv
+      href: archive
+
     - ref: newsletter
       title: Newsletter
       href: newsletter
@@ -86,6 +90,10 @@ nav:
     - ref: network
       title: Network
       href: network
+
+    - ref: archive
+      title: Archive
+      href: archive
 
     - ref: newsletter
       title: Newsletter

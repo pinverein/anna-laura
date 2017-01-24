@@ -1885,6 +1885,9 @@ section.donate {
       section.donate .donate-wrapper .col-spread .donate-info-box .bow .bow__container img {
         width: 80%; } }
 
+.archive {
+  display: none; }
+
 section.newsletter {
   background-color: #79a9c1; }
   section.newsletter .col-spread {

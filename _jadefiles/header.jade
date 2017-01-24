@@ -15,12 +15,19 @@ mixin nav-content()
 		//- p {{navigation['links']}}
 		{% for nav in navigation %}
 		{% for link in nav.links %}
-		li 
-			a(href='#{{link.href}}' class='{{link.href}}').header-link.scroll-on-page-link 
+		li
+			{% if link.href != 'archive' %}
+			a(href='#{{link.href}}' class='{{link.href}}' onclick('hideArchive()')).header-link.scroll-on-page-link 
 				{% if link.href=='donate' %}
 				i(class="icon-gift")#donate-icon
 				{% endif %}
 				{{link.title}}
+			
+			{% else %}
+			a(href='#{{link.href}}' onclick='showArchive()').header-link
+				{{link.title}}
+			{% endif %}
+			
 		{% endfor %}
 		{% endfor %} 
 		

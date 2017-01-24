@@ -141,6 +141,13 @@
 
   // };
 
+  function showArchive() {
+    $('#archive').show();
+  }
+  function hideArchive() {
+    $('#archive').hide();
+  }
+
   $.mark = {
     jump: function (options) {
       var defaults = {
