@@ -5,8 +5,6 @@ language: de
 categories: news
 weight: 1
 newsID: 'news1'
-<!-- visibile: true
-archive: true -->
 ---
 
 Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, widmen uns dem Voguing und wollen 8 Menschen dazu einladen mit uns zu tanzen.
