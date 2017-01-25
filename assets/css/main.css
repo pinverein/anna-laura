@@ -461,8 +461,8 @@ a {
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  -ms-flex-preferred-size: 15em;
-      flex-basis: 15em;
+  -ms-flex-preferred-size: 18em;
+      flex-basis: 18em;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -528,18 +528,7 @@ a {
   @media (min-width: 914px) {
     .card.project--active {
       -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg);
-      -webkit-box-flex: 2;
-          -ms-flex-positive: 2;
-              flex-grow: 2;
-      margin-left: 0;
-      margin-right: 0; }
-    .card.project--inactive {
-      margin-left: .4rem;
-      margin-right: .4rem;
-      -webkit-box-flex: 0;
-          -ms-flex-positive: 0;
-              flex-grow: 0; } }
+              transform: rotateY(180deg); } }
   @media only screen and (max-width: 321px) and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .card.project--active {
       -webkit-transform: rotateY(0deg);
@@ -1359,6 +1348,8 @@ section.startscreen {
               transform-origin: top right;
       opacity: 0;
       text-align: right;
+      overflow-y: scroll;
+      overflow-x: hidden;
       -webkit-animation: newsFade 400ms 1800ms ease-in-out forwards;
               animation: newsFade 400ms 1800ms ease-in-out forwards; }
 
@@ -1918,8 +1909,19 @@ section.donate {
   min-height: 100vh;
   overflow-y: scroll; }
   .show-archive .close-button {
-    font-size: 2rem;
-    cursor: pointer; }
+    position: absolute;
+    top: -1rem;
+    right: 1.6rem;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #aaa; }
+    .show-archive .close-button:hover {
+      color: #333; }
+    @media (max-width: 800px) {
+      .show-archive .close-button {
+        color: #333; } }
   .show-archive h1 {
     text-align: center; }
   .show-archive .content-wrapper {

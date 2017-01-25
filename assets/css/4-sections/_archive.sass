@@ -20,8 +20,21 @@
   overflow-y: scroll
 
   .close-button
-    font-size: 2rem
+    position: absolute
+    top: -1rem
+    right: 1.6rem
     cursor: pointer
+    font-family: Helvetica
+    font-size: 3.5rem
+    font-weight: 100
+    // display: none
+    color: #aaa
+
+    &:hover
+      color: #333
+
+    @media (max-width: 800px)
+      color: #333
 
   h1
     text-align: center

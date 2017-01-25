@@ -1,6 +1,4 @@
-ARCHIV menu punkt NEWS+PROJECTS
-NEWS expiration date
-NEWS+PROJECTS visible(true, false, archive)
+
 PROJECTS beim umdrehen breite beibehalten
 
 
@@ -26,3 +24,6 @@ PROJECTS beim umdrehen breite beibehalten
 // TODO: Social Media Links !?
 // Check for meta description
 // TODO: news button highlight when active (mobile)
+
+// ARCHIV menu punkt NEWS+PROJECTS
+// NEWS+PROJECTS visible(true, false, archive)
