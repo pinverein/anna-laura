@@ -2048,6 +2048,15 @@ section.team {
         background: rgba(255, 255, 255, 0);
         padding: 0rem 3rem 1rem;
         position: relative; }
+        section.team .team-member-box .team-member .member-content .member-img {
+          width: 200px;
+          height: 200px;
+          background-repeat: no-repeat;
+          background-size: contain; }
+          section.team .team-member-box .team-member .member-content .member-img--anna {
+            background-image: url("../img/anna.jpg"); }
+          section.team .team-member-box .team-member .member-content .member-img--lena {
+            background-image: url("../img/lena.jpg"); }
         section.team .team-member-box .team-member .member-content h2 {
           font-family: 'Open Sans';
           font-size: 1.5rem;
