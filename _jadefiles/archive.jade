@@ -1,17 +1,122 @@
 section.archive#archive  
   .archive-wrapper
-  
+    
     a(onclick='$("#archive").removeClass("show-archive");$(".archive-link").removeClass("archive--active")').close-button x
   
-    {% assign pages = site.pages | where: 'ref', 'archive' %}
-    
-    
-    {% for this_page in pages %}
-    
-    {% if this_page.language == page.language %}
+    {% if page.language == 'de' %}
 
-    div {{this_page.content}}
+    {% assign title = 'Archiv' %}
+    {% assign projects = 'Projekte' %}
     
     {% endif %}
+
+    {% if page.language == 'en' %}
+
+    {% assign title = 'Archive' %}
+    {% assign projects = 'Projects' %}
+
+    {% endif %}
     
-    {% endfor %}
+    h1.title-text {{title}}
+    
+    .content-wrapper
+      .content-container(onclick='toggleStuff(this, "news", "project")').news-container.active
+        .subtitle.title-text.small News
+      
+      .content-container(onclick='toggleStuff(this, "project", "news")').project-container
+        .subtitle.title-text.small {{projects}}
+    
+    script.
+      function toggleStuff(obj, pro, anti) {
+        $('.'+anti+'-container').removeClass("active");
+        $(obj).toggleClass("active");
+        $(".content-"+anti).hide();
+        $(".content-"+pro).toggle()
+      }
+      
+    .content.content-news
+      .news-box
+        
+        {% assign posts = site.posts | where:'categories', 'news' %}
+        {% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
+        {% assign archive_posts = lang_posts | where:'archive', true %}
+        
+        {% assign date-style=site.date-style | where:'language', page.language | first %}
+        
+    
+          
+        {% for post in archive_posts %}
+        //- {% if post.visible != false and post.archive != true %}
+        .news-item-box.news(onclick='showFullNews(this)')
+
+          .news-item-full.news-inner
+                      
+            .news-content-wrapper
+              //- p {{post.visibile}}
+              h1 {{post.title}}
+              p.news-intro {{ post.date | date: date-style.format }}
+              .news-content {{post.content}}
+              
+         
+        {% endfor %}
+    
+    .content.content-project
+      
+      .flex.flex--center
+        .col-full
+          
+          .cards
+            
+            {% assign posts = site.posts | where:'categories', 'projects' %}
+            {% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
+            {% assign archive_posts =  lang_posts | where:'archive', true %}
+            {% assign read-more=site.read-more | where:'language', page.language | first %}
+            
+            {% for post in archive_posts %}
+            
+            
+            
+            .card(onclick='activateProject(this)')
+              .card-background(style='background: url({{site.baseurl}}{{ post.image }})')
+              .card-short  
+                .card-image(style='background: url({{site.baseurl}}{{ post.image }})')
+                  //- img(src='{{ post.image }}', alt='')
+                    
+                .card-header
+                  .title-text.small.title--project {{ post.title }}
+                  
+                  .project-sub-title.lead-text {{ post.subtitle }}
+                     
+                .card-copy
+                  div 
+                    {{ post.excerpt }}
+                    
+                  .read-more
+                    {{ read-more.phrase }}
+                
+                  .card-footer
+                    {{ post.footer }}   
+                
+              .project-item-full.card-long()
+                .project-content-wrapper
+                  .title-text.small.title--project {{post.title}}
+                  
+                  .project-sub-title.lead-text {{ post.subtitle }}
+                    
+                  .project-content {{post.content}}
+                  
+                
+            {% endfor %}
+    
+        //- {% assign pages = site.pages | where: 'ref', 'archive' %}
+        //- 
+        //- 
+        //- {% for this_page in pages %}
+        //- 
+        //- {% if this_page.language == page.language %}
+        //- 
+        //- div {{this_page.content}}
+        //- 
+        //- {% endif %}
+        //- 
+        //- {% endfor %}

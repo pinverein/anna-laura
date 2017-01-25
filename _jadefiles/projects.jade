@@ -29,6 +29,8 @@ section.projects#projects
           {% assign read-more=site.read-more | where:'language', page.language | first %}
           {% for post in lang_posts %}
           
+          {% if post.archive != true %}
+          
           .card(onclick='activateProject(this)')
             .card-background(style='background: url({{site.baseurl}}{{ post.image }})')
             .card-short  
@@ -58,7 +60,7 @@ section.projects#projects
                   
                 .project-content {{post.content}}
                 
-              
+          {% endif %}    
           {% endfor %}
                
   //-         

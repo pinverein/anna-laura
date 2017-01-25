@@ -1,4 +1,23 @@
-<section id="archive" class="archive"> <div class="archive-wrapper"><a onclick="$(&quot;#archive&quot;).removeClass(&quot;show-archive&quot;);$(&quot;.archive-link&quot;).removeClass(&quot;archive--active&quot;)" class="close-button">x</a>{% assign pages = site.pages | where: 'ref', 'archive' %}
-{% for this_page in pages %}
-{% if this_page.language == page.language %}<div>{{this_page.content}}</div>{% endif %}
-{% endfor %}</div></section>
+<section id="archive" class="archive"> <div class="archive-wrapper"><a onclick="$(&quot;#archive&quot;).removeClass(&quot;show-archive&quot;);$(&quot;.archive-link&quot;).removeClass(&quot;archive--active&quot;)" class="close-button">x</a>{% if page.language == 'de' %}
+{% assign title = 'Archiv' %}
+{% assign projects = 'Projekte' %}
+{% endif %}
+{% if page.language == 'en' %}
+{% assign title = 'Archive' %}
+{% assign projects = 'Projects' %}
+{% endif %}<h1 class="title-text">{{title}}</h1><div class="content-wrapper"><div onclick="toggleStuff(this, &quot;news&quot;, &quot;project&quot;)" class="content-container news-container active"><div class="subtitle title-text small">News</div></div><div onclick="toggleStuff(this, &quot;project&quot;, &quot;news&quot;)" class="content-container project-container"><div class="subtitle title-text small">{{projects}}</div></div></div><script>function toggleStuff(obj, pro, anti) {
+  $('.'+anti+'-container').removeClass("active");
+  $(obj).toggleClass("active");
+  $(".content-"+anti).hide();
+  $(".content-"+pro).toggle()
+}
+</script><div class="content content-news"><div class="news-box">{% assign posts = site.posts | where:'categories', 'news' %}
+{% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
+{% assign archive_posts = lang_posts | where:'archive', true %}
+{% assign date-style=site.date-style | where:'language', page.language | first %}
+{% for post in archive_posts %}<div onclick="showFullNews(this)" class="news-item-box news"><div class="news-item-full news-inner"><div class="news-content-wrapper"><h1>{{post.title}}</h1><p class="news-intro">{{ post.date | date: date-style.format }}</p><div class="news-content">{{post.content}}</div></div></div></div>{% endfor %}</div></div><div class="content content-project"><div class="flex flex--center"><div class="col-full"><div class="cards">{% assign posts = site.posts | where:'categories', 'projects' %}
+{% assign lang_posts=posts | where:'language', page.language | sort: 'weight' %}
+{% assign archive_posts =  lang_posts | where:'archive', true %}
+{% assign read-more=site.read-more | where:'language', page.language | first %}
+{% for post in archive_posts %}<div onclick="activateProject(this)" class="card"><div style="background: url({{site.baseurl}}{{ post.image }})" class="card-background"></div><div class="card-short"> <div style="background: url({{site.baseurl}}{{ post.image }})" class="card-image"></div><div class="card-header"><div class="title-text small title--project">{{ post.title }}</div><div class="project-sub-title lead-text">{{ post.subtitle }}</div></div><div class="card-copy"><div> 
+{{ post.excerpt }}</div><div class="read-more">{{ read-more.phrase }}</div><div class="card-footer">{{ post.footer }}   </div></div></div><div class="project-item-full card-long"><div class="project-content-wrapper"><div class="title-text small title--project">{{post.title}}</div><div class="project-sub-title lead-text">{{ post.subtitle }}</div><div class="project-content">{{post.content}}</div></div></div></div>{% endfor %}</div></div></div></div></div></section>

@@ -822,7 +822,7 @@ p {
         -webkit-transition: all 300ms ease-in-out;
                 transition: all 300ms ease-in-out; }
       .home-wrap .site-nav ul .archive--active {
-        color: blue !important; }
+        color: #0074D9 !important; }
     .home-wrap .site-nav .language-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -863,6 +863,8 @@ p {
       .home-wrap .site-nav .link-list li:last-child {
         margin-bottom: 0;
         margin-top: 1rem; }
+      .home-wrap .site-nav .link-list li .archive-link {
+        cursor: pointer; }
       .home-wrap .site-nav .link-list li .scroll-on-page-link {
         border-bottom: 1px solid transparent;
         -webkit-transition: all 100ms ease-in-out;
@@ -1903,22 +1905,59 @@ section.donate {
   top: -10000px;
   height: 0px;
   z-index: 100000;
-  width: calc(100% - 200px);
   background: rgba(255, 255, 255, 0.9);
   padding: 1rem !important; }
-  @media (max-width: 680px) {
+  @media (max-width: 800px) {
     .archive {
-      width: 100%; } }
+      width: 100% !important; } }
 
 .show-archive {
   position: fixed;
   top: 0;
-  height: 100vh; }
+  width: calc(100% - 200px);
+  min-height: 100vh;
+  overflow-y: scroll; }
   .show-archive .close-button {
     font-size: 2rem;
     cursor: pointer; }
   .show-archive h1 {
     text-align: center; }
+  .show-archive .content-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .show-archive .content-wrapper .content-container .subtitle {
+      cursor: pointer;
+      margin: 0 1rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -ms-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      -webkit-tap-highlight-color: transparent; }
+    .show-archive .content-wrapper .content-container.active .subtitle {
+      color: #daa41f; }
+  .show-archive .content {
+    margin: 0 auto;
+    max-width: 1000px; }
+    .show-archive .content-news {
+      border-bottom: 1px solid #eee; }
+    .show-archive .content-project {
+      display: none;
+      margin-top: 1rem; }
 
 section.newsletter {
   background-color: #79a9c1; }
