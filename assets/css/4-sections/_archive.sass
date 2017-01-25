@@ -1,2 +1,25 @@
 .archive
-  display: none
+  position: absolute
+  top: -10000px
+  height: 0px
+  z-index: 100000
+  width: calc(100% - 200px)
+  background: rgba(#fff, .9)
+  padding: 1rem !important
+    // display: none
+
+  @media (max-width: 680px)
+    width: 100%
+
+.show-archive
+  position: fixed
+  top: 0
+  // display: block
+  height: 100vh
+
+  .close-button
+    font-size: 2rem
+    cursor: pointer
+
+  h1
+    text-align: center

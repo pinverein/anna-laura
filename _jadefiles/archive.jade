@@ -1,2 +1,17 @@
-section.archive#archive
-  h1 Archive
+section.archive#archive  
+  .archive-wrapper
+  
+    a(onclick='$("#archive").removeClass("show-archive");$(".archive-link").removeClass("archive--active")').close-button x
+  
+    {% assign pages = site.pages | where: 'ref', 'archive' %}
+    
+    
+    {% for this_page in pages %}
+    
+    {% if this_page.language == page.language %}
+
+    div {{this_page.content}}
+    
+    {% endif %}
+    
+    {% endfor %}

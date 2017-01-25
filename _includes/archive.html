@@ -1,1 +1,4 @@
-<section id="archive" class="archive"><h1>Archive</h1></section>
+<section id="archive" class="archive"> <div class="archive-wrapper"><a onclick="$(&quot;#archive&quot;).removeClass(&quot;show-archive&quot;);$(&quot;.archive-link&quot;).removeClass(&quot;archive--active&quot;)" class="close-button">x</a>{% assign pages = site.pages | where: 'ref', 'archive' %}
+{% for this_page in pages %}
+{% if this_page.language == page.language %}<div>{{this_page.content}}</div>{% endif %}
+{% endfor %}</div></section>
