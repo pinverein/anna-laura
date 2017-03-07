@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Tanzkurs: Voguing - Gegen Exklusion und Intoleranz'
+title:  'Tanzkurs II: Voguing - Gegen Exklusion und Intoleranz'
 language: de
 categories: news
 weight: 2
