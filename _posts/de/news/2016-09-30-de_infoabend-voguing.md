@@ -7,10 +7,10 @@ weight: 1
 newsID: 'news1'
 ---
 
-Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, widmen uns dem Voguing und wollen 8 Menschen dazu einladen mit uns zu tanzen.
+Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, widmen uns erneut dem Voguing und laden wieder zehn Menschen dazu ein mit uns zu tanzen.
 
-Am **30.September 2016**, dem langen Tag der Flucht, wird es ein **Infotreffen** geben, wo sich potentielle Teilnehmer*innen treffen und kennenlernen können, um mehr über den spezifischen Tanzstil - VOGUING - zu erfahren und sich bei Interesse für den folgenden Tanzkurs anzumelden.
+Am **07.03.2017** wird es eine längere **Schnuppersession** geben, wo sich potentielle Teilnehmer*innen wieder treffen und das bisher Gelernte über den spezifischen Tanzstil - VOGUING - wieder aufzufrischen und sich bei erneutem Interesse für den folgenden Fortgeschrittenen-Tanzkurs anzumelden.
 
-**Wo**: IMPROPER WALLS Galerie, Reindorfgasse 42, 1150 Wien  
-**Wann**: 30. September 2016, 18:00 - 21:00  
+**Wo**: GB*10, Quellenstraße 149  
+**Wann**: 07.03.2017, 18:00 - 21:00  
 **Eintritt**: frei / ohne Anmeldung  
