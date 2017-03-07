@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Infoabend: Voguing - Gegen Exklusion und Intoleranz'
+title:  'Schnuppersession - Voguing - Gegen Exklusion und Intoleranz'
 language: de
 categories: news
 weight: 1
