@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  'Schnuppersession - Voguing - Gegen Exklusion und Intoleranz'
+title:  Aufführung: Voguing gegen Exklusion und Intoleranz
 language: de
 categories: news
 weight: 1
 newsID: 'news1'
 ---
 
-Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, widmen uns erneut dem Voguing und laden wiedeer zehn Menschen dazu ein mit uns zu tanzen.
+Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, und die wunderbare Tanzgruppe *Voguing gegen Exklusion und Intoleranz* haben fleißig geübt und wollen das Gelernte jetzt vorzeigen.
 
-Am **07.03.2017** wird es eine längere **Schnuppersession** geben, wo sich potentielle Teilnehmer*innen wieder treffen und das bisher Gelernte über den spezifischen Tanzstil - VOGUING - wieder aufzufrischen und sich bei erneutem Interesse für den folgenden Fortgeschrittenen-Tanzkurs anzumelden.
+Am **02.05.2017** wird es eine Aufführung geben und wir wollen euch dazu einladen, vorbeizukommen, um den Teilnehmern und Teilnehmerinnen beim tanzen zuzuschauen sowie mehr über den spezifischen Tanzstil - VOGUING - zu erfahren. Wir freuen uns auf euer Kommen!
 
 **Wo**: GB*10, Quellenstraße 149  
-**Wann**: 07.03.2017, 18:00 - 21:00  
-**Eintritt**: frei / ohne Anmeldung  
+**Wann**: 02.05.2017, 18:30 - 22:00  
+**Eintritt**: freiwillige Spende
