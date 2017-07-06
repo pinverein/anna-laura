@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Dancing class: Voguing - Against Exclusion and Intolerance'
+title:  'Dance class: Voguing - Against Exclusion and Intolerance'
 language: en
 categories: news
 weight: 3
