@@ -3,8 +3,8 @@ layout: post
 title:  'Performance: Voguing - Against Exclusion and Intolerance'
 language: en
 categories: news
-weight: 1
-newsID: 'news1'
+weight: 2
+newsID: 'news2'
 ---
 
 We, dancer Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) and *pin*, and the great dance group "Voguing against Exclusion and Intolerance" practiced the Voguing dance style and now we want to perform for you!
