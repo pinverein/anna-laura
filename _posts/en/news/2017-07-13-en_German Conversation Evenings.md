@@ -3,8 +3,8 @@ layout: post
 title:  'German Conversation Evenings'
 language: de
 categories: news
-weight: 3
-newsID: 'news3'
+weight: 2
+newsID: 'news2'
 ---
 
 As Summer program project staff members, Zoe Uehlin and Anna Schreilechner, are offering weekly German Conversation Evenings for a group of max. 15 participants can participate.
