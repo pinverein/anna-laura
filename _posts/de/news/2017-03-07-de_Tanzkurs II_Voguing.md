@@ -3,8 +3,8 @@ layout: post
 title:  'Tanzkurs II: Voguing - Gegen Exklusion und Intoleranz'
 language: de
 categories: news
-weight: 2
-newsID: 'news2'
+weight: 3
+newsID: 'news3'
 ---
 
 Am 14.03.2017 startet der zweite Voguing-Tanzkurs und findet bis Juni immer am Dienstag von 18:00-20:00 in den Räumlichkeiten der [GB*10](http://www.gbstern.at/10) in der Quellenstraße 149 statt.
