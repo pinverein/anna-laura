@@ -3,8 +3,8 @@ layout: post
 title:  'Aufführung: Voguing gegen Exklusion und Intoleranz'
 language: de
 categories: news
-weight: 1
-newsID: 'news1'
+weight: 2
+newsID: 'news2'
 ---
 
 Wir, Tänzerin Karyin Cheng, [IMPROPER WALLS](http://www.improperwalls.com) und *pin*, und die wunderbare Tanzgruppe *Voguing gegen Exklusion und Intoleranz* haben fleißig geübt und wollen das Gelernte jetzt vorzeigen.
