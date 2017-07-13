@@ -3,8 +3,8 @@ layout: post
 title:  'Deutschkonversationsabende'
 language: de
 categories: news
-weight: 1
-newsID: 'news1'
+weight: 3
+newsID: 'news3'
 ---
 
 Als Sommerprogramm bieten Projektmitarbeiterinnen, Zoe Uehlin und Anna Schreilechner, wöchentlich Deutschkoversationsabende an. Teilnehmen können max. 15 Personen, insbesondere Personen der pin und IMPROPER WALLS Community.
