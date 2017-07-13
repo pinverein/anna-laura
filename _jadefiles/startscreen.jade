@@ -16,7 +16,7 @@ section.startscreen#start
       .news-box
         
         {% assign posts = site.posts | where:'categories', 'news' %}
-        {% assign lang_posts=posts | where:'language', page.language | sort: 'date' %}
+        {% assign lang_posts=posts | where:'language', page.language | sort: 'date' | reverse %}
         {% assign date-style=site.date-style | where:'language', page.language | first %}
         {% assign read-more=site.read-more | where:'language', page.language | first %}
         
