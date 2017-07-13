@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'German Conversation Evenings'
-language: de
+language: en
 categories: news
 weight: 1
 newsID: 'news1'
