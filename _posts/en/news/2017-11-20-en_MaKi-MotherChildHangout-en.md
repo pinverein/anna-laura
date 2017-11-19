@@ -9,7 +9,7 @@ newsID: 'news3'
 
 This winter midwives and *pin* project staff, Hannah Amin, Verena Krause und Theresa Knall, offer seven sociocultural mornings and talking circles for women and children at the age of 2 to 4 years.
 
-Info meetint:
+Info meeting:
 **When**: Friday, 24.11.2017, 1pm - 3pm 
 **Where**: KO-Alte Burse, Sonnenfelsgasse 19, 1010 Vienna
 **Entry**: free of costs
