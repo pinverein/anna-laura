@@ -4,7 +4,7 @@ title:  'MaKi - MamaKindTTreff'
 language: de
 categories: news
 weight: 3
-newsID: 'news4'
+newsID: 'news3'
 ---
 
 Diesen Winter bieten die Hebammen und *pin* Projektmitarbeiterinnen, Hannah Amin, Verena Krause und Theresa Knall, 7 soziokulturelle Vormittage und Gesprächsrunden für Frauen und ihre Kinder im Alter von 2 bis 4 Jahren an.
