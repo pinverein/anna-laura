@@ -23,4 +23,4 @@ Friday, 19.01.2017, 11am -1pm
 Friday, 27.01.2017, 11am -1pm
 
 Contact person: Anna Schreilechner, anna.schreilechner@pin.or.at, +43 680 40 64 706
-Cooperation partners: #openschoool, KO-Alte Burse 
+Cooperation partners:[#openschoool](http://www.openschoool.org) und [KO-Alte Burse](http://www.ko-alteburse.at 
