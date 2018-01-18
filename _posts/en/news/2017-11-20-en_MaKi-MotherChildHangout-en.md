@@ -19,7 +19,7 @@ Friday, 01.12.2017, 11am -1pm
 Friday, 08.12.2017, 11am -1pm
 Friday, 22.12.2017, 11am -1pm
 Friday, 12.01.2017, 11am -1pm
-Friday, 19.01.2017, 11am -1pm
+Friday, 19.01.2017, 1pm  -3pm
 Friday, 27.01.2017, 11am -1pm
 
 Contact person: Anna Schreilechner, anna.schreilechner@pin.or.at, +43 680 40 64 706
