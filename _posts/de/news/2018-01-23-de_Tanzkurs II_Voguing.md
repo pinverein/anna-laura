@@ -12,6 +12,6 @@ Wir freuen uns sehr mitteilen zu können, dass das Projekt 'MaKi-Fraunzeit' ab E
 Natürlich sind jegliche Angebote im Rahmen von MaKi **kostenfrei** und eine Anmeldung ist nicht nötig, aber für uns eine Erleichterung, um diverse Dinge planen zu können.
 
 
-**Wo**: GB*10, Quellenstraße 149, 1100 Wien  
+**Wo**: KO-Alte Burse, Sonnenfelsgasse 19, 1010 Wien  
 **Wann**: Neue Termine für die Frühlingsmonate werden nächste Woche bekannt gegeben!
 **Eintritt**: kostenfrei, ohne Voranmeldung
