@@ -3,8 +3,8 @@ layout: post
 title:  'MaKi- Frauenzeit'
 language: de
 categories: news
-weight: 3
-newsID: 'news3'
+weight: 1
+newsID: 'news1'
 ---
 
 Wir freuen uns sehr mitteilen zu können, dass das Projekt 'MaKi-Fraunzeit' ab Ende Februar weitergeführt wird. Neue Termine werden nächste Woche bekanntgegeben. Die Treffen von und für Frauen werden weiterhin in der [KO-Alte Burse](http://ko-alteburse.at/) in der Sonnenfelsgasse 19 stattfinden.
