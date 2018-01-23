@@ -15,3 +15,6 @@ Natürlich sind jegliche Angebote im Rahmen von MaKi **kostenfrei** und eine Anm
 **Wo**: KO-Alte Burse, Sonnenfelsgasse 19, 1010 Wien  
 **Wann**: Neue Termine für die Frühlingsmonate werden nächste Woche bekannt gegeben!
 **Eintritt**: kostenfrei, ohne Voranmeldung
+
+Kontaktperson: Anna Schreilechner, anna.schreilechner@pin.or.at, +43 680 40 64 706
+In Kooperation mit [#openschoool](http://www.openschoool.org) und [KO-Alte Burse](http://www.ko-alteburse.at)
