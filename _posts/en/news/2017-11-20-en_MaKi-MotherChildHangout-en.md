@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  'MaKi - MotherChildHangout'
+title:  'MaKiMeeting - Women* for Women*'
 language: en
 categories: news
 weight: 3
 newsID: 'news3'
 ---
 
-This winter midwives and *pin* project staff, Hannah Amin, Verena Krause und Theresa Knall, offer seven sociocultural mornings and talking circles for women and children at the age of 2 to 4 years.
+This spring the MaKi-Group of Women* will meet again every two weeks. *pin* project staff, Hannah Amin, Marlene Stockenhuber and Anna Schreilechner will organise talking circles and sociocultural afternoons for and with women. We will dance, cook, do yoga, talk, network and much more. 
 
 Info meeting:
-**When**: Friday, 24.11.2017, 1pm - 3pm 
+**When**: Sunday, 04.03.2018, 2pm - 4pm
 **Where**: KO-Alte Burse, Sonnenfelsgasse 19, 1010 Vienna
 **Entry**: free of costs
 
 Further dates: 
-Friday, 01.12.2017, 11am -1pm
+Sunday, 04.03.2018
 Friday, 08.12.2017, 11am -1pm
 Friday, 22.12.2017, 11am -1pm
 Friday, 12.01.2017, 11am -1pm
