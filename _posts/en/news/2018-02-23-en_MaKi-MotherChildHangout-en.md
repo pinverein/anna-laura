@@ -15,12 +15,15 @@ Info meeting:
 **Entry**: free of costs
 
 Further dates: 
-Sunday, 04.03.2018
-Friday, 08.12.2017, 11am -1pm
-Friday, 22.12.2017, 11am -1pm
-Friday, 12.01.2017, 11am -1pm
-Friday, 19.01.2017, 1pm  -3pm
-Friday, 27.01.2017, 11am -1pm
+Sunday, 04.03.2018, 14.00-16.00
+Sunday, 18.03.2018, 14.00-16.00
+Sunday, 08.04.2018, 14.00-16.00
+Sunday, 22.04.2018, 14.00-16.00
+Sunday, 06.05.2018, 14.00-16.00
+Sunday, 20.05.2018, 14.00-16.00
+Sunday, 03.06.2018, 14.00-16.00
+Sunday, 17.06.2018, 14.00-16.00
+Sunday, 01.07.2018, 14.00-16.00
 
 Contact person: Anna Schreilechner, anna.schreilechner@pin.or.at, +43 680 40 64 706
 Cooperation partners:[#openschoool](http://www.openschoool.org) und [KO-Alte Burse](http://www.ko-alteburse.at) 
