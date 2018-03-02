@@ -7,4 +7,4 @@ weight: 1
 newsID: 'news1'
 ---
 
-*pin* freut sich sehr, eine neue hervorragende Mitarbeiterin begrüßen zu dürfen. Djleh Mohammad wird ab jetzt an Projekten mitarbeiten, administrative Tätigkeiten übernehmen und als Dolmetscherin agieren. Es ist eine große Ehre, sie jetzt an Bord zu haben. 
+*pin* freut sich sehr, eine neue herausragende Mitarbeiterin begrüßen zu dürfen. Djleh Mohammad wird ab jetzt an Projekten mitarbeiten, administrative Tätigkeiten übernehmen und als Dolmetscherin (Deutsch/Arabisch/Kurdisch) agieren. Es ist eine große Ehre, sie jetzt an Bord zu haben. 
