@@ -9,7 +9,7 @@ newsID: 'news3'
 
 In den kommenden Frühlingsmonaten trifft sich die MaKi-Frauengruppe wieder. ALLE Frauen, unabhängig von ihrem Alter, sind herzlich dazu eingeladen, Teil der Gruppe zu werden.
 
-*pin* Projektmitarbeiterinnen, Hannah Amin, Marlene Stockenhuber und Anna Schreilechner organisieren 9 Nachmittage für Frauen mit Gesprächsrunden und soziokulturellem Angebot - u.a. Tanz, Kochen, Yoga und vieles mehr. ALLE Frauen, in jedem Alter, sind herzlich willkommen, Teil der Gruppe zu werden. Frauen, die Kinder haben, können auch gerne mit ihren Kindern kommen. 
+*pin* Projektmitarbeiterinnen, Dijle Mohammad, Hannah Amin, Marlene Stockenhuber und Anna Schreilechner organisieren 9 Nachmittage für Frauen mit Gesprächsrunden und soziokulturellem Angebot - u.a. Tanz, Kochen, Yoga und vieles mehr. ALLE Frauen, in jedem Alter, sind herzlich willkommen, Teil der Gruppe zu werden. Frauen, die Kinder haben, können auch gerne mit ihren Kindern kommen. 
 
 Infotreff:
 **Wann**: Sonntag, 04.03.2018, 14:00 - 18:00
