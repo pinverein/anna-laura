@@ -9,7 +9,7 @@ newsID: 'news3'
 
 This spring the MaKi-Group of Women* will meet again every two weeks. ALL women, of all ages, are welcome to become a part of the MaKi-Group.
 
-*pin* project staff, Hannah Amin, Marlene Stockenhuber and Anna Schreilechner will organise talking circles and sociocultural afternoons for and with women. We will dance, cook, do yoga, talk, network and much more. Women, who have children, are more than welcome to come with their children. 
+*pin* project staff, Dijle Mohammad, Hannah Amin, Marlene Stockenhuber and Anna Schreilechner will organise talking circles and sociocultural afternoons for and with women. We will dance, cook, do yoga, talk, network and much more. Women, who have children, are more than welcome to come with their children. 
 
 Info meeting:
 **When**: Sunday, 04.03.2018, 2pm - 4pm
